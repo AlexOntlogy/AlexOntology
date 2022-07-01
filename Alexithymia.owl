@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/camila/ontologies/2022/6/untitled-ontology-21"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/camila/ontologies/2022/6/untitled-ontology-21">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#BrainRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClinicalDisorder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Emotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interoception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Questionnaire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialMedia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StatisticalTest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DiagnosedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PublicizedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SentTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SentVia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAnswered"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasItem"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasParticipant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRange"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Age"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AlcoholConsumption"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alexithymia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AnteriorCingulateCortex_ACC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AnteriorInsula_AI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anxiety"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arousal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AutismSpectrumDisorder_ASD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BodyConsciousnessQuestionnaire_BCQ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BodyPerceptionQuestionnaire_BPQ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CaffeineConsumption"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ColonicDistension"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CranialNerves"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Depression"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diabetes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EatingDisorder_EDs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FabricsSensitivity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Facebook"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fatigue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HeartRate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hunger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Interoception"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InteroceptiveAwareness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InteroceptiveConfusionQuestionnaire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InteroceptiveConfusionScale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InteroceptiveConfusionScore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InteroceptiveSensibility"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InteroceptiveSensitivity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Itch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Item"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LaminaI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LevensonSelf-ReportPsychopathyScale_SRPS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MuscleAche"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MyocardialInfarction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NoPerceptionOfEmotions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NoPerceptionOfPhysicalState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OtherDisorders"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OtherSubstancesConsumption"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Participant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PhysicalContactDislike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Psychopathy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RespiratoryEffort"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Satiety"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SolitaryTract"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Temperature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Thirst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TorontoAlexithymiaScale_TAS_20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Twitter"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#ClinicalDisorder"/>
+        <NamedIndividual IRI="#Diabetes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClinicalDisorder"/>
+        <NamedIndividual IRI="#MyocardialInfarction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialMedia"/>
+        <NamedIndividual IRI="#Twitter"/>
+    </ClassAssertion>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasItem"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasParticipant"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRange"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
