@@ -1,11 +1,22 @@
 <?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.semanticweb.org/camila/ontologies/2022/6/untitled-ontology-21"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/camila/ontologies/2022/6/untitled-ontology-21">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -42,19 +53,58 @@
         <Class IRI="#Symptom"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#DiagnosedWith"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#PublicizedOn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#SentTo"/>
+        <ObjectProperty IRI="#hasANegativeImpact"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#SentVia"/>
+        <ObjectProperty IRI="#hasAbilityToPerceive"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasAnswered"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAtypicalities"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCorrelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDifficultiesInPerceiving"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMeasured"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSamePerception"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConnectedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDelayedInSeeking"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDiagnosedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRecruitedVia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isReferredToAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSentTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSentVia"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasItem"/>
@@ -64,6 +114,15 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasRange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSubject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ANOVA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AffectiveState"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Age"/>
@@ -102,6 +161,9 @@
         <NamedIndividual IRI="#CaffeineConsumption"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CareForOthers"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#ColonicDistension"/>
     </Declaration>
     <Declaration>
@@ -112,6 +174,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Diabetes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Disgust"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#EatingDisorder_EDs"/>
@@ -129,16 +194,37 @@
         <NamedIndividual IRI="#Fear"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#FeelingCold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FeelingHot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fisher_r_to_z"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FrontotemporalDementia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Happiness"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#HeartRate"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Hunger"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ImmunodeficiencyVirus_HIV"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Interoception"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#InteroceptiveAwareness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InteroceptiveConfusion"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#InteroceptiveConfusionQuestionnaire"/>
@@ -171,16 +257,25 @@
         <NamedIndividual IRI="#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#MultipleSclerosis"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#MuscleAche"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#MyocardialInfarction"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Nausea"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#NoPerceptionOfEmotions"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#NoPerceptionOfPhysicalState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NonAffectiveState"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#OtherDisorders"/>
@@ -195,7 +290,19 @@
         <NamedIndividual IRI="#Participant"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#PhysicalAche"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#PhysicalContactDislike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PhysicalNumbness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PostTraumaticStressDisorder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PotthoffAnalyses"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Psychopathy"/>
@@ -204,10 +311,31 @@
         <NamedIndividual IRI="#RespiratoryEffort"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Sadness"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Satiety"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ShortnessOfBreath"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SkinIrritation"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#SolitaryTract"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StateEmotionSImilarityQuestionnaire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StateEmotionSimilarityScore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SubstanceAbuse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Surprise"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Temperature"/>
@@ -217,6 +345,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TorontoAlexithymiaScale_TAS_20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TotalStateEmotionSimilarityScore"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Twitter"/>
@@ -249,5 +380,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
