@@ -86,6 +86,9 @@
         <ObjectProperty IRI="#isDiagnosedWith"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isRecruitedVia"/>
     </Declaration>
     <Declaration>
@@ -1510,9 +1513,39 @@
         <NamedIndividual IRI="#StateEmotionSImilarityQuestionnaire"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+        <NamedIndividual IRI="#AnteriorCingulateCortex_ACC"/>
+        <NamedIndividual IRI="#AffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+        <NamedIndividual IRI="#AnteriorCingulateCortex_ACC"/>
+        <NamedIndividual IRI="#Interoception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+        <NamedIndividual IRI="#AnteriorCingulateCortex_ACC"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isReferredToAs"/>
         <NamedIndividual IRI="#AnteriorCingulateCortex_ACC"/>
         <NamedIndividual IRI="#InteroceptiveCortex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+        <NamedIndividual IRI="#AnteriorInsula_AI"/>
+        <NamedIndividual IRI="#AffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+        <NamedIndividual IRI="#AnteriorInsula_AI"/>
+        <NamedIndividual IRI="#Interoception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+        <NamedIndividual IRI="#AnteriorInsula_AI"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isReferredToAs"/>
@@ -1855,6 +1888,16 @@
         <NamedIndividual IRI="#InteroceptiveConfusionScale"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+        <NamedIndividual IRI="#InteroceptiveCortex"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+        <NamedIndividual IRI="#InteroceptiveCortex"/>
+        <NamedIndividual IRI="#AffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAbilityToPerceive"/>
         <NamedIndividual IRI="#InteroceptiveSensibility"/>
         <NamedIndividual IRI="#NonAffectiveState"/>
@@ -1955,26 +1998,6 @@
         <NamedIndividual IRI="#Alexithymia"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isConnectedTo"/>
-        <NamedIndividual IRI="#Participant"/>
-        <NamedIndividual IRI="#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isConnectedTo"/>
-        <NamedIndividual IRI="#Participant"/>
-        <NamedIndividual IRI="#BodyPerceptionQuestionnaire_BPQ"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isConnectedTo"/>
-        <NamedIndividual IRI="#Participant"/>
-        <NamedIndividual IRI="#InteroceptiveConfusionQuestionnaire"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isConnectedTo"/>
-        <NamedIndividual IRI="#Participant"/>
-        <NamedIndividual IRI="#BodyConsciousnessQuestionnaire_BCQ"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isDiagnosedWith"/>
         <NamedIndividual IRI="#Participant"/>
         <NamedIndividual IRI="#AutismSpectrumDisorder_ASD"/>
@@ -1998,6 +2021,26 @@
         <ObjectProperty IRI="#isDiagnosedWith"/>
         <NamedIndividual IRI="#Participant"/>
         <NamedIndividual IRI="#OtherDisorders"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+        <NamedIndividual IRI="#Participant"/>
+        <NamedIndividual IRI="#InteroceptiveConfusionQuestionnaire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+        <NamedIndividual IRI="#Participant"/>
+        <NamedIndividual IRI="#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+        <NamedIndividual IRI="#Participant"/>
+        <NamedIndividual IRI="#BodyPerceptionQuestionnaire_BPQ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+        <NamedIndividual IRI="#Participant"/>
+        <NamedIndividual IRI="#BodyConsciousnessQuestionnaire_BCQ"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isRecruitedVia"/>
