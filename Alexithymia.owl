@@ -1404,6 +1404,11 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#AffectiveState"/>
+        <NamedIndividual IRI="#Alexithymia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
         <NamedIndividual IRI="#AlcoholConsumption"/>
         <NamedIndividual IRI="#Alexithymia"/>
     </ObjectPropertyAssertion>
@@ -1510,7 +1515,17 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
         <NamedIndividual IRI="#Anger"/>
+        <NamedIndividual IRI="#Alexithymia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Anger"/>
         <NamedIndividual IRI="#StateEmotionSImilarityQuestionnaire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Anger"/>
+        <NamedIndividual IRI="#AffectiveState"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isInvolvedIn"/>
@@ -1556,6 +1571,16 @@
         <ObjectProperty IRI="#isConnectedTo"/>
         <NamedIndividual IRI="#Anxiety"/>
         <NamedIndividual IRI="#Participant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Arousal"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Arousal"/>
+        <NamedIndividual IRI="#Interoception"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
@@ -1655,7 +1680,17 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
         <NamedIndividual IRI="#Disgust"/>
+        <NamedIndividual IRI="#Alexithymia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Disgust"/>
         <NamedIndividual IRI="#StateEmotionSImilarityQuestionnaire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Disgust"/>
+        <NamedIndividual IRI="#AffectiveState"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
@@ -1694,13 +1729,53 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Fatigue"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Fatigue"/>
+        <NamedIndividual IRI="#Interoception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Fear"/>
+        <NamedIndividual IRI="#AffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Fear"/>
+        <NamedIndividual IRI="#Alexithymia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
         <NamedIndividual IRI="#FeelingCold"/>
         <NamedIndividual IRI="#StateEmotionSImilarityQuestionnaire"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#FeelingCold"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#FeelingCold"/>
+        <NamedIndividual IRI="#Interoception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
         <NamedIndividual IRI="#FeelingHot"/>
         <NamedIndividual IRI="#StateEmotionSImilarityQuestionnaire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#FeelingHot"/>
+        <NamedIndividual IRI="#Interoception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#FeelingHot"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
@@ -1719,8 +1794,23 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Happiness"/>
+        <NamedIndividual IRI="#AffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Happiness"/>
+        <NamedIndividual IRI="#Alexithymia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
         <NamedIndividual IRI="#HeartRate"/>
         <NamedIndividual IRI="#StateEmotionSImilarityQuestionnaire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#HeartRate"/>
+        <NamedIndividual IRI="#Interoception"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
@@ -1729,8 +1819,23 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#HeartRate"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
         <NamedIndividual IRI="#Hunger"/>
         <NamedIndividual IRI="#StateEmotionSImilarityQuestionnaire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Hunger"/>
+        <NamedIndividual IRI="#Interoception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Hunger"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
@@ -1909,6 +2014,16 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Itch"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Itch"/>
+        <NamedIndividual IRI="#Interoception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
         <NamedIndividual IRI="#LaminaI"/>
         <NamedIndividual IRI="#AnteriorCingulateCortex_ACC"/>
     </ObjectPropertyAssertion>
@@ -1949,13 +2064,33 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#MuscleAche"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#MuscleAche"/>
+        <NamedIndividual IRI="#Interoception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
         <NamedIndividual IRI="#MyocardialInfarction"/>
         <NamedIndividual IRI="#Alexithymia"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
         <NamedIndividual IRI="#Nausea"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Nausea"/>
         <NamedIndividual IRI="#StateEmotionSImilarityQuestionnaire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Nausea"/>
+        <NamedIndividual IRI="#Interoception"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
@@ -1996,6 +2131,16 @@
         <ObjectProperty IRI="#isConnectedTo"/>
         <NamedIndividual IRI="#OtherSubstancesConsumption"/>
         <NamedIndividual IRI="#Alexithymia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Pain"/>
+        <NamedIndividual IRI="#Interoception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Pain"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isDiagnosedWith"/>
@@ -2055,7 +2200,27 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
         <NamedIndividual IRI="#PhysicalAche"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#PhysicalAche"/>
         <NamedIndividual IRI="#StateEmotionSImilarityQuestionnaire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#PhysicalAche"/>
+        <NamedIndividual IRI="#Interoception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#PhysicalNumbness"/>
+        <NamedIndividual IRI="#Interoception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#PhysicalNumbness"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
@@ -2084,8 +2249,38 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#RespiratoryEffort"/>
+        <NamedIndividual IRI="#Interoception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#RespiratoryEffort"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Sadness"/>
+        <NamedIndividual IRI="#AffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Sadness"/>
+        <NamedIndividual IRI="#Alexithymia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
         <NamedIndividual IRI="#Sadness"/>
         <NamedIndividual IRI="#StateEmotionSImilarityQuestionnaire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Satiety"/>
+        <NamedIndividual IRI="#Interoception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Satiety"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
@@ -2099,8 +2294,28 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#ShortnessOfBreath"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#ShortnessOfBreath"/>
+        <NamedIndividual IRI="#Interoception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
         <NamedIndividual IRI="#SkinIrritation"/>
         <NamedIndividual IRI="#StateEmotionSImilarityQuestionnaire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#SkinIrritation"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#SkinIrritation"/>
+        <NamedIndividual IRI="#Interoception"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
@@ -2141,6 +2356,36 @@
         <ObjectProperty IRI="#isConnectedTo"/>
         <NamedIndividual IRI="#SubstanceAbuse"/>
         <NamedIndividual IRI="#Alexithymia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Surprise"/>
+        <NamedIndividual IRI="#Alexithymia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Surprise"/>
+        <NamedIndividual IRI="#AffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Temperature"/>
+        <NamedIndividual IRI="#Interoception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Temperature"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Thirst"/>
+        <NamedIndividual IRI="#NonAffectiveState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Thirst"/>
+        <NamedIndividual IRI="#Interoception"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isConnectedTo"/>
