@@ -357,8 +357,12 @@ html, body {
     left: 15px;
 }
 
+#index{background: url(../img/emotions.webp) no-repeat center / cover;}
+#ontology{background: url(../img/ontgraph.jpg) no-repeat center / cover;}
+#cqs{background: url(../img/sparql.jpg) no-repeat center / cover;}
+
 .hero { 
-    background: url(../img/emotions.webp) no-repeat center / cover; 
+     
     height: 100%;
     width: 100%;
     display: table;
