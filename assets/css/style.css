@@ -364,7 +364,10 @@ html, body {
     width: max-content;
 }
 
-
+#livegraph{
+    margin-left:auto;
+    margin-right:auto;
+}
 
 
 #index{background: url(../img/emotions.webp) no-repeat center / cover;}
