@@ -1,0 +1,227 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+	h1 {
+		font-size: 52px;
+	}
+
+	.hero-text p {
+		font-size: 18px;
+		margin: 35px 0 25px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+	h1 {
+		font-size: 42px;
+	}
+
+	h2 {
+		font-size: 36px;
+	}
+
+	p + p {
+		margin-top: 25px;
+	}
+
+	.btn {
+		line-height: 40px;
+		min-width: 170px;
+	}
+
+	.site-header {
+		padding-top: 40px;
+	}
+
+	.hero-content {
+		padding-top: 65px;
+	}
+
+	.hero-text {
+		max-width: 750px;
+	}
+
+	.hero-text p {
+		font-size: 16px;
+		margin: 25px 0 15px;
+	}
+
+	.site-section {
+	   padding: 60px 0 100px;
+	} 
+
+	.heading-separator {
+		padding-bottom: 50px
+	}
+
+	.heading-separator:after {
+		bottom: 20px;
+	}
+
+	.subheading-text {
+	    font-size: 18px;
+	}
+
+	.section-features h2 {
+	    font-size: 26px;
+	}
+
+	.section-services .subheading-text {
+	    margin-bottom: 60px;
+	}
+
+	.section-services .col-md-3:nth-child(n+3) .service {
+	    margin-top: 30px;
+	}
+
+	.service-title {
+		margin: 25px 0 10px;
+	}
+
+	.site-footer {
+		padding-top: 55px;
+	}
+
+	.site-footer > .container {
+	    padding-bottom: 120px;
+	}
+
+	.site-footer h3,
+	.site-footer .site-title {
+		margin-bottom: 20px;
+	}
+
+	.site-footer .list-unstyled li + li {
+		margin-top: 15px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	h1 {
+		font-size: 32px;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+	p + p {
+		margin-top: 15px;
+	}
+
+	.btn {
+		min-width: 140px;
+		font-size: 14px;
+	}
+
+	.site-header {
+		padding-top: 20px;
+	}
+	
+	.navbar-header .site-title {
+		padding-left: 15px;
+	}
+
+	.site-navigation {
+		position: absolute;
+	}
+
+	.main-menu {
+		display: none;
+	}
+
+	.hero-content {
+		padding-top: 45px;
+	}
+
+	.hero-text p {
+		font-size: 14px;
+		margin: 20px 0 10px;
+	}
+
+	.site-section {
+	   padding: 30px 0 60px;
+	} 
+
+	.subheading-text {
+	    font-size: 16px;
+	}
+
+	.section-features h2 {
+	    padding-bottom: 15px;
+	    font-size: 22px;
+	}
+
+	.section-features img {
+		position: relative;
+	    height: 180px;
+	}
+
+	.section-services .subheading-text {
+	    margin-bottom: 20px;
+	}
+
+	.section-services .col-md-3 .service {
+	    margin-top: 20px;
+	}
+
+	.service-title {
+		margin: 15px 0 5px;
+	}
+
+	.site-footer {
+		padding-top: 25px;
+	}
+
+	.site-footer > .container {
+	    padding-bottom: 50px;
+	}
+
+	.site-footer h3,
+	.site-footer .site-title {
+		margin-bottom: 15px;
+	}
+
+	.site-footer .list-unstyled li + li {
+		margin-top: 10px;
+	}
+
+	.site-footer > .container .col-xs-6:last-child h3 {
+		margin-top: 15px;
+	}
+
+	.copyright {
+		padding: 15px 0;
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 479px) {
+	.section-services .col-xs-6 {
+		width: 100%;
+	}
+
+	.section-services .col-xs-6 .service{
+		min-height: 100%;
+	}
+
+	.site-footer .col-xs-6 {
+		width: 100%;
+	}
+
+	.site-footer > .container .col-xs-6:nth-child(n+2) h3 {
+		margin-top: 25px;
+	}
+
+    .copyright .col-xs-8,
+    .copyright .col-xs-4 {
+    	width: 100%;
+    	text-align: center;
+    }
+
+    .copyright .text-right {
+    	text-align: center;
+    	padding: 10px 0 0
+    }
+}

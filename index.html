@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AlexOntology</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="site-title nodeco" href="index.html"><span>AlexOntology</span></a>
+                </div>
+                <div class="collapse navbar-collapse" id="agency-navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#proj" class="nodeco" data-toggle="dropdown">The Project</a></li>
+                        <li class="dropdown"><a href="https://royalsocietypublishing.org/doi/full/10.1098/rsos.150664" target="_blank" class="dropdown-toggle nodeco" data-toggle="dropdown">The Article</a></li>
+                        <li class="dropdown"><a href="ontology.html" class="dropdown-toggle nodeco" data-toggle="dropdown">The Ontology<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                <li><a href="#item1" class="nodeco">Owl Ontology</a></li>
+                                <li><a href="#item2" class="nodeco">Knowledge Graph</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="sparql.html" class="dropdown-toggle nodeco" data-toggle="dropdown">Competency Questions<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                <li><a href="#item1" class="nodeco">Natural Language CQs</a></li>
+                                <li><a href="#item2" class="nodeco">SPARQL queries</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>   
+        </nav>
+    </header>
+    <div id="hero" class="hero overlay">
+        <div class="hero-content">
+            <div class="hero-text centered">
+                <h1>AlexOntology</h1>
+                <p id="high-text">The Knowledge Representation of Alexithymia</p>
+                <a href="#proj" class="btn btn-border">Discover the Project</a>
+            </div>
+        </div>
+    </div>
+    <div id="proj" class ="gray-bg">
+        <div class="hero-text" id="normal">
+            <h3>Alexithymia</h3>
+            <h4>Well-known symtomps for a less-known disorder</h4>
+            <p class ="descr">Alexithymia is a personality trait characterized by the subclinical inability to identify and describe emotions experienced by oneself. The core characteristic of alexithymia is marked dysfunction in emotional awareness, social attachment, and interpersonal relation. <br>
+            Typical deficiencies may include problems identifying, processing, describing, and working with one's own feelings, often marked by a lack of understanding of the feelings of others; difficulty distinguishing between feelings and the bodily sensations of emotional arousal - which is identified by the term <i>Interoception</i>; confusion of physical sensations often associated with emotions. <br>
+            Alexithymia frequently co-occurs with other disorders. Research indicates that alexithymia overlaps with autism spectrum disorders (ASD), linked to clinical depression or anxiety and post-traumatic stress disorder (PTSD), significantly associated with ADHD, Diabetes, Eating Disorders (EDs), Psychopathy, Immunodeficiency Virus (HIV) and many others clinical disorders.
+            <h3>The Project</h3>
+            <p class ="descr">Starting from the article <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsos.150664" target="_blank">Alexithymia: a general deficit of interoception</a>, we proceeded by writing 10 competency questions, which we thought to be the most meaningful to get a clear context of the content of the article. <br>
+            As a second step, we identified the classes, properties and individuals in order to build our ontology, through <a href="https://protege.stanford.edu/" target="_blank">Protégé</a>, a free open-source ontology editor, and we exported our ontology in owl format. 
+            Then we extracted from the owl file the individuals in order to get a graphical visualization of our Knowledge Graph. <br> 
+            As a last step, we translated the Natual Language Competency Questions into SPARQL queries.
+            </p>
+        </div>
+    </div>
+    <main id="main" class="site-main">
+        <section class="site-section section-features gray-bg">
+            <div class="container" id="obj">
+                <div class="row">
+                    <div class="col">
+                        <h3>Start browsing our project</h3>
+                    </div>
+                </div>
+                <br>
+                <div class="row" id="item1">
+                    <div class="col immaginelf">
+                        <div class="flexgrp">
+                        <img class="item" id="one" src="assets/img/alexithymiaregions.jpg">
+                        <p><b>Article Abstract</b> <br> Alexithymia is a sub-clinical construct, traditionally characterized by difficulties identifying and describing one's own emotions. Recent evidence suggests that alexithymia may also be associated with difficulties perceiving some non-affective interoceptive signals, such as one's heart rate. In order to determine whether alexithymia is associated with selectively impaired affective interoception, or general interoceptive impairment, we investigated the association between alexithymia and self-reported non-affective interoceptive ability, and the extent to which individuals perceive similarity between affective and non-affective states.<br>
+                        [Figure: Brain areas showing decreased gray matter volume in alexithymia, from <a href="https://www.sciencedirect.com/science/article/pii/S0149763417305298" target="_blank">Structure of the alexithymic brain</a>.]
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col buttonlf">
+                        <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsos.150664" target="_blank" class="btn btn-border">Go to the Article</a>
+                    </div>
+                </div>
+                <br>
+                <div class="row" id="item2">
+                    <div class="col immaginerg">
+                        <div class="flexgrp">
+                            <p ><b>Alexithymia Ontology</b><br>Knowledge representation refers to the technical problem of encoding human knowledge and reasoning into a symbolic language that enables it to be processed by information systems. This symbolic language goes under the label of Ontology. Ontology engineering encompasses a representation, formal naming, and definition of the categories, properties, and relations between the concepts, data, and entities that substantiate one, many, or all domains of discourse. More simply, an ontology is a way of showing the properties of a subject area and how they are related, by defining a set of concepts and categories that represent the subject.</p>
+                            <img class="item" id="two" src="assets/img/ontology.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col buttonrg">
+                        <a href="https://www.loc.gov/item/2016865807/" target="_blank" class="btn btn-border">Go to the Ontology</a>
+                    </div>
+                </div>
+                <br>
+                <div class="row" id="item3">
+                    <div class="col immaginelf">
+                        <div class="flexgrp">
+                            <img class="item" id="three" src="assets/img/cqswebp.webp">
+                            <p ><b>Competency Questions and SPARQL queries</b> <br>Competency questions are user-oriented interrogatives that allow us to scope our ontology. In other words, they are questions that our users would want to gain answers for, through exploring and querying the ontology and its associated knowledge base. There are two types of CQs: Informal (Natural Language) and Formal, SPARQL queries. <br>
+                            SPARQL is an RDF query language—that is, a semantic query language for databases—able to retrieve and manipulate data stored in Resource Description Framework (RDF) format. <br>
+                            It allows for a query to consist of triple patterns, conjunctions, disjunctions, and optional patterns.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col buttonlf">
+                        <a href="https://www.worldcat.org/title/drifters-vol-1/oclc/1059165759&referer=brief_results" target="_blank" class="btn btn-border">Go to the CQs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="colophon" class="site-footer">
+        <div class="container">
+            <div class="row">
+                <a class="site-title" id="final"><span>ABOUT THE GROUP</span></a>
+                <p id="group">AlexOntology was created by Olga Pagnotta, Sara Vellone and Camila Oliveira for the course Knowledge Representation and Extraction A.Y. 2021/2022 within the master course in Digital Humanities and Digital Knowledge at the University of Bologna.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                    <div class="text-right">
+                        <p>All Rights Reserved, &copy; <u><a href="https://creativecommons.org/licenses/by-nc/4.0/">CreativeCommons</a></u></p>
+                    </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+</html>
