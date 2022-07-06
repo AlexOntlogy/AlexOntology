@@ -137,6 +137,7 @@ select {
     border: none;
 }
 
+
 .bootstrap-select .btn {
     border: 1px solid #26272d;
     border-radius: 10px;
@@ -357,6 +358,15 @@ html, body {
     left: 15px;
 }
 
+#rdf {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+
+
+
+
 #index{background: url(../img/emotions.webp) no-repeat center / cover;}
 #ontology{background: url(../img/ontgraph.jpg) no-repeat center / cover;}
 #cqs{background: url(../img/sparql.jpg) no-repeat center / cover;}
@@ -397,6 +407,10 @@ html, body {
 .hero-text h1 {
     position: relative;
     margin: 0;
+}
+
+.no{
+    list-style-type:none;
 }
 
 .hero-text p {
@@ -468,6 +482,8 @@ html, body {
 .centered>p {
     text-align: center!important;
 }
+
+
 
 .flexgrp {
     display: flex;
