@@ -1,0 +1,807 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gexf xmlns="http://gexf.net/1.3" version="1.3" xmlns:viz="http://gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gexf.net/1.3 http://gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2022-07-06">
+    <creator>Gephi 0.9.3</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <nodes>
+      <node id="Entity" label="Entity">
+        <viz:size value="10.0"/>
+        <viz:position x="-364.6185" y="236.96976"/>
+      </node>
+      <node id="http://www.alexontology.com#hasItem" label="http://www.alexontology.com#hasItem">
+        <viz:size value="10.0"/>
+        <viz:position x="-427.0798" y="77.19412"/>
+      </node>
+      <node id="http://www.alexontology.com#PublicizedOn" label="http://www.alexontology.com#PublicizedOn">
+        <viz:size value="10.0"/>
+        <viz:position x="-381.9752" y="-85.18826"/>
+      </node>
+      <node id="http://www.alexontology.com#distinctMembers" label="http://www.alexontology.com#distinctMembers">
+        <viz:size value="10.0"/>
+        <viz:position x="-357.90427" y="-166.39825"/>
+      </node>
+      <node id="http://www.alexontology.com#hasAbilityToPerceive" label="http://www.alexontology.com#hasAbilityToPerceive">
+        <viz:size value="10.0"/>
+        <viz:position x="337.11423" y="-70.13492"/>
+      </node>
+      <node id="http://www.alexontology.com#hasCorrelation" label="http://www.alexontology.com#hasCorrelation">
+        <viz:size value="10.0"/>
+        <viz:position x="-32.2431" y="234.01584"/>
+      </node>
+      <node id="http://www.alexontology.com#hasDifficultiesInPerceiving" label="http://www.alexontology.com#hasDifficultiesInPerceiving">
+        <viz:size value="10.0"/>
+        <viz:position x="-190.89499" y="-161.99731"/>
+      </node>
+      <node id="http://www.alexontology.com#hasFemaleParticipant" label="http://www.alexontology.com#hasFemaleParticipant">
+        <viz:size value="10.0"/>
+        <viz:position x="-34.328823" y="-175.21094"/>
+      </node>
+      <node id="http://www.alexontology.com#hasMaleParticipant" label="http://www.alexontology.com#hasMaleParticipant">
+        <viz:size value="10.0"/>
+        <viz:position x="19.053318" y="-414.58917"/>
+      </node>
+      <node id="http://www.alexontology.com#hasMeasured" label="http://www.alexontology.com#hasMeasured">
+        <viz:size value="10.0"/>
+        <viz:position x="415.09482" y="512.05994"/>
+      </node>
+      <node id="http://www.alexontology.com#hasMethod" label="http://www.alexontology.com#hasMethod">
+        <viz:size value="10.0"/>
+        <viz:position x="302.9445" y="99.74271"/>
+      </node>
+      <node id="http://www.alexontology.com#hasParticipantNumber" label="http://www.alexontology.com#hasParticipantNumber">
+        <viz:size value="10.0"/>
+        <viz:position x="69.483376" y="-207.49826"/>
+      </node>
+      <node id="http://www.alexontology.com#hasRange" label="http://www.alexontology.com#hasRange">
+        <viz:size value="10.0"/>
+        <viz:position x="480.43338" y="-268.24088"/>
+      </node>
+      <node id="http://www.alexontology.com#hasSymptom" label="http://www.alexontology.com#hasSymptom">
+        <viz:size value="10.0"/>
+        <viz:position x="-183.05347" y="53.445827"/>
+      </node>
+      <node id="http://www.alexontology.com#isConnectedTo" label="http://www.alexontology.com#isConnectedTo">
+        <viz:size value="10.0"/>
+        <viz:position x="-127.93792" y="-172.72714"/>
+      </node>
+      <node id="http://www.alexontology.com#isDiagnosedWith" label="http://www.alexontology.com#isDiagnosedWith">
+        <viz:size value="10.0"/>
+        <viz:position x="99.218666" y="-183.56537"/>
+      </node>
+      <node id="http://www.alexontology.com#isInvolvedIn" label="http://www.alexontology.com#isInvolvedIn">
+        <viz:size value="10.0"/>
+        <viz:position x="-445.25595" y="280.5009"/>
+      </node>
+      <node id="http://www.alexontology.com#isRecruitedVia" label="http://www.alexontology.com#isRecruitedVia">
+        <viz:size value="10.0"/>
+        <viz:position x="-216.73322" y="260.17148"/>
+      </node>
+      <node id="http://www.alexontology.com#isReferredToAs" label="http://www.alexontology.com#isReferredToAs">
+        <viz:size value="10.0"/>
+        <viz:position x="210.28262" y="-477.531"/>
+      </node>
+      <node id="http://www.alexontology.com#isSentTo" label="http://www.alexontology.com#isSentTo">
+        <viz:size value="10.0"/>
+        <viz:position x="446.26016" y="351.9991"/>
+      </node>
+      <node id="http://www.alexontology.com#isSentVia" label="http://www.alexontology.com#isSentVia">
+        <viz:size value="10.0"/>
+        <viz:position x="-296.08414" y="31.90048"/>
+      </node>
+      <node id="http://www.alexontology.com#sameAs" label="http://www.alexontology.com#sameAs">
+        <viz:size value="10.0"/>
+        <viz:position x="82.476906" y="441.454"/>
+      </node>
+      <node id="http://www.alexontology.com#Interoception" label="http://www.alexontology.com#Interoception">
+        <viz:size value="10.0"/>
+        <viz:position x="93.35978" y="121.06229"/>
+      </node>
+      <node id="'http://www.alexontology.com#Fatigue'&#x9;'http://www.alexontology.com#Temperature'&#x9;'http://www.alexontology.com#Pain'&#x9;'http://www.alexontology.com#Satiety'&#x9;'http://www.alexontology.com#Thirst'&#x9;'http://www.alexontology.com#RespiratoryEffort'&#x9;'http://www.alexontology.com#Hunger'&#x9;'http://www.alexontology.com#HeartRate'&#x9;'http://www.alexontology.com#Itch'&#x9;'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#MuscleAche'" label="'http://www.alexontology.com#Fatigue'&#x9;'http://www.alexontology.com#Temperature'&#x9;'http://www.alexontology.com#Pain'&#x9;'http://www.alexontology.com#Satiety'&#x9;'http://www.alexontology.com#Thirst'&#x9;'http://www.alexontology.com#RespiratoryEffort'&#x9;'http://www.alexontology.com#Hunger'&#x9;'http://www.alexontology.com#HeartRate'&#x9;'http://www.alexontology.com#Itch'&#x9;'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#MuscleAche'">
+        <viz:size value="10.0"/>
+        <viz:position x="-430.1754" y="225.10568"/>
+      </node>
+      <node id="'http://www.alexontology.com#NoPerceptionOfPhysicalState'" label="'http://www.alexontology.com#NoPerceptionOfPhysicalState'">
+        <viz:size value="10.0"/>
+        <viz:position x="113.54374" y="445.3281"/>
+      </node>
+      <node id="http://www.alexontology.com#ANOVA" label="http://www.alexontology.com#ANOVA">
+        <viz:size value="10.0"/>
+        <viz:position x="-155.99667" y="-421.19406"/>
+      </node>
+      <node id="'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'" label="'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'">
+        <viz:size value="10.0"/>
+        <viz:position x="308.2142" y="412.7601"/>
+      </node>
+      <node id="http://www.alexontology.com#AffectiveState" label="http://www.alexontology.com#AffectiveState">
+        <viz:size value="10.0"/>
+        <viz:position x="-380.05838" y="-128.36386"/>
+      </node>
+      <node id="'http://www.alexontology.com#Alexithymia'" label="'http://www.alexontology.com#Alexithymia'">
+        <viz:size value="10.0"/>
+        <viz:position x="-113.19601" y="428.79642"/>
+      </node>
+      <node id="http://www.alexontology.com#AlcoholConsumption" label="http://www.alexontology.com#AlcoholConsumption">
+        <viz:size value="10.0"/>
+        <viz:position x="-327.01346" y="25.25485"/>
+      </node>
+      <node id="http://www.alexontology.com#Alexithymia" label="http://www.alexontology.com#Alexithymia">
+        <viz:size value="10.0"/>
+        <viz:position x="73.44413" y="-298.8253"/>
+      </node>
+      <node id="'http://www.alexontology.com#StateEmotionSimilarityScore'&#x9;'http://www.alexontology.com#InteroceptiveConfusion'&#x9;'http://www.alexontology.com#Psychopathy'" label="'http://www.alexontology.com#StateEmotionSimilarityScore'&#x9;'http://www.alexontology.com#InteroceptiveConfusion'&#x9;'http://www.alexontology.com#Psychopathy'">
+        <viz:size value="10.0"/>
+        <viz:position x="146.43143" y="-236.98767"/>
+      </node>
+      <node id="'http://www.alexontology.com#AffectiveState'" label="'http://www.alexontology.com#AffectiveState'">
+        <viz:size value="10.0"/>
+        <viz:position x="184.72202" y="151.50723"/>
+      </node>
+      <node id="'http://www.alexontology.com#NoPerceptionOfEmotions'" label="'http://www.alexontology.com#NoPerceptionOfEmotions'">
+        <viz:size value="10.0"/>
+        <viz:position x="87.31638" y="205.11264"/>
+      </node>
+      <node id="'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'&#x9;'http://www.alexontology.com#FrontotemporalDementia'&#x9;'http://www.alexontology.com#AutismSpectrumDisorder_ASD'&#x9;'http://www.alexontology.com#CaffeineConsumption'&#x9;'http://www.alexontology.com#SubstanceAbuse'&#x9;'http://www.alexontology.com#AlcoholConsumption'&#x9;'http://www.alexontology.com#ImmunodeficiencyVirus_HIV'&#x9;'http://www.alexontology.com#Psychopathy'&#x9;'http://www.alexontology.com#OtherSubstancesConsumption'&#x9;'http://www.alexontology.com#MyocardialInfarction'&#x9;'http://www.alexontology.com#MultipleSclerosis'&#x9;'http://www.alexontology.com#ColonicDistension'&#x9;'http://www.alexontology.com#EatingDisorder_EDs'&#x9;'http://www.alexontology.com#CareForOthers'&#x9;'http://www.alexontology.com#PostTraumaticStressDisorder'" label="'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'&#x9;'http://www.alexontology.com#FrontotemporalDementia'&#x9;'http://www.alexontology.com#AutismSpectrumDisorder_ASD'&#x9;'http://www.alexontology.com#CaffeineConsumption'&#x9;'http://www.alexontology.com#SubstanceAbuse'&#x9;'http://www.alexontology.com#AlcoholConsumption'&#x9;'http://www.alexontology.com#ImmunodeficiencyVirus_HIV'&#x9;'http://www.alexontology.com#Psychopathy'&#x9;'http://www.alexontology.com#OtherSubstancesConsumption'&#x9;'http://www.alexontology.com#MyocardialInfarction'&#x9;'http://www.alexontology.com#MultipleSclerosis'&#x9;'http://www.alexontology.com#ColonicDistension'&#x9;'http://www.alexontology.com#EatingDisorder_EDs'&#x9;'http://www.alexontology.com#CareForOthers'&#x9;'http://www.alexontology.com#PostTraumaticStressDisorder'">
+        <viz:size value="10.0"/>
+        <viz:position x="-76.236595" y="-167.53528"/>
+      </node>
+      <node id="http://www.alexontology.com#Anger" label="http://www.alexontology.com#Anger">
+        <viz:size value="10.0"/>
+        <viz:position x="429.03714" y="209.26718"/>
+      </node>
+      <node id="'http://www.alexontology.com#Alexithymia'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#AffectiveState'" label="'http://www.alexontology.com#Alexithymia'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#AffectiveState'">
+        <viz:size value="10.0"/>
+        <viz:position x="410.44583" y="133.31454"/>
+      </node>
+      <node id="http://www.alexontology.com#AnteriorCingulateCortex_ACC" label="http://www.alexontology.com#AnteriorCingulateCortex_ACC">
+        <viz:size value="10.0"/>
+        <viz:position x="-62.849056" y="-369.30014"/>
+      </node>
+      <node id="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#NonAffectiveState'" label="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#NonAffectiveState'">
+        <viz:size value="10.0"/>
+        <viz:position x="281.0248" y="-28.403597"/>
+      </node>
+      <node id="'http://www.alexontology.com#InteroceptiveCortex'" label="'http://www.alexontology.com#InteroceptiveCortex'">
+        <viz:size value="10.0"/>
+        <viz:position x="213.86856" y="-18.97571"/>
+      </node>
+      <node id="http://www.alexontology.com#AnteriorInsula_AI" label="http://www.alexontology.com#AnteriorInsula_AI">
+        <viz:size value="10.0"/>
+        <viz:position x="-214.8175" y="115.01083"/>
+      </node>
+      <node id="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#AffectiveState'" label="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#AffectiveState'">
+        <viz:size value="10.0"/>
+        <viz:position x="-282.92618" y="-197.56766"/>
+      </node>
+      <node id="http://www.alexontology.com#Anxiety" label="http://www.alexontology.com#Anxiety">
+        <viz:size value="10.0"/>
+        <viz:position x="184.4838" y="-244.86891"/>
+      </node>
+      <node id="'http://www.alexontology.com#Participant'" label="'http://www.alexontology.com#Participant'">
+        <viz:size value="10.0"/>
+        <viz:position x="-108.68722" y="441.7927"/>
+      </node>
+      <node id="http://www.alexontology.com#Arousal" label="http://www.alexontology.com#Arousal">
+        <viz:size value="10.0"/>
+        <viz:position x="-86.54693" y="463.3419"/>
+      </node>
+      <node id="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#Interoception'" label="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#Interoception'">
+        <viz:size value="10.0"/>
+        <viz:position x="-68.95269" y="-191.32443"/>
+      </node>
+      <node id="http://www.alexontology.com#AtypicalAffectiveTouch" label="http://www.alexontology.com#AtypicalAffectiveTouch">
+        <viz:size value="10.0"/>
+        <viz:position x="-97.04107" y="-300.5557"/>
+      </node>
+      <node id="'http://www.alexontology.com#AutismSpectrumDisorder_ASD'" label="'http://www.alexontology.com#AutismSpectrumDisorder_ASD'">
+        <viz:size value="10.0"/>
+        <viz:position x="400.5685" y="131.98251"/>
+      </node>
+      <node id="http://www.alexontology.com#AutismSpectrumDisorder_ASD" label="http://www.alexontology.com#AutismSpectrumDisorder_ASD">
+        <viz:size value="10.0"/>
+        <viz:position x="185.32321" y="114.657135"/>
+      </node>
+      <node id="'http://www.alexontology.com#AtypicalAffectiveTouch'&#x9;'http://www.alexontology.com#SensitivityToFabrics'&#x9;'http://www.alexontology.com#DislikeOfPhisicalContact'&#x9;'http://www.alexontology.com#Alexithymia'" label="'http://www.alexontology.com#AtypicalAffectiveTouch'&#x9;'http://www.alexontology.com#SensitivityToFabrics'&#x9;'http://www.alexontology.com#DislikeOfPhisicalContact'&#x9;'http://www.alexontology.com#Alexithymia'">
+        <viz:size value="10.0"/>
+        <viz:position x="-79.682884" y="-308.2266"/>
+      </node>
+      <node id="http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ" label="http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ">
+        <viz:size value="10.0"/>
+        <viz:position x="401.546" y="-6.7164025"/>
+      </node>
+      <node id="'20'" label="'20'">
+        <viz:size value="10.0"/>
+        <viz:position x="395.96036" y="-3.9513571"/>
+      </node>
+      <node id="'http://www.alexontology.com#Facebook'&#x9;'http://www.alexontology.com#Twitter'" label="'http://www.alexontology.com#Facebook'&#x9;'http://www.alexontology.com#Twitter'">
+        <viz:size value="10.0"/>
+        <viz:position x="113.26444" y="311.1011"/>
+      </node>
+      <node id="'172'" label="'172'">
+        <viz:size value="10.0"/>
+        <viz:position x="-185.5751" y="-103.3425"/>
+      </node>
+      <node id="'36'" label="'36'">
+        <viz:size value="10.0"/>
+        <viz:position x="-114.45873" y="53.57089"/>
+      </node>
+      <node id="'208'" label="'208'">
+        <viz:size value="10.0"/>
+        <viz:position x="460.18887" y="-305.8327"/>
+      </node>
+      <node id="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'" label="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'">
+        <viz:size value="10.0"/>
+        <viz:position x="-48.696438" y="-366.74652"/>
+      </node>
+      <node id="http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ" label="http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ">
+        <viz:size value="10.0"/>
+        <viz:position x="-484.5148" y="368.44345"/>
+      </node>
+      <node id="'http://www.alexontology.com#Twitter'&#x9;'http://www.alexontology.com#Facebook'" label="'http://www.alexontology.com#Twitter'&#x9;'http://www.alexontology.com#Facebook'">
+        <viz:size value="10.0"/>
+        <viz:position x="-105.76925" y="473.35562"/>
+      </node>
+      <node id="http://www.alexontology.com#CaffeineConsumption" label="http://www.alexontology.com#CaffeineConsumption">
+        <viz:size value="10.0"/>
+        <viz:position x="399.673" y="-310.14685"/>
+      </node>
+      <node id="http://www.alexontology.com#CareForOthers" label="http://www.alexontology.com#CareForOthers">
+        <viz:size value="10.0"/>
+        <viz:position x="194.11575" y="83.12198"/>
+      </node>
+      <node id="http://www.alexontology.com#ColonicDistension" label="http://www.alexontology.com#ColonicDistension">
+        <viz:size value="10.0"/>
+        <viz:position x="-124.11761" y="115.420135"/>
+      </node>
+      <node id="http://www.alexontology.com#CranialNerves" label="http://www.alexontology.com#CranialNerves">
+        <viz:size value="10.0"/>
+        <viz:position x="-332.7989" y="240.82523"/>
+      </node>
+      <node id="'http://www.alexontology.com#SolitaryTract'" label="'http://www.alexontology.com#SolitaryTract'">
+        <viz:size value="10.0"/>
+        <viz:position x="-92.85876" y="54.92245"/>
+      </node>
+      <node id="http://www.alexontology.com#Depression" label="http://www.alexontology.com#Depression">
+        <viz:size value="10.0"/>
+        <viz:position x="-196.28253" y="221.39664"/>
+      </node>
+      <node id="http://www.alexontology.com#Diabetes" label="http://www.alexontology.com#Diabetes">
+        <viz:size value="10.0"/>
+        <viz:position x="479.54465" y="303.83804"/>
+      </node>
+      <node id="http://www.alexontology.com#Disgust" label="http://www.alexontology.com#Disgust">
+        <viz:size value="10.0"/>
+        <viz:position x="-244.17102" y="358.27872"/>
+      </node>
+      <node id="'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#Alexithymia'" label="'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#Alexithymia'">
+        <viz:size value="10.0"/>
+        <viz:position x="126.62705" y="183.20847"/>
+      </node>
+      <node id="http://www.alexontology.com#DislikeOfPhisicalContact" label="http://www.alexontology.com#DislikeOfPhisicalContact">
+        <viz:size value="10.0"/>
+        <viz:position x="261.41623" y="-387.1303"/>
+      </node>
+      <node id="http://www.alexontology.com#EatingDisorder_EDs" label="http://www.alexontology.com#EatingDisorder_EDs">
+        <viz:size value="10.0"/>
+        <viz:position x="-313.04916" y="200.90366"/>
+      </node>
+      <node id="http://www.alexontology.com#Facebook" label="http://www.alexontology.com#Facebook">
+        <viz:size value="10.0"/>
+        <viz:position x="102.604774" y="239.97012"/>
+      </node>
+      <node id="'http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ'&#x9;'http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ'&#x9;'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'&#x9;'http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA'" label="'http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ'&#x9;'http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ'&#x9;'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'&#x9;'http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA'">
+        <viz:size value="10.0"/>
+        <viz:position x="-93.97405" y="-145.56406"/>
+      </node>
+      <node id="http://www.alexontology.com#Fatigue" label="http://www.alexontology.com#Fatigue">
+        <viz:size value="10.0"/>
+        <viz:position x="-207.32745" y="83.928925"/>
+      </node>
+      <node id="'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'" label="'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'">
+        <viz:size value="10.0"/>
+        <viz:position x="-145.9739" y="-467.6149"/>
+      </node>
+      <node id="http://www.alexontology.com#Fear" label="http://www.alexontology.com#Fear">
+        <viz:size value="10.0"/>
+        <viz:position x="60.9473" y="-482.27225"/>
+      </node>
+      <node id="'http://www.alexontology.com#Alexithymia'&#x9;'http://www.alexontology.com#AffectiveState'" label="'http://www.alexontology.com#Alexithymia'&#x9;'http://www.alexontology.com#AffectiveState'">
+        <viz:size value="10.0"/>
+        <viz:position x="-227.6305" y="339.65994"/>
+      </node>
+      <node id="http://www.alexontology.com#FeelingCold" label="http://www.alexontology.com#FeelingCold">
+        <viz:size value="10.0"/>
+        <viz:position x="362.5309" y="-453.97067"/>
+      </node>
+      <node id="http://www.alexontology.com#FeelingHot" label="http://www.alexontology.com#FeelingHot">
+        <viz:size value="10.0"/>
+        <viz:position x="-114.91656" y="71.23648"/>
+      </node>
+      <node id="http://www.alexontology.com#Fisher_r_to_z" label="http://www.alexontology.com#Fisher_r_to_z">
+        <viz:size value="10.0"/>
+        <viz:position x="78.16483" y="133.25558"/>
+      </node>
+      <node id="http://www.alexontology.com#FrontotemporalDementia" label="http://www.alexontology.com#FrontotemporalDementia">
+        <viz:size value="10.0"/>
+        <viz:position x="-85.02703" y="489.6766"/>
+      </node>
+      <node id="http://www.alexontology.com#Happiness" label="http://www.alexontology.com#Happiness">
+        <viz:size value="10.0"/>
+        <viz:position x="289.27585" y="389.0508"/>
+      </node>
+      <node id="'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#Alexithymia'" label="'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#Alexithymia'">
+        <viz:size value="10.0"/>
+        <viz:position x="-470.03336" y="-476.35425"/>
+      </node>
+      <node id="http://www.alexontology.com#HeartRate" label="http://www.alexontology.com#HeartRate">
+        <viz:size value="10.0"/>
+        <viz:position x="14.220249" y="-153.97708"/>
+      </node>
+      <node id="'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#MyocardialInfarction'&#x9;'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'" label="'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#MyocardialInfarction'&#x9;'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'">
+        <viz:size value="10.0"/>
+        <viz:position x="-288.38733" y="-2.1893332"/>
+      </node>
+      <node id="http://www.alexontology.com#Hunger" label="http://www.alexontology.com#Hunger">
+        <viz:size value="10.0"/>
+        <viz:position x="-426.03076" y="-301.5535"/>
+      </node>
+      <node id="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#Interoception'" label="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#Interoception'">
+        <viz:size value="10.0"/>
+        <viz:position x="85.551125" y="28.914152"/>
+      </node>
+      <node id="http://www.alexontology.com#ImmunodeficiencyVirus_HIV" label="http://www.alexontology.com#ImmunodeficiencyVirus_HIV">
+        <viz:size value="10.0"/>
+        <viz:position x="318.95505" y="-464.35126"/>
+      </node>
+      <node id="http://www.alexontology.com#Individual" label="http://www.alexontology.com#Individual">
+        <viz:size value="10.0"/>
+        <viz:position x="-417.1106" y="278.4871"/>
+      </node>
+      <node id="'http://www.alexontology.com#HeartRate'" label="'http://www.alexontology.com#HeartRate'">
+        <viz:size value="10.0"/>
+        <viz:position x="293.52554" y="-199.91028"/>
+      </node>
+      <node id="http://www.alexontology.com#InteroceptiveAwareness" label="http://www.alexontology.com#InteroceptiveAwareness">
+        <viz:size value="10.0"/>
+        <viz:position x="411.75906" y="-160.42859"/>
+      </node>
+      <node id="'http://www.alexontology.com#InteroceptiveSensibility'&#x9;'http://www.alexontology.com#InteroceptiveSensitivity'" label="'http://www.alexontology.com#InteroceptiveSensibility'&#x9;'http://www.alexontology.com#InteroceptiveSensitivity'">
+        <viz:size value="10.0"/>
+        <viz:position x="-459.57092" y="-72.312836"/>
+      </node>
+      <node id="http://www.alexontology.com#InteroceptiveConfusion" label="http://www.alexontology.com#InteroceptiveConfusion">
+        <viz:size value="10.0"/>
+        <viz:position x="209.93436" y="-347.00732"/>
+      </node>
+      <node id="'http://www.alexontology.com#StateEmotionSimilarityScore'&#x9;'http://www.alexontology.com#Alexithymia'" label="'http://www.alexontology.com#StateEmotionSimilarityScore'&#x9;'http://www.alexontology.com#Alexithymia'">
+        <viz:size value="10.0"/>
+        <viz:position x="-345.0197" y="-113.27573"/>
+      </node>
+      <node id="http://www.alexontology.com#InteroceptiveConfusionQuestionnaire" label="http://www.alexontology.com#InteroceptiveConfusionQuestionnaire">
+        <viz:size value="10.0"/>
+        <viz:position x="422.2446" y="-1.8651756"/>
+      </node>
+      <node id="'http://www.alexontology.com#Fisher_r_to_z'&#x9;'http://www.alexontology.com#PotthoffAnalyses'" label="'http://www.alexontology.com#Fisher_r_to_z'&#x9;'http://www.alexontology.com#PotthoffAnalyses'">
+        <viz:size value="10.0"/>
+        <viz:position x="-112.96755" y="-378.28043"/>
+      </node>
+      <node id="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#InteroceptiveConfusionScore'&#x9;'http://www.alexontology.com#InteroceptiveConfusionScale'&#x9;'http://www.alexontology.com#Interoception'" label="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#InteroceptiveConfusionScore'&#x9;'http://www.alexontology.com#InteroceptiveConfusionScale'&#x9;'http://www.alexontology.com#Interoception'">
+        <viz:size value="10.0"/>
+        <viz:position x="400.613" y="-216.16669"/>
+      </node>
+      <node id="http://www.alexontology.com#InteroceptiveConfusionScale" label="http://www.alexontology.com#InteroceptiveConfusionScale">
+        <viz:size value="10.0"/>
+        <viz:position x="-441.39072" y="-270.07474"/>
+      </node>
+      <node id="'http://www.alexontology.com#InteroceptiveSensibility'" label="'http://www.alexontology.com#InteroceptiveSensibility'">
+        <viz:size value="10.0"/>
+        <viz:position x="459.90652" y="76.917145"/>
+      </node>
+      <node id="'1-5'" label="'1-5'">
+        <viz:size value="10.0"/>
+        <viz:position x="-183.97421" y="-449.3394"/>
+      </node>
+      <node id="'http://www.alexontology.com#InteroceptiveConfusionScore'&#x9;'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'" label="'http://www.alexontology.com#InteroceptiveConfusionScore'&#x9;'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'">
+        <viz:size value="10.0"/>
+        <viz:position x="139.38455" y="-450.90552"/>
+      </node>
+      <node id="http://www.alexontology.com#InteroceptiveConfusionScore" label="http://www.alexontology.com#InteroceptiveConfusionScore">
+        <viz:size value="10.0"/>
+        <viz:position x="-232.44623" y="-268.52365"/>
+      </node>
+      <node id="'20-100'" label="'20-100'">
+        <viz:size value="10.0"/>
+        <viz:position x="217.3826" y="297.29044"/>
+      </node>
+      <node id="'http://www.alexontology.com#InteroceptiveConfusionScale'" label="'http://www.alexontology.com#InteroceptiveConfusionScale'">
+        <viz:size value="10.0"/>
+        <viz:position x="-128.83539" y="250.18332"/>
+      </node>
+      <node id="http://www.alexontology.com#InteroceptiveCortex" label="http://www.alexontology.com#InteroceptiveCortex">
+        <viz:size value="10.0"/>
+        <viz:position x="-394.02817" y="-201.79025"/>
+      </node>
+      <node id="'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#NonAffectiveState'" label="'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#NonAffectiveState'">
+        <viz:size value="10.0"/>
+        <viz:position x="31.608372" y="-181.92996"/>
+      </node>
+      <node id="http://www.alexontology.com#InteroceptiveSensibility" label="http://www.alexontology.com#InteroceptiveSensibility">
+        <viz:size value="10.0"/>
+        <viz:position x="112.684425" y="-405.18875"/>
+      </node>
+      <node id="'http://www.alexontology.com#NonAffectiveState'" label="'http://www.alexontology.com#NonAffectiveState'">
+        <viz:size value="10.0"/>
+        <viz:position x="242.0646" y="-432.82925"/>
+      </node>
+      <node id="http://www.alexontology.com#InteroceptiveSensitivity" label="http://www.alexontology.com#InteroceptiveSensitivity">
+        <viz:size value="10.0"/>
+        <viz:position x="197.99857" y="-319.4554"/>
+      </node>
+      <node id="http://www.alexontology.com#Itch" label="http://www.alexontology.com#Itch">
+        <viz:size value="10.0"/>
+        <viz:position x="-237.17236" y="-66.76352"/>
+      </node>
+      <node id="http://www.alexontology.com#LaminaI" label="http://www.alexontology.com#LaminaI">
+        <viz:size value="10.0"/>
+        <viz:position x="280.12643" y="446.61447"/>
+      </node>
+      <node id="'http://www.alexontology.com#AnteriorCingulateCortex_ACC'" label="'http://www.alexontology.com#AnteriorCingulateCortex_ACC'">
+        <viz:size value="10.0"/>
+        <viz:position x="-232.03604" y="-313.90103"/>
+      </node>
+      <node id="http://www.alexontology.com#LevensonSelf-ReportPsychopathyScale_SRPS" label="http://www.alexontology.com#LevensonSelf-ReportPsychopathyScale_SRPS">
+        <viz:size value="10.0"/>
+        <viz:position x="-157.24942" y="488.20126"/>
+      </node>
+      <node id="'http://www.alexontology.com#Psychopathy'" label="'http://www.alexontology.com#Psychopathy'">
+        <viz:size value="10.0"/>
+        <viz:position x="110.60819" y="130.4078"/>
+      </node>
+      <node id="http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA" label="http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA">
+        <viz:size value="10.0"/>
+        <viz:position x="-413.2924" y="-472.519"/>
+      </node>
+      <node id="http://www.alexontology.com#MultipleSclerosis" label="http://www.alexontology.com#MultipleSclerosis">
+        <viz:size value="10.0"/>
+        <viz:position x="358.53873" y="-397.74084"/>
+      </node>
+      <node id="http://www.alexontology.com#MuscleAche" label="http://www.alexontology.com#MuscleAche">
+        <viz:size value="10.0"/>
+        <viz:position x="133.2161" y="204.45132"/>
+      </node>
+      <node id="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'" label="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'">
+        <viz:size value="10.0"/>
+        <viz:position x="-466.09833" y="-478.9759"/>
+      </node>
+      <node id="http://www.alexontology.com#MyocardialInfarction" label="http://www.alexontology.com#MyocardialInfarction">
+        <viz:size value="10.0"/>
+        <viz:position x="334.10056" y="510.98605"/>
+      </node>
+      <node id="http://www.alexontology.com#Nausea" label="http://www.alexontology.com#Nausea">
+        <viz:size value="10.0"/>
+        <viz:position x="54.42795" y="420.72385"/>
+      </node>
+      <node id="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#NonAffectiveState'" label="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#NonAffectiveState'">
+        <viz:size value="10.0"/>
+        <viz:position x="73.56278" y="199.20139"/>
+      </node>
+      <node id="http://www.alexontology.com#NoPerceptionOfEmotions" label="http://www.alexontology.com#NoPerceptionOfEmotions">
+        <viz:size value="10.0"/>
+        <viz:position x="218.21555" y="-418.41315"/>
+      </node>
+      <node id="http://www.alexontology.com#NoPerceptionOfPhysicalState" label="http://www.alexontology.com#NoPerceptionOfPhysicalState">
+        <viz:size value="10.0"/>
+        <viz:position x="-443.59543" y="-417.8652"/>
+      </node>
+      <node id="'http://www.alexontology.com#Interoception'" label="'http://www.alexontology.com#Interoception'">
+        <viz:size value="10.0"/>
+        <viz:position x="200.12405" y="109.964264"/>
+      </node>
+      <node id="http://www.alexontology.com#NonAffectiveState" label="http://www.alexontology.com#NonAffectiveState">
+        <viz:size value="10.0"/>
+        <viz:position x="469.2065" y="-237.10077"/>
+      </node>
+      <node id="'http://www.alexontology.com#SolitaryTract'&#x9;'http://www.alexontology.com#AnteriorCingulateCortex_ACC'" label="'http://www.alexontology.com#SolitaryTract'&#x9;'http://www.alexontology.com#AnteriorCingulateCortex_ACC'">
+        <viz:size value="10.0"/>
+        <viz:position x="-64.942375" y="-426.4336"/>
+      </node>
+      <node id="'http://www.alexontology.com#CranialNerves'&#x9;'http://www.alexontology.com#LaminaI'" label="'http://www.alexontology.com#CranialNerves'&#x9;'http://www.alexontology.com#LaminaI'">
+        <viz:size value="10.0"/>
+        <viz:position x="73.8198" y="477.89005"/>
+      </node>
+      <node id="http://www.alexontology.com#OtherDisorders" label="http://www.alexontology.com#OtherDisorders">
+        <viz:size value="10.0"/>
+        <viz:position x="451.8857" y="-410.97528"/>
+      </node>
+      <node id="http://www.alexontology.com#OtherSubstancesConsumption" label="http://www.alexontology.com#OtherSubstancesConsumption">
+        <viz:size value="10.0"/>
+        <viz:position x="246.62924" y="420.2861"/>
+      </node>
+      <node id="http://www.alexontology.com#Pain" label="http://www.alexontology.com#Pain">
+        <viz:size value="10.0"/>
+        <viz:position x="191.48111" y="80.0701"/>
+      </node>
+      <node id="http://www.alexontology.com#Participant" label="http://www.alexontology.com#Participant">
+        <viz:size value="10.0"/>
+        <viz:position x="-287.6027" y="122.00052"/>
+      </node>
+      <node id="'http://www.alexontology.com#OtherDisorders'&#x9;'http://www.alexontology.com#Depression'&#x9;'http://www.alexontology.com#AutismSpectrumDisorder_ASD'&#x9;'http://www.alexontology.com#EatingDisorder_EDs'&#x9;'http://www.alexontology.com#Anxiety'" label="'http://www.alexontology.com#OtherDisorders'&#x9;'http://www.alexontology.com#Depression'&#x9;'http://www.alexontology.com#AutismSpectrumDisorder_ASD'&#x9;'http://www.alexontology.com#EatingDisorder_EDs'&#x9;'http://www.alexontology.com#Anxiety'">
+        <viz:size value="10.0"/>
+        <viz:position x="-406.67142" y="277.1605"/>
+      </node>
+      <node id="'http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA'&#x9;'http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ'&#x9;'http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ'&#x9;'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'" label="'http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA'&#x9;'http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ'&#x9;'http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ'&#x9;'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'">
+        <viz:size value="10.0"/>
+        <viz:position x="238.10086" y="215.40115"/>
+      </node>
+      <node id="http://www.alexontology.com#PhysicalAche" label="http://www.alexontology.com#PhysicalAche">
+        <viz:size value="10.0"/>
+        <viz:position x="-232.61472" y="-86.82367"/>
+      </node>
+      <node id="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'" label="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'">
+        <viz:size value="10.0"/>
+        <viz:position x="350.0226" y="170.53354"/>
+      </node>
+      <node id="http://www.alexontology.com#PhysicalNumbness" label="http://www.alexontology.com#PhysicalNumbness">
+        <viz:size value="10.0"/>
+        <viz:position x="381.35068" y="484.84506"/>
+      </node>
+      <node id="http://www.alexontology.com#PostTraumaticStressDisorder" label="http://www.alexontology.com#PostTraumaticStressDisorder">
+        <viz:size value="10.0"/>
+        <viz:position x="216.46304" y="409.24484"/>
+      </node>
+      <node id="http://www.alexontology.com#PotthoffAnalyses" label="http://www.alexontology.com#PotthoffAnalyses">
+        <viz:size value="10.0"/>
+        <viz:position x="-11.770596" y="-104.158325"/>
+      </node>
+      <node id="http://www.alexontology.com#Psychopathy" label="http://www.alexontology.com#Psychopathy">
+        <viz:size value="10.0"/>
+        <viz:position x="-301.2121" y="34.52017"/>
+      </node>
+      <node id="http://www.alexontology.com#RespiratoryEffort" label="http://www.alexontology.com#RespiratoryEffort">
+        <viz:size value="10.0"/>
+        <viz:position x="-104.95156" y="275.05368"/>
+      </node>
+      <node id="http://www.alexontology.com#Sadness" label="http://www.alexontology.com#Sadness">
+        <viz:size value="10.0"/>
+        <viz:position x="215.12949" y="281.50705"/>
+      </node>
+      <node id="'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#Alexithymia'&#x9;'http://www.alexontology.com#AffectiveState'" label="'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#Alexithymia'&#x9;'http://www.alexontology.com#AffectiveState'">
+        <viz:size value="10.0"/>
+        <viz:position x="330.81503" y="272.28702"/>
+      </node>
+      <node id="http://www.alexontology.com#Satiety" label="http://www.alexontology.com#Satiety">
+        <viz:size value="10.0"/>
+        <viz:position x="-16.089687" y="196.11838"/>
+      </node>
+      <node id="http://www.alexontology.com#SensitivityToFabrics" label="http://www.alexontology.com#SensitivityToFabrics">
+        <viz:size value="10.0"/>
+        <viz:position x="110.2797" y="-326.2715"/>
+      </node>
+      <node id="'http://www.alexontology.com#SensitivityToFabrics'" label="'http://www.alexontology.com#SensitivityToFabrics'">
+        <viz:size value="10.0"/>
+        <viz:position x="418.46048" y="-22.233126"/>
+      </node>
+      <node id="http://www.alexontology.com#ShortnessOfBreath" label="http://www.alexontology.com#ShortnessOfBreath">
+        <viz:size value="10.0"/>
+        <viz:position x="209.79391" y="-249.23097"/>
+      </node>
+      <node id="http://www.alexontology.com#SkinIrritation" label="http://www.alexontology.com#SkinIrritation">
+        <viz:size value="10.0"/>
+        <viz:position x="-70.64895" y="-115.29959"/>
+      </node>
+      <node id="http://www.alexontology.com#SolitaryTract" label="http://www.alexontology.com#SolitaryTract">
+        <viz:size value="10.0"/>
+        <viz:position x="-327.46997" y="358.3326"/>
+      </node>
+      <node id="'http://www.alexontology.com#CranialNerves'" label="'http://www.alexontology.com#CranialNerves'">
+        <viz:size value="10.0"/>
+        <viz:position x="157.66653" y="-406.431"/>
+      </node>
+      <node id="http://www.alexontology.com#StateEmotionSImilarityQuestionnaire" label="http://www.alexontology.com#StateEmotionSImilarityQuestionnaire">
+        <viz:size value="10.0"/>
+        <viz:position x="42.556553" y="432.64267"/>
+      </node>
+      <node id="'72'" label="'72'">
+        <viz:size value="10.0"/>
+        <viz:position x="-289.70688" y="429.27054"/>
+      </node>
+      <node id="'http://www.alexontology.com#InteroceptiveSensibility'&#x9;'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#NonAffectiveState'" label="'http://www.alexontology.com#InteroceptiveSensibility'&#x9;'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#NonAffectiveState'">
+        <viz:size value="10.0"/>
+        <viz:position x="90.73838" y="203.39847"/>
+      </node>
+      <node id="'1-7'" label="'1-7'">
+        <viz:size value="10.0"/>
+        <viz:position x="-202.60144" y="-63.215366"/>
+      </node>
+      <node id="http://www.alexontology.com#StateEmotionSimilarityScore" label="http://www.alexontology.com#StateEmotionSimilarityScore">
+        <viz:size value="10.0"/>
+        <viz:position x="-59.840816" y="131.62216"/>
+      </node>
+      <node id="'http://www.alexontology.com#Alexithymia'&#x9;'http://www.alexontology.com#InteroceptiveConfusion'" label="'http://www.alexontology.com#Alexithymia'&#x9;'http://www.alexontology.com#InteroceptiveConfusion'">
+        <viz:size value="10.0"/>
+        <viz:position x="-217.36713" y="-146.38004"/>
+      </node>
+      <node id="'72-504'" label="'72-504'">
+        <viz:size value="10.0"/>
+        <viz:position x="-175.26144" y="311.97696"/>
+      </node>
+      <node id="'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'" label="'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'">
+        <viz:size value="10.0"/>
+        <viz:position x="-451.8199" y="-340.338"/>
+      </node>
+      <node id="http://www.alexontology.com#SubstanceAbuse" label="http://www.alexontology.com#SubstanceAbuse">
+        <viz:size value="10.0"/>
+        <viz:position x="-378.05618" y="-162.85477"/>
+      </node>
+      <node id="http://www.alexontology.com#Surprise" label="http://www.alexontology.com#Surprise">
+        <viz:size value="10.0"/>
+        <viz:position x="-250.35797" y="-469.3752"/>
+      </node>
+      <node id="'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#Alexithymia'" label="'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#Alexithymia'">
+        <viz:size value="10.0"/>
+        <viz:position x="-11.0274315" y="411.89432"/>
+      </node>
+      <node id="http://www.alexontology.com#Temperature" label="http://www.alexontology.com#Temperature">
+        <viz:size value="10.0"/>
+        <viz:position x="-510.16174" y="-298.02722"/>
+      </node>
+      <node id="http://www.alexontology.com#Thirst" label="http://www.alexontology.com#Thirst">
+        <viz:size value="10.0"/>
+        <viz:position x="401.50888" y="325.74832"/>
+      </node>
+      <node id="http://www.alexontology.com#TorontoAlexithymiaScale_TAS_20" label="http://www.alexontology.com#TorontoAlexithymiaScale_TAS_20">
+        <viz:size value="10.0"/>
+        <viz:position x="-324.04373" y="-37.90714"/>
+      </node>
+      <node id="http://www.alexontology.com#Twitter" label="http://www.alexontology.com#Twitter">
+        <viz:size value="10.0"/>
+        <viz:position x="-354.86765" y="-254.27866"/>
+      </node>
+      <node id="'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'&#x9;'http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA'&#x9;'http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ'&#x9;'http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ'" label="'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'&#x9;'http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA'&#x9;'http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ'&#x9;'http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ'">
+        <viz:size value="10.0"/>
+        <viz:position x="341.08914" y="236.66165"/>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Entity" target="http://www.alexontology.com#hasItem"/>
+      <edge id="1" source="Entity" target="http://www.alexontology.com#PublicizedOn"/>
+      <edge id="2" source="Entity" target="http://www.alexontology.com#distinctMembers"/>
+      <edge id="3" source="Entity" target="http://www.alexontology.com#hasAbilityToPerceive"/>
+      <edge id="4" source="Entity" target="http://www.alexontology.com#hasCorrelation"/>
+      <edge id="5" source="Entity" target="http://www.alexontology.com#hasDifficultiesInPerceiving"/>
+      <edge id="6" source="Entity" target="http://www.alexontology.com#hasFemaleParticipant"/>
+      <edge id="7" source="Entity" target="http://www.alexontology.com#hasMaleParticipant"/>
+      <edge id="8" source="Entity" target="http://www.alexontology.com#hasMeasured"/>
+      <edge id="9" source="Entity" target="http://www.alexontology.com#hasMethod"/>
+      <edge id="10" source="Entity" target="http://www.alexontology.com#hasParticipantNumber"/>
+      <edge id="11" source="Entity" target="http://www.alexontology.com#hasRange"/>
+      <edge id="12" source="Entity" target="http://www.alexontology.com#hasSymptom"/>
+      <edge id="13" source="Entity" target="http://www.alexontology.com#isConnectedTo"/>
+      <edge id="14" source="Entity" target="http://www.alexontology.com#isDiagnosedWith"/>
+      <edge id="15" source="Entity" target="http://www.alexontology.com#isInvolvedIn"/>
+      <edge id="16" source="Entity" target="http://www.alexontology.com#isRecruitedVia"/>
+      <edge id="17" source="Entity" target="http://www.alexontology.com#isReferredToAs"/>
+      <edge id="18" source="Entity" target="http://www.alexontology.com#isSentTo"/>
+      <edge id="19" source="Entity" target="http://www.alexontology.com#isSentVia"/>
+      <edge id="20" source="Entity" target="http://www.alexontology.com#sameAs"/>
+      <edge id="21" source="http://www.alexontology.com#Interoception" target="'http://www.alexontology.com#Fatigue'&#x9;'http://www.alexontology.com#Temperature'&#x9;'http://www.alexontology.com#Pain'&#x9;'http://www.alexontology.com#Satiety'&#x9;'http://www.alexontology.com#Thirst'&#x9;'http://www.alexontology.com#RespiratoryEffort'&#x9;'http://www.alexontology.com#Hunger'&#x9;'http://www.alexontology.com#HeartRate'&#x9;'http://www.alexontology.com#Itch'&#x9;'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#MuscleAche'" weight="2.0"/>
+      <edge id="22" source="http://www.alexontology.com#Interoception" target="'http://www.alexontology.com#NoPerceptionOfPhysicalState'" weight="2.0"/>
+      <edge id="23" source="http://www.alexontology.com#ANOVA" target="'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'"/>
+      <edge id="24" source="http://www.alexontology.com#AffectiveState" target="'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="25" source="http://www.alexontology.com#AlcoholConsumption" target="'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="26" source="http://www.alexontology.com#Alexithymia" target="'http://www.alexontology.com#StateEmotionSimilarityScore'&#x9;'http://www.alexontology.com#InteroceptiveConfusion'&#x9;'http://www.alexontology.com#Psychopathy'"/>
+      <edge id="27" source="http://www.alexontology.com#Alexithymia" target="'http://www.alexontology.com#AffectiveState'"/>
+      <edge id="28" source="http://www.alexontology.com#Alexithymia" target="'http://www.alexontology.com#NoPerceptionOfEmotions'"/>
+      <edge id="29" source="http://www.alexontology.com#Alexithymia" target="'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'&#x9;'http://www.alexontology.com#FrontotemporalDementia'&#x9;'http://www.alexontology.com#AutismSpectrumDisorder_ASD'&#x9;'http://www.alexontology.com#CaffeineConsumption'&#x9;'http://www.alexontology.com#SubstanceAbuse'&#x9;'http://www.alexontology.com#AlcoholConsumption'&#x9;'http://www.alexontology.com#ImmunodeficiencyVirus_HIV'&#x9;'http://www.alexontology.com#Psychopathy'&#x9;'http://www.alexontology.com#OtherSubstancesConsumption'&#x9;'http://www.alexontology.com#MyocardialInfarction'&#x9;'http://www.alexontology.com#MultipleSclerosis'&#x9;'http://www.alexontology.com#ColonicDistension'&#x9;'http://www.alexontology.com#EatingDisorder_EDs'&#x9;'http://www.alexontology.com#CareForOthers'&#x9;'http://www.alexontology.com#PostTraumaticStressDisorder'"/>
+      <edge id="30" source="http://www.alexontology.com#Anger" target="'http://www.alexontology.com#Alexithymia'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#AffectiveState'"/>
+      <edge id="31" source="http://www.alexontology.com#AnteriorCingulateCortex_ACC" target="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#NonAffectiveState'"/>
+      <edge id="32" source="http://www.alexontology.com#AnteriorCingulateCortex_ACC" target="'http://www.alexontology.com#InteroceptiveCortex'"/>
+      <edge id="33" source="http://www.alexontology.com#AnteriorInsula_AI" target="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#AffectiveState'"/>
+      <edge id="34" source="http://www.alexontology.com#AnteriorInsula_AI" target="'http://www.alexontology.com#InteroceptiveCortex'"/>
+      <edge id="35" source="http://www.alexontology.com#Anxiety" target="'http://www.alexontology.com#Participant'"/>
+      <edge id="36" source="http://www.alexontology.com#Arousal" target="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#Interoception'"/>
+      <edge id="37" source="http://www.alexontology.com#AtypicalAffectiveTouch" target="'http://www.alexontology.com#AutismSpectrumDisorder_ASD'"/>
+      <edge id="38" source="http://www.alexontology.com#AutismSpectrumDisorder_ASD" target="'http://www.alexontology.com#AtypicalAffectiveTouch'&#x9;'http://www.alexontology.com#SensitivityToFabrics'&#x9;'http://www.alexontology.com#DislikeOfPhisicalContact'&#x9;'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="39" source="http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ" target="'20'"/>
+      <edge id="40" source="http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ" target="'http://www.alexontology.com#Facebook'&#x9;'http://www.alexontology.com#Twitter'"/>
+      <edge id="41" source="http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ" target="'172'"/>
+      <edge id="42" source="http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ" target="'36'"/>
+      <edge id="43" source="http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ" target="'208'"/>
+      <edge id="44" source="http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ" target="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'"/>
+      <edge id="45" source="http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ" target="'20'"/>
+      <edge id="46" source="http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ" target="'http://www.alexontology.com#Twitter'&#x9;'http://www.alexontology.com#Facebook'"/>
+      <edge id="47" source="http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ" target="'172'"/>
+      <edge id="48" source="http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ" target="'36'"/>
+      <edge id="49" source="http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ" target="'208'"/>
+      <edge id="50" source="http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ" target="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#Interoception'"/>
+      <edge id="51" source="http://www.alexontology.com#CaffeineConsumption" target="'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="52" source="http://www.alexontology.com#CareForOthers" target="'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="53" source="http://www.alexontology.com#ColonicDistension" target="'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="54" source="http://www.alexontology.com#CranialNerves" target="'http://www.alexontology.com#SolitaryTract'"/>
+      <edge id="55" source="http://www.alexontology.com#Depression" target="'http://www.alexontology.com#Participant'"/>
+      <edge id="56" source="http://www.alexontology.com#Diabetes" target="'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="57" source="http://www.alexontology.com#Disgust" target="'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="58" source="http://www.alexontology.com#DislikeOfPhisicalContact" target="'http://www.alexontology.com#AutismSpectrumDisorder_ASD'"/>
+      <edge id="59" source="http://www.alexontology.com#EatingDisorder_EDs" target="'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="60" source="http://www.alexontology.com#Facebook" target="'http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ'&#x9;'http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ'&#x9;'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'&#x9;'http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA'"/>
+      <edge id="61" source="http://www.alexontology.com#Fatigue" target="'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'"/>
+      <edge id="62" source="http://www.alexontology.com#Fear" target="'http://www.alexontology.com#Alexithymia'&#x9;'http://www.alexontology.com#AffectiveState'"/>
+      <edge id="63" source="http://www.alexontology.com#FeelingCold" target="'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'"/>
+      <edge id="64" source="http://www.alexontology.com#FeelingHot" target="'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'"/>
+      <edge id="65" source="http://www.alexontology.com#Fisher_r_to_z" target="'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'"/>
+      <edge id="66" source="http://www.alexontology.com#FrontotemporalDementia" target="'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="67" source="http://www.alexontology.com#Happiness" target="'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="68" source="http://www.alexontology.com#HeartRate" target="'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#MyocardialInfarction'&#x9;'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'"/>
+      <edge id="69" source="http://www.alexontology.com#Hunger" target="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#Interoception'"/>
+      <edge id="70" source="http://www.alexontology.com#ImmunodeficiencyVirus_HIV" target="'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="71" source="http://www.alexontology.com#Individual" target="'http://www.alexontology.com#HeartRate'"/>
+      <edge id="72" source="http://www.alexontology.com#Individual" target="'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="73" source="http://www.alexontology.com#Individual" target="'http://www.alexontology.com#Participant'"/>
+      <edge id="76" source="http://www.alexontology.com#InteroceptiveAwareness" target="'http://www.alexontology.com#InteroceptiveSensibility'&#x9;'http://www.alexontology.com#InteroceptiveSensitivity'"/>
+      <edge id="77" source="http://www.alexontology.com#InteroceptiveConfusion" target="'http://www.alexontology.com#StateEmotionSimilarityScore'&#x9;'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="78" source="http://www.alexontology.com#InteroceptiveConfusionQuestionnaire" target="'20'"/>
+      <edge id="79" source="http://www.alexontology.com#InteroceptiveConfusionQuestionnaire" target="'http://www.alexontology.com#Facebook'&#x9;'http://www.alexontology.com#Twitter'"/>
+      <edge id="80" source="http://www.alexontology.com#InteroceptiveConfusionQuestionnaire" target="'172'"/>
+      <edge id="81" source="http://www.alexontology.com#InteroceptiveConfusionQuestionnaire" target="'36'"/>
+      <edge id="82" source="http://www.alexontology.com#InteroceptiveConfusionQuestionnaire" target="'http://www.alexontology.com#Fisher_r_to_z'&#x9;'http://www.alexontology.com#PotthoffAnalyses'"/>
+      <edge id="83" source="http://www.alexontology.com#InteroceptiveConfusionQuestionnaire" target="'208'"/>
+      <edge id="84" source="http://www.alexontology.com#InteroceptiveConfusionQuestionnaire" target="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#InteroceptiveConfusionScore'&#x9;'http://www.alexontology.com#InteroceptiveConfusionScale'&#x9;'http://www.alexontology.com#Interoception'"/>
+      <edge id="85" source="http://www.alexontology.com#InteroceptiveConfusionScale" target="'http://www.alexontology.com#InteroceptiveSensibility'"/>
+      <edge id="86" source="http://www.alexontology.com#InteroceptiveConfusionScale" target="'1-5'"/>
+      <edge id="87" source="http://www.alexontology.com#InteroceptiveConfusionScale" target="'http://www.alexontology.com#InteroceptiveConfusionScore'&#x9;'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'"/>
+      <edge id="88" source="http://www.alexontology.com#InteroceptiveConfusionScore" target="'20-100'"/>
+      <edge id="89" source="http://www.alexontology.com#InteroceptiveConfusionScore" target="'http://www.alexontology.com#InteroceptiveConfusionScale'"/>
+      <edge id="90" source="http://www.alexontology.com#InteroceptiveCortex" target="'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#NonAffectiveState'"/>
+      <edge id="91" source="http://www.alexontology.com#InteroceptiveSensibility" target="'http://www.alexontology.com#NonAffectiveState'"/>
+      <edge id="92" source="http://www.alexontology.com#InteroceptiveSensitivity" target="'http://www.alexontology.com#HeartRate'"/>
+      <edge id="93" source="http://www.alexontology.com#Itch" target="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'"/>
+      <edge id="94" source="http://www.alexontology.com#LaminaI" target="'http://www.alexontology.com#AnteriorCingulateCortex_ACC'"/>
+      <edge id="95" source="http://www.alexontology.com#LevensonSelf-ReportPsychopathyScale_SRPS" target="'http://www.alexontology.com#Psychopathy'"/>
+      <edge id="96" source="http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA" target="'20'"/>
+      <edge id="97" source="http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA" target="'http://www.alexontology.com#Facebook'&#x9;'http://www.alexontology.com#Twitter'"/>
+      <edge id="98" source="http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA" target="'172'"/>
+      <edge id="99" source="http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA" target="'36'"/>
+      <edge id="100" source="http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA" target="'208'"/>
+      <edge id="101" source="http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA" target="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#Interoception'"/>
+      <edge id="102" source="http://www.alexontology.com#MultipleSclerosis" target="'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="103" source="http://www.alexontology.com#MuscleAche" target="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'"/>
+      <edge id="104" source="http://www.alexontology.com#MyocardialInfarction" target="'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="105" source="http://www.alexontology.com#Nausea" target="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#NonAffectiveState'"/>
+      <edge id="106" source="http://www.alexontology.com#NoPerceptionOfEmotions" target="'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="107" source="http://www.alexontology.com#NoPerceptionOfPhysicalState" target="'http://www.alexontology.com#Interoception'"/>
+      <edge id="108" source="http://www.alexontology.com#NonAffectiveState" target="'http://www.alexontology.com#SolitaryTract'&#x9;'http://www.alexontology.com#AnteriorCingulateCortex_ACC'"/>
+      <edge id="109" source="http://www.alexontology.com#NonAffectiveState" target="'http://www.alexontology.com#CranialNerves'&#x9;'http://www.alexontology.com#LaminaI'"/>
+      <edge id="110" source="http://www.alexontology.com#OtherDisorders" target="'http://www.alexontology.com#Participant'"/>
+      <edge id="111" source="http://www.alexontology.com#OtherSubstancesConsumption" target="'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="112" source="http://www.alexontology.com#Pain" target="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'"/>
+      <edge id="113" source="http://www.alexontology.com#Participant" target="'http://www.alexontology.com#OtherDisorders'&#x9;'http://www.alexontology.com#Depression'&#x9;'http://www.alexontology.com#AutismSpectrumDisorder_ASD'&#x9;'http://www.alexontology.com#EatingDisorder_EDs'&#x9;'http://www.alexontology.com#Anxiety'"/>
+      <edge id="114" source="http://www.alexontology.com#Participant" target="'http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA'&#x9;'http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ'&#x9;'http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ'&#x9;'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'"/>
+      <edge id="115" source="http://www.alexontology.com#Participant" target="'http://www.alexontology.com#Facebook'&#x9;'http://www.alexontology.com#Twitter'"/>
+      <edge id="116" source="http://www.alexontology.com#PhysicalAche" target="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'"/>
+      <edge id="117" source="http://www.alexontology.com#PhysicalNumbness" target="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#Interoception'"/>
+      <edge id="118" source="http://www.alexontology.com#PostTraumaticStressDisorder" target="'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="119" source="http://www.alexontology.com#PotthoffAnalyses" target="'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'"/>
+      <edge id="120" source="http://www.alexontology.com#Psychopathy" target="'http://www.alexontology.com#Alexithymia'" weight="2.0"/>
+      <edge id="122" source="http://www.alexontology.com#RespiratoryEffort" target="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#NonAffectiveState'"/>
+      <edge id="123" source="http://www.alexontology.com#Sadness" target="'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#Alexithymia'&#x9;'http://www.alexontology.com#AffectiveState'"/>
+      <edge id="124" source="http://www.alexontology.com#Satiety" target="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#Interoception'"/>
+      <edge id="125" source="http://www.alexontology.com#SensitivityToFabrics" target="'http://www.alexontology.com#SensitivityToFabrics'"/>
+      <edge id="126" source="http://www.alexontology.com#ShortnessOfBreath" target="'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#NonAffectiveState'"/>
+      <edge id="127" source="http://www.alexontology.com#SkinIrritation" target="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'&#x9;'http://www.alexontology.com#Interoception'"/>
+      <edge id="128" source="http://www.alexontology.com#SolitaryTract" target="'http://www.alexontology.com#CranialNerves'"/>
+      <edge id="129" source="http://www.alexontology.com#StateEmotionSImilarityQuestionnaire" target="'72'"/>
+      <edge id="130" source="http://www.alexontology.com#StateEmotionSImilarityQuestionnaire" target="'http://www.alexontology.com#InteroceptiveSensibility'&#x9;'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#NonAffectiveState'"/>
+      <edge id="131" source="http://www.alexontology.com#StateEmotionSImilarityQuestionnaire" target="'1-7'"/>
+      <edge id="132" source="http://www.alexontology.com#StateEmotionSimilarityScore" target="'http://www.alexontology.com#Alexithymia'&#x9;'http://www.alexontology.com#InteroceptiveConfusion'"/>
+      <edge id="133" source="http://www.alexontology.com#StateEmotionSimilarityScore" target="'72-504'"/>
+      <edge id="134" source="http://www.alexontology.com#StateEmotionSimilarityScore" target="'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'"/>
+      <edge id="135" source="http://www.alexontology.com#SubstanceAbuse" target="'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="136" source="http://www.alexontology.com#Surprise" target="'http://www.alexontology.com#AffectiveState'&#x9;'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="137" source="http://www.alexontology.com#Temperature" target="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#Interoception'"/>
+      <edge id="138" source="http://www.alexontology.com#Thirst" target="'http://www.alexontology.com#NonAffectiveState'&#x9;'http://www.alexontology.com#Interoception'&#x9;'http://www.alexontology.com#StateEmotionSImilarityQuestionnaire'"/>
+      <edge id="139" source="http://www.alexontology.com#TorontoAlexithymiaScale_TAS_20" target="'http://www.alexontology.com#Alexithymia'"/>
+      <edge id="140" source="http://www.alexontology.com#Twitter" target="'http://www.alexontology.com#InteroceptiveConfusionQuestionnaire'&#x9;'http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA'&#x9;'http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ'&#x9;'http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ'"/>
+    </edges>
+  </graph>
+</gexf>
