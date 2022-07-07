@@ -305,7 +305,9 @@
                                             :NamedIndividual ;
                                    
                                    <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#AffectiveState> ,
-                                                                               <http://www.alexontology.com#Alexithymia> .
+                                                                               <http://www.alexontology.com#Alexithymia> ,
+                                                                                <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+                                                                               
 
 
 
@@ -869,7 +871,8 @@
                                                 :NamedIndividual ;
                                        
                                        <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#AffectiveState> ,
-                                                                                   <http://www.alexontology.com#Alexithymia> .
+                                                                                   <http://www.alexontology.com#Alexithymia> ,
+                                                                                   <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
 
 
 
