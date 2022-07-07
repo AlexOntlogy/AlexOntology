@@ -1,4 +1,4 @@
-@prefix : <http://www.alexontology.com#> .
+@prefix : <http://www.w3.org/2002/07/owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -189,6 +189,12 @@
                                        
                                        rdfs:domain <http://www.alexontology.com#Questionnaire> ,
                                                    <http://www.alexontology.com#Scale> .
+
+
+
+###  http://www.alexontology.com#hasRangeOfAge
+
+<http://www.alexontology.com#hasRangeOfAge> rdf:type :DatatypeProperty .
 
 
 
@@ -432,6 +438,8 @@
                                                                  
                                                                  <http://www.alexontology.com#hasFemaleParticipant> "172"^^xsd:int ;
                                                                  
+                                                                 <http://www.alexontology.com#hasRangeOfAge> "18-69"^^rdfs:Literal ;
+                                                                 
                                                                  <http://www.alexontology.com#hasItem> "20"^^xsd:int ;
                                                                  
                                                                  <http://www.alexontology.com#hasParticipantNumber> "208"^^xsd:int ;
@@ -453,6 +461,8 @@
                                                                        :NamedIndividual ;
                                                               
                                                               <http://www.alexontology.com#hasFemaleParticipant> "172"^^xsd:int ;
+                                                              
+                                                              <http://www.alexontology.com#hasRangeOfAge> "18-69"^^rdfs:Literal ;
                                                               
                                                               <http://www.alexontology.com#hasItem> "20"^^xsd:int ;
                                                               
@@ -581,7 +591,8 @@
                                             :NamedIndividual ;
                                    
                                    <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#AffectiveState> ,
-                                                                               <http://www.alexontology.com#Alexithymia> .
+                                                                               <http://www.alexontology.com#Alexithymia> ,
+                                                                               <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
 
 
 
@@ -731,6 +742,8 @@
                                                                   
                                                                   <http://www.alexontology.com#hasFemaleParticipant> "172"^^xsd:int ;
                                                                   
+                                                                  <http://www.alexontology.com#hasRangeOfAge> "18-69"^^rdfs:Literal ;
+                                                                  
                                                                   <http://www.alexontology.com#hasItem> "20"^^xsd:int ;
                                                                   
                                                                   <http://www.alexontology.com#hasParticipantNumber> "208"^^xsd:int ;
@@ -839,6 +852,8 @@
                                                                                                :NamedIndividual ;
                                                                                       
                                                                                       <http://www.alexontology.com#hasFemaleParticipant> "172"^^xsd:int ;
+                                                                                      
+                                                                                      <http://www.alexontology.com#hasRangeOfAge> "18-69"^^rdfs:Literal ;
                                                                                       
                                                                                       <http://www.alexontology.com#hasItem> "20"^^xsd:int ;
                                                                                       
@@ -1145,7 +1160,8 @@
                                                 :NamedIndividual ;
                                        
                                        <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#AffectiveState> ,
-                                                                                   <http://www.alexontology.com#Alexithymia> .
+                                                                                   <http://www.alexontology.com#Alexithymia> ,
+                                                                                   <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
 
 
 
@@ -1201,223 +1217,48 @@
 
 
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
-                     <http://www.alexontology.com#ShortnessOfBreath>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
-                     <http://www.alexontology.com#Temperature>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Arousal>
-                     <http://www.alexontology.com#Hunger>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#ShortnessOfBreath>
-                     <http://www.alexontology.com#Thirst>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
-                     <http://www.alexontology.com#PhysicalNumbness>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Anger>
-                     <http://www.alexontology.com#Fear>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
-                     <http://www.alexontology.com#FeelingHot>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#SkinIrritation>
-                     <http://www.alexontology.com#Temperature>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
-                     <http://www.alexontology.com#ShortnessOfBreath>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
-                     <http://www.alexontology.com#Nausea>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
-                     <http://www.alexontology.com#PhysicalNumbness>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Happiness>
-                     <http://www.alexontology.com#Sadness>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#PhysicalNumbness>
-                     <http://www.alexontology.com#SkinIrritation>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Nausea>
-                     <http://www.alexontology.com#RespiratoryEffort>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
-                     <http://www.alexontology.com#Temperature>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Arousal>
-                     <http://www.alexontology.com#Fatigue>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
-                     <http://www.alexontology.com#SkinIrritation>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Arousal>
-                     <http://www.alexontology.com#FeelingCold>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Itch>
-                     <http://www.alexontology.com#PhysicalAche>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#ANOVA>
-                     <http://www.alexontology.com#Fisher_r_to_z>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
-                     <http://www.alexontology.com#RespiratoryEffort>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Fear>
-                     <http://www.alexontology.com#Happiness>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Pain>
-                     <http://www.alexontology.com#RespiratoryEffort>
-                   )
-] .
-[ rdf:type :AllDifferent ;
   :distinctMembers ( <http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ>
                      <http://www.alexontology.com#InteroceptiveConfusionQuestionnaire>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#ShortnessOfBreath>
-                     <http://www.alexontology.com#SkinIrritation>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Anger>
-                     <http://www.alexontology.com#Sadness>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#PhysicalNumbness>
-                     <http://www.alexontology.com#ShortnessOfBreath>
+  :distinctMembers ( <http://www.alexontology.com#Pain>
+                     <http://www.alexontology.com#Satiety>
                    )
 ] .
 [ rdf:type :AllDifferent ;
   :distinctMembers ( <http://www.alexontology.com#Hunger>
-                     <http://www.alexontology.com#Nausea>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Fatigue>
-                     <http://www.alexontology.com#Pain>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
-                     <http://www.alexontology.com#Pain>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
-                     <http://www.alexontology.com#Satiety>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
-                     <http://www.alexontology.com#Satiety>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Fatigue>
-                     <http://www.alexontology.com#SkinIrritation>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Arousal>
                      <http://www.alexontology.com#RespiratoryEffort>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Itch>
-                     <http://www.alexontology.com#ShortnessOfBreath>
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#SkinIrritation>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Pain>
-                     <http://www.alexontology.com#Thirst>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Hunger>
-                     <http://www.alexontology.com#Satiety>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Itch>
-                     <http://www.alexontology.com#Nausea>
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#Temperature>
                    )
 ] .
 [ rdf:type :AllDifferent ;
   :distinctMembers ( <http://www.alexontology.com#MuscleAche>
-                     <http://www.alexontology.com#PhysicalAche>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Fatigue>
-                     <http://www.alexontology.com#MuscleAche>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Nausea>
-                     <http://www.alexontology.com#PhysicalAche>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#HeartRate>
-                     <http://www.alexontology.com#Nausea>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Itch>
                      <http://www.alexontology.com#Thirst>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Pain>
-                     <http://www.alexontology.com#PhysicalAche>
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Satiety>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#RespiratoryEffort>
+                     <http://www.alexontology.com#SkinIrritation>
                    )
 ] .
 [ rdf:type :AllDifferent ;
@@ -1427,71 +1268,21 @@
 ] .
 [ rdf:type :AllDifferent ;
   :distinctMembers ( <http://www.alexontology.com#Hunger>
-                     <http://www.alexontology.com#SkinIrritation>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
-                     <http://www.alexontology.com#RespiratoryEffort>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Fatigue>
-                     <http://www.alexontology.com#FeelingHot>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#RespiratoryEffort>
-                     <http://www.alexontology.com#Thirst>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
-                     <http://www.alexontology.com#Pain>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Pain>
                      <http://www.alexontology.com#PhysicalNumbness>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Nausea>
-                     <http://www.alexontology.com#PhysicalNumbness>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
-                     <http://www.alexontology.com#HeartRate>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Fatigue>
-                     <http://www.alexontology.com#Itch>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Fatigue>
-                     <http://www.alexontology.com#Thirst>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
-                     <http://www.alexontology.com#Hunger>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#InteroceptiveAwareness>
-                     <http://www.alexontology.com#InteroceptiveSensibility>
-                   )
-] .
-[ rdf:type :AllDifferent ;
   :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
-                     <http://www.alexontology.com#SkinIrritation>
+                     <http://www.alexontology.com#Satiety>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Itch>
+  :distinctMembers ( <http://www.alexontology.com#ANOVA>
+                     <http://www.alexontology.com#Fisher_r_to_z>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
                      <http://www.alexontology.com#Pain>
                    )
 ] .
@@ -1501,23 +1292,213 @@
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
-                     <http://www.alexontology.com#MuscleAche>
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#PhysicalAche>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Fatigue>
-                     <http://www.alexontology.com#FeelingCold>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Fatigue>
-                     <http://www.alexontology.com#HeartRate>
+  :distinctMembers ( <http://www.alexontology.com#InteroceptiveSensibility>
+                     <http://www.alexontology.com#InteroceptiveSensitivity>
                    )
 ] .
 [ rdf:type :AllDifferent ;
   :distinctMembers ( <http://www.alexontology.com#Pain>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Satiety>
                      <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#SkinIrritation>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#Nausea>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Nausea>
+                     <http://www.alexontology.com#Pain>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#Fatigue>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ>
+                     <http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Nausea>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#RespiratoryEffort>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalNumbness>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#HeartRate>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#RespiratoryEffort>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#FeelingCold>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Nausea>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#SkinIrritation>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#Hunger>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#Nausea>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Pain>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#RespiratoryEffort>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#HeartRate>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalNumbness>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Alexithymia>
+                     <http://www.alexontology.com#Interoception>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#Pain>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#FeelingHot>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#InteroceptiveAwareness>
+                     <http://www.alexontology.com#InteroceptiveSensibility>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Anger>
+                     <http://www.alexontology.com#Happiness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Anger>
+                     <http://www.alexontology.com#Sadness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalNumbness>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#MuscleAche>
                    )
 ] .
 [ rdf:type :AllDifferent ;
@@ -1526,7 +1507,17 @@
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Pain>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
                      <http://www.alexontology.com#PhysicalAche>
                    )
 ] .
@@ -1536,28 +1527,28 @@
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#AnteriorCingulateCortex_ACC>
-                     <http://www.alexontology.com#AnteriorInsula_AI>
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalNumbness>
+                     <http://www.alexontology.com#Thirst>
                    )
 ] .
 [ rdf:type :AllDifferent ;
   :distinctMembers ( <http://www.alexontology.com#FeelingHot>
-                     <http://www.alexontology.com#Temperature>
+                     <http://www.alexontology.com#RespiratoryEffort>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
-                     <http://www.alexontology.com#Satiety>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
                      <http://www.alexontology.com#Hunger>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Anger>
-                     <http://www.alexontology.com#Surprise>
+  :distinctMembers ( <http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ>
+                     <http://www.alexontology.com#InteroceptiveConfusionQuestionnaire>
                    )
 ] .
 [ rdf:type :AllDifferent ;
@@ -1566,7 +1557,237 @@
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Temperature>
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#Itch>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#HeartRate>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#Hunger>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#Nausea>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Anger>
+                     <http://www.alexontology.com#Surprise>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#Itch>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#FeelingHot>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#MuscleAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#MuscleAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#InteroceptiveConfusionQuestionnaire>
+                     <http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Nausea>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fear>
+                     <http://www.alexontology.com#Surprise>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#Pain>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#Itch>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#ANOVA>
+                     <http://www.alexontology.com#PotthoffAnalyses>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#MuscleAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Disgust>
+                     <http://www.alexontology.com#Fear>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#HeartRate>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ>
+                     <http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#MuscleAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#ShortnessOfBreath>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Satiety>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#Hunger>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Anger>
+                     <http://www.alexontology.com#Fear>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#FeelingHot>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#Nausea>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#MuscleAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Sadness>
+                     <http://www.alexontology.com#Surprise>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#AffectiveState>
+                     <http://www.alexontology.com#NonAffectiveState>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Nausea>
                      <http://www.alexontology.com#Thirst>
                    )
 ] .
@@ -1576,278 +1797,43 @@
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
-                     <http://www.alexontology.com#HeartRate>
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#ShortnessOfBreath>
                    )
 ] .
 [ rdf:type :AllDifferent ;
   :distinctMembers ( <http://www.alexontology.com#RespiratoryEffort>
-                     <http://www.alexontology.com#ShortnessOfBreath>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Fatigue>
-                     <http://www.alexontology.com#Temperature>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Fatigue>
                      <http://www.alexontology.com#Satiety>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
                      <http://www.alexontology.com#Pain>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Itch>
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
                      <http://www.alexontology.com#PhysicalNumbness>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Hunger>
-                     <http://www.alexontology.com#Pain>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#HeartRate>
-                     <http://www.alexontology.com#PhysicalNumbness>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#HeartRate>
-                     <http://www.alexontology.com#Itch>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
-                     <http://www.alexontology.com#Thirst>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
-                     <http://www.alexontology.com#RespiratoryEffort>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
-                     <http://www.alexontology.com#PhysicalAche>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#HeartRate>
-                     <http://www.alexontology.com#RespiratoryEffort>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Fatigue>
-                     <http://www.alexontology.com#ShortnessOfBreath>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
-                     <http://www.alexontology.com#Thirst>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
-                     <http://www.alexontology.com#Temperature>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Fatigue>
-                     <http://www.alexontology.com#PhysicalNumbness>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Hunger>
-                     <http://www.alexontology.com#Temperature>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Alexithymia>
-                     <http://www.alexontology.com#Interoception>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
-                     <http://www.alexontology.com#Nausea>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
-                     <http://www.alexontology.com#MuscleAche>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Itch>
-                     <http://www.alexontology.com#MuscleAche>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#PhysicalNumbness>
-                     <http://www.alexontology.com#Thirst>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Hunger>
-                     <http://www.alexontology.com#Thirst>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#HeartRate>
-                     <http://www.alexontology.com#PhysicalAche>
                    )
 ] .
 [ rdf:type :AllDifferent ;
   :distinctMembers ( <http://www.alexontology.com#Satiety>
-                     <http://www.alexontology.com#Temperature>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#HeartRate>
-                     <http://www.alexontology.com#Hunger>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Hunger>
-                     <http://www.alexontology.com#PhysicalAche>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Nausea>
-                     <http://www.alexontology.com#Pain>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#RespiratoryEffort>
-                     <http://www.alexontology.com#Satiety>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Fatigue>
-                     <http://www.alexontology.com#PhysicalAche>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
-                     <http://www.alexontology.com#ShortnessOfBreath>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Arousal>
                      <http://www.alexontology.com#Thirst>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Nausea>
-                     <http://www.alexontology.com#Temperature>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ>
-                     <http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA>
-                   )
-] .
-[ rdf:type :AllDifferent ;
   :distinctMembers ( <http://www.alexontology.com#Arousal>
-                     <http://www.alexontology.com#MuscleAche>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Itch>
-                     <http://www.alexontology.com#RespiratoryEffort>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Arousal>
-                     <http://www.alexontology.com#Satiety>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#HeartRate>
                      <http://www.alexontology.com#SkinIrritation>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#HeartRate>
-                     <http://www.alexontology.com#ShortnessOfBreath>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ>
-                     <http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Sadness>
-                     <http://www.alexontology.com#Surprise>
+  :distinctMembers ( <http://www.alexontology.com#Fear>
+                     <http://www.alexontology.com#Happiness>
                    )
 ] .
 [ rdf:type :AllDifferent ;
   :distinctMembers ( <http://www.alexontology.com#Disgust>
-                     <http://www.alexontology.com#Surprise>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#HeartRate>
-                     <http://www.alexontology.com#Satiety>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Disgust>
-                     <http://www.alexontology.com#Fear>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Pain>
-                     <http://www.alexontology.com#SkinIrritation>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#ShortnessOfBreath>
-                     <http://www.alexontology.com#Temperature>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Fatigue>
-                     <http://www.alexontology.com#Nausea>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Arousal>
-                     <http://www.alexontology.com#PhysicalNumbness>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
-                     <http://www.alexontology.com#Itch>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Nausea>
-                     <http://www.alexontology.com#ShortnessOfBreath>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#PhysicalNumbness>
-                     <http://www.alexontology.com#Satiety>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Satiety>
-                     <http://www.alexontology.com#ShortnessOfBreath>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#RespiratoryEffort>
-                     <http://www.alexontology.com#SkinIrritation>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#AffectiveState>
-                     <http://www.alexontology.com#NonAffectiveState>
+                     <http://www.alexontology.com#Sadness>
                    )
 ] .
 [ rdf:type :AllDifferent ;
@@ -1856,98 +1842,13 @@
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Satiety>
-                     <http://www.alexontology.com#SkinIrritation>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Satiety>
-                     <http://www.alexontology.com#Thirst>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#SkinIrritation>
-                     <http://www.alexontology.com#Thirst>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
-                     <http://www.alexontology.com#Hunger>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Arousal>
-                     <http://www.alexontology.com#SkinIrritation>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Hunger>
-                     <http://www.alexontology.com#Itch>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
-                     <http://www.alexontology.com#PhysicalNumbness>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Anger>
-                     <http://www.alexontology.com#Happiness>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Arousal>
-                     <http://www.alexontology.com#Nausea>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
-                     <http://www.alexontology.com#SkinIrritation>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Hunger>
-                     <http://www.alexontology.com#MuscleAche>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Nausea>
-                     <http://www.alexontology.com#Satiety>
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#Temperature>
                    )
 ] .
 [ rdf:type :AllDifferent ;
   :distinctMembers ( <http://www.alexontology.com#Fatigue>
-                     <http://www.alexontology.com#RespiratoryEffort>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
-                     <http://www.alexontology.com#Itch>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Arousal>
-                     <http://www.alexontology.com#Pain>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#HeartRate>
-                     <http://www.alexontology.com#MuscleAche>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#InteroceptiveSensibility>
-                     <http://www.alexontology.com#InteroceptiveSensitivity>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Nausea>
-                     <http://www.alexontology.com#SkinIrritation>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Arousal>
-                     <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#Temperature>
                    )
 ] .
 [ rdf:type :AllDifferent ;
@@ -1956,88 +1857,8 @@
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Arousal>
-                     <http://www.alexontology.com#Itch>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
                      <http://www.alexontology.com#Thirst>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#HeartRate>
-                     <http://www.alexontology.com#Pain>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
-                     <http://www.alexontology.com#Satiety>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Itch>
-                     <http://www.alexontology.com#Temperature>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Hunger>
-                     <http://www.alexontology.com#PhysicalNumbness>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
-                     <http://www.alexontology.com#ShortnessOfBreath>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Arousal>
-                     <http://www.alexontology.com#ShortnessOfBreath>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Arousal>
-                     <http://www.alexontology.com#HeartRate>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
-                     <http://www.alexontology.com#Nausea>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
-                     <http://www.alexontology.com#PhysicalNumbness>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Itch>
-                     <http://www.alexontology.com#SkinIrritation>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
-                     <http://www.alexontology.com#RespiratoryEffort>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
-                     <http://www.alexontology.com#Thirst>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#InteroceptiveAwareness>
-                     <http://www.alexontology.com#InteroceptiveSensitivity>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#HeartRate>
-                     <http://www.alexontology.com#Temperature>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Hunger>
-                     <http://www.alexontology.com#RespiratoryEffort>
                    )
 ] .
 [ rdf:type :AllDifferent ;
@@ -2046,43 +1867,188 @@
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Arousal>
-                     <http://www.alexontology.com#PhysicalAche>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Pain>
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
                      <http://www.alexontology.com#Satiety>
                    )
 ] .
 [ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#Pain>
+                   )
+] .
+[ rdf:type :AllDifferent ;
   :distinctMembers ( <http://www.alexontology.com#Nausea>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#MuscleAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Nausea>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#Nausea>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Disgust>
+                     <http://www.alexontology.com#Surprise>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Temperature>
                      <http://www.alexontology.com#Thirst>
                    )
 ] .
 [ rdf:type :AllDifferent ;
   :distinctMembers ( <http://www.alexontology.com#Fear>
-                     <http://www.alexontology.com#Surprise>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#RespiratoryEffort>
-                     <http://www.alexontology.com#Temperature>
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Disgust>
                      <http://www.alexontology.com#Sadness>
                    )
 ] .
 [ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#Itch>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#Pain>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#FeelingCold>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Happiness>
+                     <http://www.alexontology.com#Sadness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#Pain>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#Itch>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#Nausea>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Nausea>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#InteroceptiveAwareness>
+                     <http://www.alexontology.com#InteroceptiveSensitivity>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Nausea>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Pain>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#ShortnessOfBreath>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#Hunger>
+                   )
+] .
+[ rdf:type :AllDifferent ;
   :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#Nausea>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
                      <http://www.alexontology.com#ShortnessOfBreath>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#PhysicalNumbness>
-                     <http://www.alexontology.com#Temperature>
+  :distinctMembers ( <http://www.alexontology.com#Pain>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#RespiratoryEffort>
                    )
 ] .
 [ rdf:type :AllDifferent ;
@@ -2091,28 +2057,78 @@
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#Itch>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#AnteriorCingulateCortex_ACC>
+                     <http://www.alexontology.com#AnteriorInsula_AI>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalNumbness>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
                      <http://www.alexontology.com#Thirst>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#ANOVA>
-                     <http://www.alexontology.com#PotthoffAnalyses>
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#ShortnessOfBreath>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ>
-                     <http://www.alexontology.com#InteroceptiveConfusionQuestionnaire>
+  :distinctMembers ( <http://www.alexontology.com#Pain>
+                     <http://www.alexontology.com#SkinIrritation>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#Fear>
-                     <http://www.alexontology.com#Sadness>
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#Pain>
                    )
 ] .
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.alexontology.com#InteroceptiveConfusionQuestionnaire>
-                     <http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA>
+  :distinctMembers ( <http://www.alexontology.com#ShortnessOfBreath>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#Nausea>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#Thirst>
                    )
 ] .
 
