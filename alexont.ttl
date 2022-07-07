@@ -1,10 +1,12 @@
-@prefix : <http://www.alexontology.com#> .
+@prefix : <http://www.w3.org/2002/07/owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://www.alexontology.com> .
+
+<http://www.alexontology.com> rdf:type :Ontology .
 
 ###  http://www.alexontology.com#ANOVA
 
@@ -156,6 +158,8 @@
                                                                  
                                                                  <http://www.alexontology.com#hasFemaleParticipant> "172"^^xsd:int ;
                                                                  
+                                                                 <http://www.alexontology.com#hasRangeOfAge> "18-69"^^rdfs:Literal ;
+                                                                 
                                                                  <http://www.alexontology.com#hasItem> "20"^^xsd:int ;
                                                                  
                                                                  <http://www.alexontology.com#hasParticipantNumber> "208"^^xsd:int ;
@@ -177,6 +181,8 @@
                                                                        :NamedIndividual ;
                                                               
                                                               <http://www.alexontology.com#hasFemaleParticipant> "172"^^xsd:int ;
+                                                              
+                                                              <http://www.alexontology.com#hasRangeOfAge> "18-69"^^rdfs:Literal ;
                                                               
                                                               <http://www.alexontology.com#hasItem> "20"^^xsd:int ;
                                                               
@@ -306,8 +312,7 @@
                                    
                                    <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#AffectiveState> ,
                                                                                <http://www.alexontology.com#Alexithymia> ,
-                                                                                <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
-                                                                               
+                                                                               <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
 
 
 
@@ -457,6 +462,8 @@
                                                                   
                                                                   <http://www.alexontology.com#hasFemaleParticipant> "172"^^xsd:int ;
                                                                   
+                                                                  <http://www.alexontology.com#hasRangeOfAge> "18-69"^^rdfs:Literal ;
+                                                                  
                                                                   <http://www.alexontology.com#hasItem> "20"^^xsd:int ;
                                                                   
                                                                   <http://www.alexontology.com#hasParticipantNumber> "208"^^xsd:int ;
@@ -565,6 +572,8 @@
                                                                                                :NamedIndividual ;
                                                                                       
                                                                                       <http://www.alexontology.com#hasFemaleParticipant> "172"^^xsd:int ;
+                                                                                      
+                                                                                      <http://www.alexontology.com#hasRangeOfAge> "18-69"^^rdfs:Literal ;
                                                                                       
                                                                                       <http://www.alexontology.com#hasItem> "20"^^xsd:int ;
                                                                                       
@@ -915,6 +924,3 @@
                                                                                   <http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ> ,
                                                                                   <http://www.alexontology.com#InteroceptiveConfusionQuestionnaire> ,
                                                                                   <http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA> .
-
-
-
