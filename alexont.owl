@@ -6,2094 +6,2134 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://www.alexontology.com> .
 
-<http://www.alexontology.com> rdf:type owl:Ontology .
+<http://www.alexontology.com> rdf:type :Ontology .
+
 
 #################################################################
+#
 #    Object Properties
+#
 #################################################################
+
 
 ###  http://www.alexontology.com#PublicizedOn
-:PublicizedOn rdf:type owl:ObjectProperty ;
-              rdfs:domain :SocialMedia .
+
+<http://www.alexontology.com#PublicizedOn> rdf:type :ObjectProperty ;
+                                           
+                                           rdfs:domain <http://www.alexontology.com#SocialMedia> .
+
 
 
 ###  http://www.alexontology.com#hasAbilityToPerceive
-:hasAbilityToPerceive rdf:type owl:ObjectProperty ;
-                      rdfs:domain :Emotion ,
-                                  :PhysicalState .
+
+<http://www.alexontology.com#hasAbilityToPerceive> rdf:type :ObjectProperty ;
+                                                   
+                                                   rdfs:domain <http://www.alexontology.com#Emotion> ,
+                                                               <http://www.alexontology.com#PhysicalState> .
+
 
 
 ###  http://www.alexontology.com#hasCorrelation
-:hasCorrelation rdf:type owl:ObjectProperty ;
-                rdfs:domain :StatisticalTest .
+
+<http://www.alexontology.com#hasCorrelation> rdf:type :ObjectProperty ;
+                                             
+                                             rdfs:domain <http://www.alexontology.com#StatisticalTest> .
+
 
 
 ###  http://www.alexontology.com#hasDifficultiesInPerceiving
-:hasDifficultiesInPerceiving rdf:type owl:ObjectProperty ;
-                             rdfs:domain :Emotion ,
-                                         :PhysicalState .
+
+<http://www.alexontology.com#hasDifficultiesInPerceiving> rdf:type :ObjectProperty ;
+                                                          
+                                                          rdfs:domain <http://www.alexontology.com#Emotion> ,
+                                                                      <http://www.alexontology.com#PhysicalState> .
+
 
 
 ###  http://www.alexontology.com#hasMeasured
-:hasMeasured rdf:type owl:ObjectProperty ;
-             rdfs:domain :Scale .
+
+<http://www.alexontology.com#hasMeasured> rdf:type :ObjectProperty ;
+                                          
+                                          rdfs:domain <http://www.alexontology.com#Scale> .
+
 
 
 ###  http://www.alexontology.com#hasMethod
-:hasMethod rdf:type owl:ObjectProperty ;
-           rdfs:domain :Questionnaire .
+
+<http://www.alexontology.com#hasMethod> rdf:type :ObjectProperty ;
+                                        
+                                        rdfs:domain <http://www.alexontology.com#Questionnaire> .
+
 
 
 ###  http://www.alexontology.com#hasSymptom
-:hasSymptom rdf:type owl:ObjectProperty ;
-            rdfs:domain :Symptom .
+
+<http://www.alexontology.com#hasSymptom> rdf:type :ObjectProperty ;
+                                         
+                                         rdfs:domain <http://www.alexontology.com#Symptom> .
+
 
 
 ###  http://www.alexontology.com#isConnectedTo
-:isConnectedTo rdf:type owl:ObjectProperty ;
-               rdfs:domain :BodyPart ,
-                           :BrainRegion ,
-                           :ClinicalDisorder ,
-                           :Emotion ,
-                           :Interoception ,
-                           :Person ,
-                           :PhysicalState ,
-                           :Questionnaire ,
-                           :Scale ,
-                           :SocialMedia ,
-                           :StatisticalTest ,
-                           :Symptom .
+
+<http://www.alexontology.com#isConnectedTo> rdf:type :ObjectProperty ;
+                                            
+                                            rdfs:domain <http://www.alexontology.com#BodyPart> ,
+                                                        <http://www.alexontology.com#BrainRegion> ,
+                                                        <http://www.alexontology.com#ClinicalDisorder> ,
+                                                        <http://www.alexontology.com#Emotion> ,
+                                                        <http://www.alexontology.com#Interoception> ,
+                                                        <http://www.alexontology.com#Person> ,
+                                                        <http://www.alexontology.com#PhysicalState> ,
+                                                        <http://www.alexontology.com#Questionnaire> ,
+                                                        <http://www.alexontology.com#Scale> ,
+                                                        <http://www.alexontology.com#SocialMedia> ,
+                                                        <http://www.alexontology.com#StatisticalTest> ,
+                                                        <http://www.alexontology.com#Symptom> .
+
 
 
 ###  http://www.alexontology.com#isDiagnosedWith
-:isDiagnosedWith rdf:type owl:ObjectProperty ;
-                 rdfs:domain :ClinicalDisorder .
+
+<http://www.alexontology.com#isDiagnosedWith> rdf:type :ObjectProperty ;
+                                              
+                                              rdfs:domain <http://www.alexontology.com#ClinicalDisorder> .
+
 
 
 ###  http://www.alexontology.com#isInvolvedIn
-:isInvolvedIn rdf:type owl:ObjectProperty ;
-              rdfs:domain :BrainRegion ,
-                          :ClinicalDisorder ,
-                          :Interoception ,
-                          :PhysicalState .
 
+<http://www.alexontology.com#isInvolvedIn> rdf:type :ObjectProperty .
 
-###  http://www.alexontology.com#isParticipantIn
-:isParticipantIn rdf:type owl:ObjectProperty ;
-                 rdfs:domain :Questionnaire .
 
 
 ###  http://www.alexontology.com#isRecruitedVia
-:isRecruitedVia rdf:type owl:ObjectProperty ;
-                rdfs:domain :Person ,
-                            :SocialMedia .
+
+<http://www.alexontology.com#isRecruitedVia> rdf:type :ObjectProperty ;
+                                             
+                                             rdfs:domain <http://www.alexontology.com#Person> ,
+                                                         <http://www.alexontology.com#SocialMedia> .
+
 
 
 ###  http://www.alexontology.com#isReferredToAs
-:isReferredToAs rdf:type owl:ObjectProperty ;
-                rdfs:domain :BrainRegion .
+
+<http://www.alexontology.com#isReferredToAs> rdf:type :ObjectProperty ;
+                                             
+                                             rdfs:domain <http://www.alexontology.com#BrainRegion> .
+
 
 
 ###  http://www.alexontology.com#isSentTo
-:isSentTo rdf:type owl:ObjectProperty ;
-          rdfs:domain :BrainRegion .
+
+<http://www.alexontology.com#isSentTo> rdf:type :ObjectProperty ;
+                                       
+                                       rdfs:domain <http://www.alexontology.com#BrainRegion> .
+
 
 
 ###  http://www.alexontology.com#isSentVia
-:isSentVia rdf:type owl:ObjectProperty ;
-           rdfs:domain :BodyPart .
+
+<http://www.alexontology.com#isSentVia> rdf:type :ObjectProperty ;
+                                        
+                                        rdfs:domain <http://www.alexontology.com#BodyPart> .
+
+
+
 
 
 #################################################################
+#
 #    Data properties
+#
 #################################################################
+
 
 ###  http://www.alexontology.com#hasFemaleParticipant
-:hasFemaleParticipant rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :Questionnaire .
+
+<http://www.alexontology.com#hasFemaleParticipant> rdf:type :DatatypeProperty ;
+                                                   
+                                                   rdfs:domain <http://www.alexontology.com#Questionnaire> .
+
 
 
 ###  http://www.alexontology.com#hasItem
-:hasItem rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Questionnaire ;
-         rdfs:range xsd:int .
+
+<http://www.alexontology.com#hasItem> rdf:type :DatatypeProperty ;
+                                      
+                                      rdfs:domain <http://www.alexontology.com#Questionnaire> ;
+                                      
+                                      rdfs:range xsd:int .
+
 
 
 ###  http://www.alexontology.com#hasMaleParticipant
-:hasMaleParticipant rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :Questionnaire .
+
+<http://www.alexontology.com#hasMaleParticipant> rdf:type :DatatypeProperty ;
+                                                 
+                                                 rdfs:domain <http://www.alexontology.com#Questionnaire> .
+
 
 
 ###  http://www.alexontology.com#hasParticipantNumber
-:hasParticipantNumber rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :Questionnaire .
+
+<http://www.alexontology.com#hasParticipantNumber> rdf:type :DatatypeProperty ;
+                                                   
+                                                   rdfs:domain <http://www.alexontology.com#Questionnaire> .
+
 
 
 ###  http://www.alexontology.com#hasRange
-:hasRange rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Questionnaire ,
-                      :Scale .
+
+<http://www.alexontology.com#hasRange> rdf:type :DatatypeProperty ;
+                                       
+                                       rdfs:domain <http://www.alexontology.com#Questionnaire> ,
+                                                   <http://www.alexontology.com#Scale> .
+
 
 
 ###  http://www.alexontology.com#hasRangeOfAge
-:hasRangeOfAge rdf:type owl:DatatypeProperty .
+
+<http://www.alexontology.com#hasRangeOfAge> rdf:type :DatatypeProperty .
+
+
+
 
 
 #################################################################
+#
 #    Classes
+#
 #################################################################
+
 
 ###  http://www.alexontology.com#BodyPart
-:BodyPart rdf:type owl:Class .
+
+<http://www.alexontology.com#BodyPart> rdf:type :Class .
+
 
 
 ###  http://www.alexontology.com#BrainRegion
-:BrainRegion rdf:type owl:Class .
+
+<http://www.alexontology.com#BrainRegion> rdf:type :Class .
+
 
 
 ###  http://www.alexontology.com#ClinicalDisorder
-:ClinicalDisorder rdf:type owl:Class .
+
+<http://www.alexontology.com#ClinicalDisorder> rdf:type :Class .
+
 
 
 ###  http://www.alexontology.com#Emotion
-:Emotion rdf:type owl:Class .
+
+<http://www.alexontology.com#Emotion> rdf:type :Class .
+
 
 
 ###  http://www.alexontology.com#Interoception
-:Interoception rdf:type owl:Class .
+
+<http://www.alexontology.com#Interoception> rdf:type :Class .
+
 
 
 ###  http://www.alexontology.com#Person
-:Person rdf:type owl:Class .
+
+<http://www.alexontology.com#Person> rdf:type :Class .
+
 
 
 ###  http://www.alexontology.com#PhysicalState
-:PhysicalState rdf:type owl:Class .
+
+<http://www.alexontology.com#PhysicalState> rdf:type :Class .
+
 
 
 ###  http://www.alexontology.com#Questionnaire
-:Questionnaire rdf:type owl:Class .
+
+<http://www.alexontology.com#Questionnaire> rdf:type :Class .
+
 
 
 ###  http://www.alexontology.com#Scale
-:Scale rdf:type owl:Class .
+
+<http://www.alexontology.com#Scale> rdf:type :Class .
+
 
 
 ###  http://www.alexontology.com#SocialMedia
-:SocialMedia rdf:type owl:Class .
+
+<http://www.alexontology.com#SocialMedia> rdf:type :Class .
+
 
 
 ###  http://www.alexontology.com#StatisticalTest
-:StatisticalTest rdf:type owl:Class .
+
+<http://www.alexontology.com#StatisticalTest> rdf:type :Class .
+
 
 
 ###  http://www.alexontology.com#Symptom
-:Symptom rdf:type owl:Class .
+
+<http://www.alexontology.com#Symptom> rdf:type :Class .
+
+
+
 
 
 #################################################################
+#
 #    Individuals
+#
 #################################################################
+
 
 ###  http://www.alexontology.com#ANOVA
-:ANOVA rdf:type owl:NamedIndividual ,
-                :StatisticalTest ;
-       :isConnectedTo :InteroceptiveConfusionQuestionnaire .
+
+<http://www.alexontology.com#ANOVA> rdf:type <http://www.alexontology.com#StatisticalTest> ,
+                                             :NamedIndividual ;
+                                    
+                                    <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#InteroceptiveConfusionQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#AffectiveState
-:AffectiveState rdf:type owl:NamedIndividual ,
-                         :Emotion ;
-                :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#AffectiveState> rdf:type <http://www.alexontology.com#Emotion> ,
+                                                      :NamedIndividual ;
+                                             
+                                             <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Alexithymia> .
+
 
 
 ###  http://www.alexontology.com#AlcoholConsumption
-:AlcoholConsumption rdf:type owl:NamedIndividual ,
-                             :ClinicalDisorder ;
-                    :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#AlcoholConsumption> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                          :NamedIndividual ;
+                                                 
+                                                 <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Alexithymia> .
+
 
 
 ###  http://www.alexontology.com#Alexithymia
-:Alexithymia rdf:type owl:NamedIndividual ,
-                      :ClinicalDisorder ;
-             :hasCorrelation :InteroceptiveConfusion ,
-                             :Psychopathy ,
-                             :StateEmotionSimilarityScore ;
-             :hasDifficultiesInPerceiving :AffectiveState ;
-             :hasSymptom :NoPerceptionOfEmotions ;
-             :isConnectedTo :AlcoholConsumption ,
-                            :AutismSpectrumDisorder_ASD ,
-                            :CaffeineConsumption ,
-                            :CareForOthers ,
-                            :ColonicDistension ,
-                            :EatingDisorder_EDs ,
-                            :FrontotemporalDementia ,
-                            :ImmunodeficiencyVirus_HIV ,
-                            :InteroceptiveConfusionQuestionnaire ,
-                            :MultipleSclerosis ,
-                            :MyocardialInfarction ,
-                            :OtherSubstancesConsumption ,
-                            :PostTraumaticStressDisorder ,
-                            :Psychopathy ,
-                            :SubstanceAbuse .
+
+<http://www.alexontology.com#Alexithymia> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                   :NamedIndividual ;
+                                          
+                                          <http://www.alexontology.com#hasDifficultiesInPerceiving> <http://www.alexontology.com#AffectiveState> ;
+                                          
+                                          <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#AlcoholConsumption> ,
+                                                                                      <http://www.alexontology.com#AutismSpectrumDisorder_ASD> ,
+                                                                                      <http://www.alexontology.com#CaffeineConsumption> ,
+                                                                                      <http://www.alexontology.com#CareForOthers> ,
+                                                                                      <http://www.alexontology.com#ColonicDistension> ,
+                                                                                      <http://www.alexontology.com#EatingDisorder_EDs> ,
+                                                                                      <http://www.alexontology.com#FrontotemporalDementia> ,
+                                                                                      <http://www.alexontology.com#ImmunodeficiencyVirus_HIV> ;
+                                          
+                                          <http://www.alexontology.com#hasCorrelation> <http://www.alexontology.com#InteroceptiveConfusion> ;
+                                          
+                                          <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#InteroceptiveConfusionQuestionnaire> ,
+                                                                                      <http://www.alexontology.com#MultipleSclerosis> ,
+                                                                                      <http://www.alexontology.com#MyocardialInfarction> ;
+                                          
+                                          <http://www.alexontology.com#hasSymptom> <http://www.alexontology.com#NoPerceptionOfEmotions> ;
+                                          
+                                          <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#OtherSubstancesConsumption> ,
+                                                                                      <http://www.alexontology.com#PostTraumaticStressDisorder> ;
+                                          
+                                          <http://www.alexontology.com#hasCorrelation> <http://www.alexontology.com#Psychopathy> ;
+                                          
+                                          <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Psychopathy> ;
+                                          
+                                          <http://www.alexontology.com#hasCorrelation> <http://www.alexontology.com#StateEmotionSimilarityScore> ;
+                                          
+                                          <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#SubstanceAbuse> .
+
 
 
 ###  http://www.alexontology.com#Anger
-:Anger rdf:type owl:NamedIndividual ,
-                :Emotion ;
-       :isConnectedTo :AffectiveState ,
-                      :Alexithymia ,
-                      :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#Anger> rdf:type <http://www.alexontology.com#Emotion> ,
+                                             :NamedIndividual ;
+                                    
+                                    <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#AffectiveState> ,
+                                                                                <http://www.alexontology.com#Alexithymia> ,
+                                                                                <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#AnteriorCingulateCortex_ACC
-:AnteriorCingulateCortex_ACC rdf:type owl:NamedIndividual ,
-                                      :BrainRegion ;
-                             :isInvolvedIn :AffectiveState ,
-                                           :Interoception ,
-                                           :NonAffectiveState ;
-                             :isReferredToAs :InteroceptiveCortex .
+
+<http://www.alexontology.com#AnteriorCingulateCortex_ACC> rdf:type <http://www.alexontology.com#BrainRegion> ,
+                                                                   :NamedIndividual ;
+                                                          
+                                                          <http://www.alexontology.com#isInvolvedIn> <http://www.alexontology.com#AffectiveState> ,
+                                                                                                     <http://www.alexontology.com#Interoception> ;
+                                                          
+                                                          <http://www.alexontology.com#isReferredToAs> <http://www.alexontology.com#InteroceptiveCortex> ;
+                                                          
+                                                          <http://www.alexontology.com#isInvolvedIn> <http://www.alexontology.com#NonAffectiveState> .
+
 
 
 ###  http://www.alexontology.com#AnteriorInsula_AI
-:AnteriorInsula_AI rdf:type owl:NamedIndividual ,
-                            :BrainRegion ;
-                   :isInvolvedIn :AffectiveState ,
-                                 :Interoception ,
-                                 :NonAffectiveState ;
-                   :isReferredToAs :InteroceptiveCortex .
+
+<http://www.alexontology.com#AnteriorInsula_AI> rdf:type <http://www.alexontology.com#BrainRegion> ,
+                                                         :NamedIndividual ;
+                                                
+                                                <http://www.alexontology.com#isInvolvedIn> <http://www.alexontology.com#AffectiveState> ,
+                                                                                           <http://www.alexontology.com#Interoception> ;
+                                                
+                                                <http://www.alexontology.com#isReferredToAs> <http://www.alexontology.com#InteroceptiveCortex> ;
+                                                
+                                                <http://www.alexontology.com#isInvolvedIn> <http://www.alexontology.com#NonAffectiveState> .
+
 
 
 ###  http://www.alexontology.com#Anxiety
-:Anxiety rdf:type owl:NamedIndividual ,
-                  :ClinicalDisorder ;
-         :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#Anxiety> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                               :NamedIndividual ;
+                                      
+                                      <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Participant> .
+
 
 
 ###  http://www.alexontology.com#Arousal
-:Arousal rdf:type owl:NamedIndividual ,
-                  :PhysicalState ;
-         :isConnectedTo :Interoception ,
-                        :NonAffectiveState .
+
+<http://www.alexontology.com#Arousal> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                               :NamedIndividual ;
+                                      
+                                      <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                  <http://www.alexontology.com#NonAffectiveState> .
+
 
 
 ###  http://www.alexontology.com#AtypicalAffectiveTouch
-:AtypicalAffectiveTouch rdf:type owl:NamedIndividual ,
-                                 :Symptom ;
-                        :isConnectedTo :AutismSpectrumDisorder_ASD .
+
+<http://www.alexontology.com#AtypicalAffectiveTouch> rdf:type <http://www.alexontology.com#Symptom> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#AutismSpectrumDisorder_ASD> .
+
 
 
 ###  http://www.alexontology.com#AutismSpectrumDisorder_ASD
-:AutismSpectrumDisorder_ASD rdf:type owl:NamedIndividual ,
-                                     :ClinicalDisorder ;
-                            :isConnectedTo :Alexithymia ,
-                                           :AtypicalAffectiveTouch ,
-                                           :DislikeOfPhisicalContact ,
-                                           :SensitivityToFabrics .
+
+<http://www.alexontology.com#AutismSpectrumDisorder_ASD> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                                  :NamedIndividual ;
+                                                         
+                                                         <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Alexithymia> ,
+                                                                                                     <http://www.alexontology.com#AtypicalAffectiveTouch> ,
+                                                                                                     <http://www.alexontology.com#DislikeOfPhisicalContact> ,
+                                                                                                     <http://www.alexontology.com#SensitivityToFabrics> .
+
 
 
 ###  http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ
-:BodyConsciousnessQuestionnaire_BCQ rdf:type owl:NamedIndividual ,
-                                             :Questionnaire ;
-                                    :PublicizedOn :Facebook ,
-                                                  :Twitter ;
-                                    :isConnectedTo :Interoception ,
-                                                   :NonAffectiveState ;
-                                    :hasFemaleParticipant "172"^^xsd:int ;
-                                    :hasItem "20"^^xsd:int ;
-                                    :hasMaleParticipant "36"^^xsd:int ;
-                                    :hasParticipantNumber "208"^^xsd:int ;
-                                    :hasRangeOfAge "18-69"^^rdfs:Literal .
+
+<http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ> rdf:type <http://www.alexontology.com#Questionnaire> ,
+                                                                          :NamedIndividual ;
+                                                                 
+                                                                 <http://www.alexontology.com#hasFemaleParticipant> "172"^^xsd:int ;
+                                                                 
+                                                                 <http://www.alexontology.com#hasRangeOfAge> "18-69"^^rdfs:Literal ;
+                                                                 
+                                                                 <http://www.alexontology.com#hasItem> "20"^^xsd:int ;
+                                                                 
+                                                                 <http://www.alexontology.com#hasParticipantNumber> "208"^^xsd:int ;
+                                                                 
+                                                                 <http://www.alexontology.com#hasMaleParticipant> "36"^^xsd:int ;
+                                                                 
+                                                                 <http://www.alexontology.com#PublicizedOn> <http://www.alexontology.com#Facebook> ;
+                                                                 
+                                                                 <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                                             <http://www.alexontology.com#NonAffectiveState> ;
+                                                                 
+                                                                 <http://www.alexontology.com#PublicizedOn> <http://www.alexontology.com#Twitter> .
+
 
 
 ###  http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ
-:BodyPerceptionQuestionnaire_BPQ rdf:type owl:NamedIndividual ,
-                                          :Questionnaire ;
-                                 :PublicizedOn :Facebook ,
-                                               :Twitter ;
-                                 :isConnectedTo :Interoception ,
-                                                :NonAffectiveState ;
-                                 :hasFemaleParticipant "172"^^xsd:int ;
-                                 :hasItem "20"^^xsd:int ;
-                                 :hasMaleParticipant "36"^^xsd:int ;
-                                 :hasParticipantNumber "208"^^xsd:int ;
-                                 :hasRangeOfAge "18-69"^^rdfs:Literal .
+
+<http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ> rdf:type <http://www.alexontology.com#Questionnaire> ,
+                                                                       :NamedIndividual ;
+                                                              
+                                                              <http://www.alexontology.com#hasFemaleParticipant> "172"^^xsd:int ;
+                                                              
+                                                              <http://www.alexontology.com#hasRangeOfAge> "18-69"^^rdfs:Literal ;
+                                                              
+                                                              <http://www.alexontology.com#hasItem> "20"^^xsd:int ;
+                                                              
+                                                              <http://www.alexontology.com#hasParticipantNumber> "208"^^xsd:int ;
+                                                              
+                                                              <http://www.alexontology.com#hasMaleParticipant> "36"^^xsd:int ;
+                                                              
+                                                              <http://www.alexontology.com#PublicizedOn> <http://www.alexontology.com#Facebook> ;
+                                                              
+                                                              <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                                          <http://www.alexontology.com#NonAffectiveState> ;
+                                                              
+                                                              <http://www.alexontology.com#PublicizedOn> <http://www.alexontology.com#Twitter> .
+
 
 
 ###  http://www.alexontology.com#CaffeineConsumption
-:CaffeineConsumption rdf:type owl:NamedIndividual ,
-                              :ClinicalDisorder ;
-                     :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#CaffeineConsumption> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                           :NamedIndividual ;
+                                                  
+                                                  <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Alexithymia> .
+
 
 
 ###  http://www.alexontology.com#CareForOthers
-:CareForOthers rdf:type owl:NamedIndividual ,
-                        :Symptom ;
-               :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#CareForOthers> rdf:type <http://www.alexontology.com#Symptom> ,
+                                                     :NamedIndividual ;
+                                            
+                                            <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Alexithymia> .
+
 
 
 ###  http://www.alexontology.com#ColonicDistension
-:ColonicDistension rdf:type owl:NamedIndividual ,
-                            :ClinicalDisorder ;
-                   :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#ColonicDistension> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                         :NamedIndividual ;
+                                                
+                                                <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Alexithymia> .
+
 
 
 ###  http://www.alexontology.com#CranialNerves
-:CranialNerves rdf:type owl:NamedIndividual ,
-                        :BodyPart ;
-               :isConnectedTo :SolitaryTract .
+
+<http://www.alexontology.com#CranialNerves> rdf:type <http://www.alexontology.com#BodyPart> ,
+                                                     :NamedIndividual ;
+                                            
+                                            <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#SolitaryTract> .
+
 
 
 ###  http://www.alexontology.com#Depression
-:Depression rdf:type owl:NamedIndividual ,
-                     :ClinicalDisorder ;
-            :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#Depression> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                  :NamedIndividual ;
+                                         
+                                         <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Participant> .
+
 
 
 ###  http://www.alexontology.com#Diabetes
-:Diabetes rdf:type owl:NamedIndividual ,
-                   :ClinicalDisorder ;
-          :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#Diabetes> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                :NamedIndividual ;
+                                       
+                                       <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Alexithymia> .
+
 
 
 ###  http://www.alexontology.com#Disgust
-:Disgust rdf:type owl:NamedIndividual ,
-                  :Emotion ;
-         :isConnectedTo :AffectiveState ,
-                        :Alexithymia ,
-                        :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#Disgust> rdf:type <http://www.alexontology.com#Emotion> ,
+                                               :NamedIndividual ;
+                                      
+                                      <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#AffectiveState> ,
+                                                                                  <http://www.alexontology.com#Alexithymia> ,
+                                                                                  <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#DislikeOfPhisicalContact
-:DislikeOfPhisicalContact rdf:type owl:NamedIndividual ,
-                                   :Symptom ;
-                          :isConnectedTo :AutismSpectrumDisorder_ASD .
+
+<http://www.alexontology.com#DislikeOfPhisicalContact> rdf:type <http://www.alexontology.com#Symptom> ,
+                                                                :NamedIndividual ;
+                                                       
+                                                       <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#AutismSpectrumDisorder_ASD> .
+
 
 
 ###  http://www.alexontology.com#EatingDisorder_EDs
-:EatingDisorder_EDs rdf:type owl:NamedIndividual ,
-                             :ClinicalDisorder ;
-                    :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#EatingDisorder_EDs> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                          :NamedIndividual ;
+                                                 
+                                                 <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Alexithymia> .
+
 
 
 ###  http://www.alexontology.com#Facebook
-:Facebook rdf:type owl:NamedIndividual ,
-                   :SocialMedia ;
-          :isConnectedTo :BodyConsciousnessQuestionnaire_BCQ ,
-                         :BodyPerceptionQuestionnaire_BPQ ,
-                         :InteroceptiveConfusionQuestionnaire ,
-                         :MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA .
+
+<http://www.alexontology.com#Facebook> rdf:type <http://www.alexontology.com#SocialMedia> ,
+                                                :NamedIndividual ;
+                                       
+                                       <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ> ,
+                                                                                   <http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ> ,
+                                                                                   <http://www.alexontology.com#InteroceptiveConfusionQuestionnaire> ,
+                                                                                   <http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA> .
+
 
 
 ###  http://www.alexontology.com#Fatigue
-:Fatigue rdf:type owl:NamedIndividual ,
-                  :PhysicalState ;
-         :isConnectedTo :Interoception ,
-                        :NonAffectiveState ,
-                        :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#Fatigue> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                               :NamedIndividual ;
+                                      
+                                      <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                  <http://www.alexontology.com#NonAffectiveState> ,
+                                                                                  <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#Fear
-:Fear rdf:type owl:NamedIndividual ,
-               :Emotion ;
-      :isConnectedTo :AffectiveState ,
-                     :Alexithymia ,
-                     :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#Fear> rdf:type <http://www.alexontology.com#Emotion> ,
+                                            :NamedIndividual ;
+                                   
+                                   <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#AffectiveState> ,
+                                                                               <http://www.alexontology.com#Alexithymia> ,
+                                                                               <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#FeelingCold
-:FeelingCold rdf:type owl:NamedIndividual ,
-                      :PhysicalState ;
-             :isConnectedTo :Interoception ,
-                            :NonAffectiveState ,
-                            :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#FeelingCold> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                                   :NamedIndividual ;
+                                          
+                                          <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                      <http://www.alexontology.com#NonAffectiveState> ,
+                                                                                      <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#FeelingHot
-:FeelingHot rdf:type owl:NamedIndividual ,
-                     :PhysicalState ;
-            :isConnectedTo :Interoception ,
-                           :NonAffectiveState ,
-                           :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#FeelingHot> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                                  :NamedIndividual ;
+                                         
+                                         <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                     <http://www.alexontology.com#NonAffectiveState> ,
+                                                                                     <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#Fisher_r_to_z
-:Fisher_r_to_z rdf:type owl:NamedIndividual ,
-                        :StatisticalTest ;
-               :isConnectedTo :InteroceptiveConfusionQuestionnaire .
+
+<http://www.alexontology.com#Fisher_r_to_z> rdf:type <http://www.alexontology.com#StatisticalTest> ,
+                                                     :NamedIndividual ;
+                                            
+                                            <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#InteroceptiveConfusionQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#FrontotemporalDementia
-:FrontotemporalDementia rdf:type owl:NamedIndividual ,
-                                 :ClinicalDisorder ;
-                        :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#FrontotemporalDementia> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Alexithymia> .
+
 
 
 ###  http://www.alexontology.com#Happiness
-:Happiness rdf:type owl:NamedIndividual ,
-                    :Emotion ;
-           :isConnectedTo :AffectiveState ,
-                          :Alexithymia ,
-                          :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#Happiness> rdf:type <http://www.alexontology.com#Emotion> ,
+                                                 :NamedIndividual ;
+                                        
+                                        <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#AffectiveState> ,
+                                                                                    <http://www.alexontology.com#Alexithymia> ,
+                                                                                    <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#HeartRate
-:HeartRate rdf:type owl:NamedIndividual ,
-                    :PhysicalState ;
-           :isConnectedTo :Interoception ,
-                          :MyocardialInfarction ,
-                          :NonAffectiveState ,
-                          :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#HeartRate> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                                 :NamedIndividual ;
+                                        
+                                        <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                    <http://www.alexontology.com#MyocardialInfarction> ,
+                                                                                    <http://www.alexontology.com#NonAffectiveState> ,
+                                                                                    <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#Hunger
-:Hunger rdf:type owl:NamedIndividual ,
-                 :PhysicalState ;
-        :isConnectedTo :Interoception ,
-                       :NonAffectiveState ,
-                       :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#Hunger> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                              :NamedIndividual ;
+                                     
+                                     <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                 <http://www.alexontology.com#NonAffectiveState> ,
+                                                                                 <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#ImmunodeficiencyVirus_HIV
-:ImmunodeficiencyVirus_HIV rdf:type owl:NamedIndividual ,
-                                    :ClinicalDisorder ;
-                           :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#ImmunodeficiencyVirus_HIV> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                                 :NamedIndividual ;
+                                                        
+                                                        <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Alexithymia> .
+
 
 
 ###  http://www.alexontology.com#Individual
-:Individual rdf:type owl:NamedIndividual ,
-                     :Person ;
-            :hasDifficultiesInPerceiving :HeartRate ;
-            :isDiagnosedWith :Alexithymia ,
-                             :Anxiety ,
-                             :AutismSpectrumDisorder_ASD ,
-                             :Depression ,
-                             :EatingDisorder_EDs ,
-                             :OtherDisorders ;
-            :isParticipantIn :BodyConsciousnessQuestionnaire_BCQ ,
-                             :BodyPerceptionQuestionnaire_BPQ ,
-                             :InteroceptiveConfusionQuestionnaire ,
-                             :MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA ;
-            :isRecruitedVia :Facebook ,
-                            :Twitter .
+
+<http://www.alexontology.com#Individual> rdf:type <http://www.alexontology.com#Person> ,
+                                                  :NamedIndividual ;
+                                         
+                                         <http://www.alexontology.com#isDiagnosedWith> <http://www.alexontology.com#Alexithymia> ;
+                                         
+                                         <http://www.alexontology.com#hasDifficultiesInPerceiving> <http://www.alexontology.com#HeartRate> ;
+                                         
+                                         :sameAs <http://www.alexontology.com#Participant> .
+
 
 
 ###  http://www.alexontology.com#Interoception
-:Interoception rdf:type owl:NamedIndividual ,
-                        :Interoception ,
-                        :PhysicalState ;
-               :hasAbilityToPerceive :Fatigue ,
-                                     :HeartRate ,
-                                     :Hunger ,
-                                     :Itch ,
-                                     :MuscleAche ,
-                                     :NonAffectiveState ,
-                                     :Pain ,
-                                     :RespiratoryEffort ,
-                                     :Satiety ,
-                                     :Temperature ,
-                                     :Thirst ;
-               :hasSymptom :NoPerceptionOfPhysicalState .
+
+<http://www.alexontology.com#Interoception> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                     <http://www.alexontology.com#Interoception> ,
+                                                     :NamedIndividual ;
+                                            
+                                            <http://www.alexontology.com#hasAbilityToPerceive> <http://www.alexontology.com#Fatigue> ,
+                                                                                               <http://www.alexontology.com#HeartRate> ,
+                                                                                               <http://www.alexontology.com#Hunger> ,
+                                                                                               <http://www.alexontology.com#Itch> ,
+                                                                                               <http://www.alexontology.com#MuscleAche> ;
+                                            
+                                            <http://www.alexontology.com#hasSymptom> <http://www.alexontology.com#NoPerceptionOfPhysicalState> ;
+                                            
+                                            <http://www.alexontology.com#hasAbilityToPerceive> <http://www.alexontology.com#NonAffectiveState> ,
+                                                                                               <http://www.alexontology.com#Pain> ,
+                                                                                               <http://www.alexontology.com#RespiratoryEffort> ,
+                                                                                               <http://www.alexontology.com#Satiety> ,
+                                                                                               <http://www.alexontology.com#Temperature> ,
+                                                                                               <http://www.alexontology.com#Thirst> .
+
 
 
 ###  http://www.alexontology.com#InteroceptiveAwareness
-:InteroceptiveAwareness rdf:type owl:NamedIndividual ,
-                                 :Interoception ;
-                        :isConnectedTo :InteroceptiveSensibility ,
-                                       :InteroceptiveSensitivity .
+
+<http://www.alexontology.com#InteroceptiveAwareness> rdf:type <http://www.alexontology.com#Interoception> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#InteroceptiveSensibility> ,
+                                                                                                 <http://www.alexontology.com#InteroceptiveSensitivity> .
+
 
 
 ###  http://www.alexontology.com#InteroceptiveConfusion
-:InteroceptiveConfusion rdf:type owl:NamedIndividual ,
-                                 :Interoception ;
-                        :hasCorrelation :Alexithymia ,
-                                        :StateEmotionSimilarityScore .
+
+<http://www.alexontology.com#InteroceptiveConfusion> rdf:type <http://www.alexontology.com#Interoception> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     <http://www.alexontology.com#hasCorrelation> <http://www.alexontology.com#Alexithymia> ,
+                                                                                                  <http://www.alexontology.com#StateEmotionSimilarityScore> .
+
 
 
 ###  http://www.alexontology.com#InteroceptiveConfusionQuestionnaire
-:InteroceptiveConfusionQuestionnaire rdf:type owl:NamedIndividual ,
-                                              :Questionnaire ;
-                                     :PublicizedOn :Facebook ,
-                                                   :Twitter ;
-                                     :hasMethod :Fisher_r_to_z ,
-                                                :PotthoffAnalyses ;
-                                     :isConnectedTo :Interoception ,
-                                                    :InteroceptiveConfusionScale ,
-                                                    :InteroceptiveConfusionScore ,
-                                                    :NonAffectiveState ;
-                                     :hasFemaleParticipant "172"^^xsd:int ;
-                                     :hasItem "20"^^xsd:int ;
-                                     :hasMaleParticipant "36"^^xsd:int ;
-                                     :hasParticipantNumber "208"^^xsd:int ;
-                                     :hasRangeOfAge "18-69"^^rdfs:Literal .
+
+<http://www.alexontology.com#InteroceptiveConfusionQuestionnaire> rdf:type <http://www.alexontology.com#Questionnaire> ,
+                                                                           :NamedIndividual ;
+                                                                  
+                                                                  <http://www.alexontology.com#hasFemaleParticipant> "172"^^xsd:int ;
+                                                                  
+                                                                  <http://www.alexontology.com#hasRangeOfAge> "18-69"^^rdfs:Literal ;
+                                                                  
+                                                                  <http://www.alexontology.com#hasItem> "20"^^xsd:int ;
+                                                                  
+                                                                  <http://www.alexontology.com#hasParticipantNumber> "208"^^xsd:int ;
+                                                                  
+                                                                  <http://www.alexontology.com#hasMaleParticipant> "36"^^xsd:int ;
+                                                                  
+                                                                  <http://www.alexontology.com#PublicizedOn> <http://www.alexontology.com#Facebook> ;
+                                                                  
+                                                                  <http://www.alexontology.com#hasMethod> <http://www.alexontology.com#Fisher_r_to_z> ;
+                                                                  
+                                                                  <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                                              <http://www.alexontology.com#InteroceptiveConfusionScale> ,
+                                                                                                              <http://www.alexontology.com#InteroceptiveConfusionScore> ,
+                                                                                                              <http://www.alexontology.com#NonAffectiveState> ;
+                                                                  
+                                                                  <http://www.alexontology.com#hasMethod> <http://www.alexontology.com#PotthoffAnalyses> ;
+                                                                  
+                                                                  <http://www.alexontology.com#PublicizedOn> <http://www.alexontology.com#Twitter> .
+
 
 
 ###  http://www.alexontology.com#InteroceptiveConfusionScale
-:InteroceptiveConfusionScale rdf:type owl:NamedIndividual ,
-                                      :Scale ;
-                             :hasMeasured :InteroceptiveSensibility ;
-                             :isConnectedTo :InteroceptiveConfusionQuestionnaire ,
-                                            :InteroceptiveConfusionScore ;
-                             :hasRange "1-5"^^xsd:string .
+
+<http://www.alexontology.com#InteroceptiveConfusionScale> rdf:type <http://www.alexontology.com#Scale> ,
+                                                                   :NamedIndividual ;
+                                                          
+                                                          <http://www.alexontology.com#hasRange> "1-5"^^xsd:string ;
+                                                          
+                                                          <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#InteroceptiveConfusionQuestionnaire> ,
+                                                                                                      <http://www.alexontology.com#InteroceptiveConfusionScore> ;
+                                                          
+                                                          <http://www.alexontology.com#hasMeasured> <http://www.alexontology.com#InteroceptiveSensibility> .
+
 
 
 ###  http://www.alexontology.com#InteroceptiveConfusionScore
-:InteroceptiveConfusionScore rdf:type owl:NamedIndividual ,
-                                      :Scale ;
-                             :isConnectedTo :InteroceptiveConfusionScale ;
-                             :hasRange "20-100"^^xsd:string .
+
+<http://www.alexontology.com#InteroceptiveConfusionScore> rdf:type <http://www.alexontology.com#Scale> ,
+                                                                   :NamedIndividual ;
+                                                          
+                                                          <http://www.alexontology.com#hasRange> "20-100"^^xsd:string ;
+                                                          
+                                                          <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#InteroceptiveConfusionScale> .
+
 
 
 ###  http://www.alexontology.com#InteroceptiveCortex
-:InteroceptiveCortex rdf:type owl:NamedIndividual ,
-                              :BrainRegion ;
-                     :isInvolvedIn :AffectiveState ,
-                                   :NonAffectiveState .
+
+<http://www.alexontology.com#InteroceptiveCortex> rdf:type <http://www.alexontology.com#BrainRegion> ,
+                                                           :NamedIndividual ;
+                                                  
+                                                  <http://www.alexontology.com#isInvolvedIn> <http://www.alexontology.com#AffectiveState> ,
+                                                                                             <http://www.alexontology.com#NonAffectiveState> .
+
 
 
 ###  http://www.alexontology.com#InteroceptiveSensibility
-:InteroceptiveSensibility rdf:type owl:NamedIndividual ,
-                                   :Interoception ;
-                          :hasAbilityToPerceive :NonAffectiveState .
+
+<http://www.alexontology.com#InteroceptiveSensibility> rdf:type <http://www.alexontology.com#Interoception> ,
+                                                                :NamedIndividual ;
+                                                       
+                                                       <http://www.alexontology.com#hasAbilityToPerceive> <http://www.alexontology.com#NonAffectiveState> .
+
 
 
 ###  http://www.alexontology.com#InteroceptiveSensitivity
-:InteroceptiveSensitivity rdf:type owl:NamedIndividual ,
-                                   :Interoception ;
-                          :hasAbilityToPerceive :HeartRate .
+
+<http://www.alexontology.com#InteroceptiveSensitivity> rdf:type <http://www.alexontology.com#Interoception> ,
+                                                                :NamedIndividual ;
+                                                       
+                                                       <http://www.alexontology.com#hasAbilityToPerceive> <http://www.alexontology.com#HeartRate> .
+
 
 
 ###  http://www.alexontology.com#Itch
-:Itch rdf:type owl:NamedIndividual ,
-               :PhysicalState ;
-      :isConnectedTo :Interoception ,
-                     :NonAffectiveState .
+
+<http://www.alexontology.com#Itch> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                            :NamedIndividual ;
+                                   
+                                   <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                               <http://www.alexontology.com#NonAffectiveState> .
+
 
 
 ###  http://www.alexontology.com#LaminaI
-:LaminaI rdf:type owl:NamedIndividual ,
-                  :BodyPart ;
-         :isConnectedTo :AnteriorCingulateCortex_ACC .
+
+<http://www.alexontology.com#LaminaI> rdf:type <http://www.alexontology.com#BodyPart> ,
+                                               :NamedIndividual ;
+                                      
+                                      <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#AnteriorCingulateCortex_ACC> .
+
 
 
 ###  http://www.alexontology.com#LevensonSelf-ReportPsychopathyScale_SRPS
-:LevensonSelf-ReportPsychopathyScale_SRPS rdf:type owl:NamedIndividual ,
-                                                   :Scale ;
-                                          :hasMeasured :Psychopathy .
+
+<http://www.alexontology.com#LevensonSelf-ReportPsychopathyScale_SRPS> rdf:type <http://www.alexontology.com#Scale> ,
+                                                                                :NamedIndividual ;
+                                                                       
+                                                                       <http://www.alexontology.com#hasMeasured> <http://www.alexontology.com#Psychopathy> .
+
 
 
 ###  http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA
-:MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA rdf:type owl:NamedIndividual ,
-                                                                  :Questionnaire ;
-                                                         :PublicizedOn :Facebook ,
-                                                                       :Twitter ;
-                                                         :isConnectedTo :Interoception ,
-                                                                        :NonAffectiveState ;
-                                                         :hasFemaleParticipant "172"^^xsd:int ;
-                                                         :hasItem "20"^^xsd:int ;
-                                                         :hasMaleParticipant "36"^^xsd:int ;
-                                                         :hasParticipantNumber "208"^^xsd:int ;
-                                                         :hasRangeOfAge "18-69"^^rdfs:Literal .
+
+<http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA> rdf:type <http://www.alexontology.com#Questionnaire> ,
+                                                                                               :NamedIndividual ;
+                                                                                      
+                                                                                      <http://www.alexontology.com#hasFemaleParticipant> "172"^^xsd:int ;
+                                                                                      
+                                                                                      <http://www.alexontology.com#hasRangeOfAge> "18-69"^^rdfs:Literal ;
+                                                                                      
+                                                                                      <http://www.alexontology.com#hasItem> "20"^^xsd:int ;
+                                                                                      
+                                                                                      <http://www.alexontology.com#hasParticipantNumber> "208"^^xsd:int ;
+                                                                                      
+                                                                                      <http://www.alexontology.com#hasMaleParticipant> "36"^^xsd:int ;
+                                                                                      
+                                                                                      <http://www.alexontology.com#PublicizedOn> <http://www.alexontology.com#Facebook> ;
+                                                                                      
+                                                                                      <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                                                                  <http://www.alexontology.com#NonAffectiveState> ;
+                                                                                      
+                                                                                      <http://www.alexontology.com#PublicizedOn> <http://www.alexontology.com#Twitter> .
+
 
 
 ###  http://www.alexontology.com#MultipleSclerosis
-:MultipleSclerosis rdf:type owl:NamedIndividual ,
-                            :ClinicalDisorder ;
-                   :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#MultipleSclerosis> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                         :NamedIndividual ;
+                                                
+                                                <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Alexithymia> .
+
 
 
 ###  http://www.alexontology.com#MuscleAche
-:MuscleAche rdf:type owl:NamedIndividual ,
-                     :PhysicalState ;
-            :isConnectedTo :Interoception ,
-                           :NonAffectiveState ,
-                           :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#MuscleAche> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                                  :NamedIndividual ;
+                                         
+                                         <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                     <http://www.alexontology.com#NonAffectiveState> ,
+                                                                                     <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#MyocardialInfarction
-:MyocardialInfarction rdf:type owl:NamedIndividual ,
-                               :ClinicalDisorder ;
-                      :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#MyocardialInfarction> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                            :NamedIndividual ;
+                                                   
+                                                   <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Alexithymia> .
+
 
 
 ###  http://www.alexontology.com#Nausea
-:Nausea rdf:type owl:NamedIndividual ,
-                 :PhysicalState ;
-        :isConnectedTo :Interoception ,
-                       :NonAffectiveState ,
-                       :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#Nausea> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                              :NamedIndividual ;
+                                     
+                                     <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                 <http://www.alexontology.com#NonAffectiveState> ,
+                                                                                 <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#NoPerceptionOfEmotions
-:NoPerceptionOfEmotions rdf:type owl:NamedIndividual ,
-                                 :Symptom ;
-                        :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#NoPerceptionOfEmotions> rdf:type <http://www.alexontology.com#Symptom> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Alexithymia> .
+
 
 
 ###  http://www.alexontology.com#NoPerceptionOfPhysicalState
-:NoPerceptionOfPhysicalState rdf:type owl:NamedIndividual ,
-                                      :Symptom ;
-                             :isConnectedTo :Interoception .
+
+<http://www.alexontology.com#NoPerceptionOfPhysicalState> rdf:type <http://www.alexontology.com#Symptom> ,
+                                                                   :NamedIndividual ;
+                                                          
+                                                          <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> .
+
 
 
 ###  http://www.alexontology.com#NonAffectiveState
-:NonAffectiveState rdf:type owl:NamedIndividual ;
-                   :isSentTo :AnteriorCingulateCortex_ACC ,
-                             :SolitaryTract ;
-                   :isSentVia :CranialNerves ,
-                              :LaminaI .
+
+<http://www.alexontology.com#NonAffectiveState> rdf:type :NamedIndividual ;
+                                                
+                                                <http://www.alexontology.com#isSentTo> <http://www.alexontology.com#AnteriorCingulateCortex_ACC> ;
+                                                
+                                                <http://www.alexontology.com#isSentVia> <http://www.alexontology.com#CranialNerves> ,
+                                                                                        <http://www.alexontology.com#LaminaI> ;
+                                                
+                                                <http://www.alexontology.com#isSentTo> <http://www.alexontology.com#SolitaryTract> .
+
 
 
 ###  http://www.alexontology.com#OtherDisorders
-:OtherDisorders rdf:type owl:NamedIndividual ,
-                         :ClinicalDisorder ;
-                :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#OtherDisorders> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                      :NamedIndividual ;
+                                             
+                                             <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Participant> .
+
 
 
 ###  http://www.alexontology.com#OtherSubstancesConsumption
-:OtherSubstancesConsumption rdf:type owl:NamedIndividual ,
-                                     :ClinicalDisorder ;
-                            :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#OtherSubstancesConsumption> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                                  :NamedIndividual ;
+                                                         
+                                                         <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Alexithymia> .
+
 
 
 ###  http://www.alexontology.com#Pain
-:Pain rdf:type owl:NamedIndividual ,
-               :PhysicalState ;
-      :isConnectedTo :Interoception ,
-                     :NonAffectiveState .
+
+<http://www.alexontology.com#Pain> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                            :NamedIndividual ;
+                                   
+                                   <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                               <http://www.alexontology.com#NonAffectiveState> .
+
+
+
+###  http://www.alexontology.com#Participant
+
+<http://www.alexontology.com#Participant> rdf:type <http://www.alexontology.com#Person> ,
+                                                   :NamedIndividual ;
+                                          
+                                          <http://www.alexontology.com#isDiagnosedWith> <http://www.alexontology.com#Anxiety> ,
+                                                                                        <http://www.alexontology.com#AutismSpectrumDisorder_ASD> ;
+                                          
+                                          <http://www.alexontology.com#isInvolvedIn> <http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ> ,
+                                                                                     <http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ> ;
+                                          
+                                          <http://www.alexontology.com#isDiagnosedWith> <http://www.alexontology.com#Depression> ,
+                                                                                        <http://www.alexontology.com#EatingDisorder_EDs> ;
+                                          
+                                          <http://www.alexontology.com#isRecruitedVia> <http://www.alexontology.com#Facebook> ;
+                                          
+                                          <http://www.alexontology.com#isInvolvedIn> <http://www.alexontology.com#InteroceptiveConfusionQuestionnaire> ,
+                                                                                     <http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA> ;
+                                          
+                                          <http://www.alexontology.com#isDiagnosedWith> <http://www.alexontology.com#OtherDisorders> ;
+                                          
+                                          <http://www.alexontology.com#isRecruitedVia> <http://www.alexontology.com#Twitter> .
+
 
 
 ###  http://www.alexontology.com#PhysicalAche
-:PhysicalAche rdf:type owl:NamedIndividual ,
-                       :PhysicalState ;
-              :isConnectedTo :Interoception ,
-                             :NonAffectiveState ,
-                             :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#PhysicalAche> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                                    :NamedIndividual ;
+                                           
+                                           <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                       <http://www.alexontology.com#NonAffectiveState> ,
+                                                                                       <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#PhysicalNumbness
-:PhysicalNumbness rdf:type owl:NamedIndividual ,
-                           :PhysicalState ;
-                  :isConnectedTo :Interoception ,
-                                 :NonAffectiveState ,
-                                 :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#PhysicalNumbness> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                                        :NamedIndividual ;
+                                               
+                                               <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                           <http://www.alexontology.com#NonAffectiveState> ,
+                                                                                           <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#PostTraumaticStressDisorder
-:PostTraumaticStressDisorder rdf:type owl:NamedIndividual ,
-                                      :ClinicalDisorder ;
-                             :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#PostTraumaticStressDisorder> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                                   :NamedIndividual ;
+                                                          
+                                                          <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Alexithymia> .
+
 
 
 ###  http://www.alexontology.com#PotthoffAnalyses
-:PotthoffAnalyses rdf:type owl:NamedIndividual ,
-                           :StatisticalTest ;
-                  :isConnectedTo :InteroceptiveConfusionQuestionnaire .
+
+<http://www.alexontology.com#PotthoffAnalyses> rdf:type <http://www.alexontology.com#StatisticalTest> ,
+                                                        :NamedIndividual ;
+                                               
+                                               <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#InteroceptiveConfusionQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#Psychopathy
-:Psychopathy rdf:type owl:NamedIndividual ,
-                      :ClinicalDisorder ;
-             :hasCorrelation :Alexithymia ;
-             :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#Psychopathy> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                   :NamedIndividual ;
+                                          
+                                          <http://www.alexontology.com#hasCorrelation> <http://www.alexontology.com#Alexithymia> ;
+                                          
+                                          <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Alexithymia> .
+
 
 
 ###  http://www.alexontology.com#RespiratoryEffort
-:RespiratoryEffort rdf:type owl:NamedIndividual ,
-                            :PhysicalState ;
-                   :isConnectedTo :Interoception ,
-                                  :NonAffectiveState .
+
+<http://www.alexontology.com#RespiratoryEffort> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                                         :NamedIndividual ;
+                                                
+                                                <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                            <http://www.alexontology.com#NonAffectiveState> .
+
 
 
 ###  http://www.alexontology.com#Sadness
-:Sadness rdf:type owl:NamedIndividual ,
-                  :Emotion ;
-         :isConnectedTo :AffectiveState ,
-                        :Alexithymia ,
-                        :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#Sadness> rdf:type <http://www.alexontology.com#Emotion> ,
+                                               :NamedIndividual ;
+                                      
+                                      <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#AffectiveState> ,
+                                                                                  <http://www.alexontology.com#Alexithymia> ,
+                                                                                  <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#Satiety
-:Satiety rdf:type owl:NamedIndividual ,
-                  :PhysicalState ;
-         :isConnectedTo :Interoception ,
-                        :NonAffectiveState .
+
+<http://www.alexontology.com#Satiety> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                               :NamedIndividual ;
+                                      
+                                      <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                  <http://www.alexontology.com#NonAffectiveState> .
+
 
 
 ###  http://www.alexontology.com#SensitivityToFabrics
-:SensitivityToFabrics rdf:type owl:NamedIndividual ,
-                               :Symptom ;
-                      :isConnectedTo :SensitivityToFabrics .
+
+<http://www.alexontology.com#SensitivityToFabrics> rdf:type <http://www.alexontology.com#Symptom> ,
+                                                            :NamedIndividual ;
+                                                   
+                                                   <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#SensitivityToFabrics> .
+
 
 
 ###  http://www.alexontology.com#ShortnessOfBreath
-:ShortnessOfBreath rdf:type owl:NamedIndividual ,
-                            :PhysicalState ;
-                   :isConnectedTo :Interoception ,
-                                  :NonAffectiveState ,
-                                  :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#ShortnessOfBreath> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                                         :NamedIndividual ;
+                                                
+                                                <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                            <http://www.alexontology.com#NonAffectiveState> ,
+                                                                                            <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#SkinIrritation
-:SkinIrritation rdf:type owl:NamedIndividual ,
-                         :PhysicalState ;
-                :isConnectedTo :Interoception ,
-                               :NonAffectiveState ,
-                               :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#SkinIrritation> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                                      :NamedIndividual ;
+                                             
+                                             <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                         <http://www.alexontology.com#NonAffectiveState> ,
+                                                                                         <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#SolitaryTract
-:SolitaryTract rdf:type owl:NamedIndividual ,
-                        :BodyPart ;
-               :isConnectedTo :CranialNerves .
+
+<http://www.alexontology.com#SolitaryTract> rdf:type <http://www.alexontology.com#BodyPart> ,
+                                                     :NamedIndividual ;
+                                            
+                                            <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#CranialNerves> .
+
 
 
 ###  http://www.alexontology.com#StateEmotionSImilarityQuestionnaire
-:StateEmotionSImilarityQuestionnaire rdf:type owl:NamedIndividual ,
-                                              :Scale ;
-                                     :hasMeasured :AffectiveState ,
-                                                  :InteroceptiveSensibility ,
-                                                  :NonAffectiveState ;
-                                     :hasItem "72"^^xsd:int ;
-                                     :hasRange "1-7"^^xsd:string .
+
+<http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> rdf:type <http://www.alexontology.com#Scale> ,
+                                                                           :NamedIndividual ;
+                                                                  
+                                                                  <http://www.alexontology.com#hasRange> "1-7"^^xsd:string ;
+                                                                  
+                                                                  <http://www.alexontology.com#hasItem> "72"^^xsd:int ;
+                                                                  
+                                                                  <http://www.alexontology.com#hasMeasured> <http://www.alexontology.com#AffectiveState> ,
+                                                                                                            <http://www.alexontology.com#InteroceptiveSensibility> ,
+                                                                                                            <http://www.alexontology.com#NonAffectiveState> .
+
 
 
 ###  http://www.alexontology.com#StateEmotionSimilarityScore
-:StateEmotionSimilarityScore rdf:type owl:NamedIndividual ,
-                                      :Scale ;
-                             :hasCorrelation :Alexithymia ,
-                                             :InteroceptiveConfusion ;
-                             :isConnectedTo :StateEmotionSImilarityQuestionnaire ;
-                             :hasRange "72-504"^^xsd:string .
+
+<http://www.alexontology.com#StateEmotionSimilarityScore> rdf:type <http://www.alexontology.com#Scale> ,
+                                                                   :NamedIndividual ;
+                                                          
+                                                          <http://www.alexontology.com#hasRange> "72-504"^^xsd:string ;
+                                                          
+                                                          <http://www.alexontology.com#hasCorrelation> <http://www.alexontology.com#Alexithymia> ,
+                                                                                                       <http://www.alexontology.com#InteroceptiveConfusion> ;
+                                                          
+                                                          <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#SubstanceAbuse
-:SubstanceAbuse rdf:type owl:NamedIndividual ,
-                         :ClinicalDisorder ;
-                :isConnectedTo :Alexithymia .
+
+<http://www.alexontology.com#SubstanceAbuse> rdf:type <http://www.alexontology.com#ClinicalDisorder> ,
+                                                      :NamedIndividual ;
+                                             
+                                             <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Alexithymia> .
+
 
 
 ###  http://www.alexontology.com#Surprise
-:Surprise rdf:type owl:NamedIndividual ,
-                   :Emotion ;
-          :isConnectedTo :AffectiveState ,
-                         :Alexithymia ,
-                         :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#Surprise> rdf:type <http://www.alexontology.com#Emotion> ,
+                                                :NamedIndividual ;
+                                       
+                                       <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#AffectiveState> ,
+                                                                                   <http://www.alexontology.com#Alexithymia> ,
+                                                                                   <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#Temperature
-:Temperature rdf:type owl:NamedIndividual ,
-                      :PhysicalState ;
-             :isConnectedTo :Interoception ,
-                            :NonAffectiveState .
+
+<http://www.alexontology.com#Temperature> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                                   :NamedIndividual ;
+                                          
+                                          <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                      <http://www.alexontology.com#NonAffectiveState> .
+
 
 
 ###  http://www.alexontology.com#Thirst
-:Thirst rdf:type owl:NamedIndividual ,
-                 :PhysicalState ;
-        :isConnectedTo :Interoception ,
-                       :NonAffectiveState ,
-                       :StateEmotionSImilarityQuestionnaire .
+
+<http://www.alexontology.com#Thirst> rdf:type <http://www.alexontology.com#PhysicalState> ,
+                                              :NamedIndividual ;
+                                     
+                                     <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#Interoception> ,
+                                                                                 <http://www.alexontology.com#NonAffectiveState> ,
+                                                                                 <http://www.alexontology.com#StateEmotionSImilarityQuestionnaire> .
+
 
 
 ###  http://www.alexontology.com#TorontoAlexithymiaScale_TAS_20
-:TorontoAlexithymiaScale_TAS_20 rdf:type owl:NamedIndividual ,
-                                         :Scale ;
-                                :hasMeasured :Alexithymia .
+
+<http://www.alexontology.com#TorontoAlexithymiaScale_TAS_20> rdf:type <http://www.alexontology.com#Scale> ,
+                                                                      :NamedIndividual ;
+                                                             
+                                                             <http://www.alexontology.com#hasMeasured> <http://www.alexontology.com#Alexithymia> .
+
 
 
 ###  http://www.alexontology.com#Twitter
-:Twitter rdf:type owl:NamedIndividual ,
-                  :SocialMedia ;
-         :isConnectedTo :BodyConsciousnessQuestionnaire_BCQ ,
-                        :BodyPerceptionQuestionnaire_BPQ ,
-                        :InteroceptiveConfusionQuestionnaire ,
-                        :MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA .
+
+<http://www.alexontology.com#Twitter> rdf:type <http://www.alexontology.com#SocialMedia> ,
+                                               :NamedIndividual ;
+                                      
+                                      <http://www.alexontology.com#isConnectedTo> <http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ> ,
+                                                                                  <http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ> ,
+                                                                                  <http://www.alexontology.com#InteroceptiveConfusionQuestionnaire> ,
+                                                                                  <http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA> .
+
+
+
 
 
 #################################################################
+#
 #    General axioms
+#
 #################################################################
 
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :ANOVA
-                        :Fisher_r_to_z
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :ANOVA
-                        :PotthoffAnalyses
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :AffectiveState
-                        :NonAffectiveState
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Alexithymia
-                        :Interoception
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Anger
-                        :Disgust
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Anger
-                        :Fear
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Anger
-                        :Happiness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Anger
-                        :Sadness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Anger
-                        :Surprise
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :AnteriorCingulateCortex_ACC
-                        :AnteriorInsula_AI
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Arousal
-                        :Fatigue
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Arousal
-                        :FeelingCold
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Arousal
-                        :FeelingHot
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Arousal
-                        :HeartRate
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Arousal
-                        :Hunger
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Arousal
-                        :Itch
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Arousal
-                        :MuscleAche
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Arousal
-                        :Nausea
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Arousal
-                        :Pain
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Arousal
-                        :PhysicalAche
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Arousal
-                        :PhysicalNumbness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Arousal
-                        :RespiratoryEffort
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Arousal
-                        :Satiety
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Arousal
-                        :ShortnessOfBreath
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Arousal
-                        :SkinIrritation
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Arousal
-                        :Temperature
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Arousal
-                        :Thirst
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :BodyConsciousnessQuestionnaire_BCQ
-                        :BodyPerceptionQuestionnaire_BPQ
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :BodyConsciousnessQuestionnaire_BCQ
-                        :InteroceptiveConfusionQuestionnaire
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :BodyConsciousnessQuestionnaire_BCQ
-                        :MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :BodyPerceptionQuestionnaire_BPQ
-                        :InteroceptiveConfusionQuestionnaire
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :BodyPerceptionQuestionnaire_BPQ
-                        :MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Disgust
-                        :Fear
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Disgust
-                        :Happiness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Disgust
-                        :Sadness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Disgust
-                        :Surprise
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fatigue
-                        :FeelingCold
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fatigue
-                        :FeelingHot
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fatigue
-                        :HeartRate
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fatigue
-                        :Hunger
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fatigue
-                        :Itch
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fatigue
-                        :MuscleAche
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fatigue
-                        :Nausea
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fatigue
-                        :Pain
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fatigue
-                        :PhysicalAche
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fatigue
-                        :PhysicalNumbness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fatigue
-                        :RespiratoryEffort
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fatigue
-                        :Satiety
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fatigue
-                        :ShortnessOfBreath
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fatigue
-                        :SkinIrritation
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fatigue
-                        :Temperature
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fatigue
-                        :Thirst
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fear
-                        :Happiness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fear
-                        :Sadness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fear
-                        :Surprise
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingCold
-                        :FeelingHot
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingCold
-                        :HeartRate
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingCold
-                        :Hunger
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingCold
-                        :Itch
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingCold
-                        :MuscleAche
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingCold
-                        :Nausea
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingCold
-                        :Pain
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingCold
-                        :PhysicalAche
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingCold
-                        :PhysicalNumbness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingCold
-                        :RespiratoryEffort
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingCold
-                        :Satiety
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingCold
-                        :ShortnessOfBreath
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingCold
-                        :SkinIrritation
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingCold
-                        :Temperature
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingCold
-                        :Thirst
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingHot
-                        :HeartRate
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingHot
-                        :Hunger
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingHot
-                        :Itch
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingHot
-                        :MuscleAche
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingHot
-                        :Nausea
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingHot
-                        :Pain
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingHot
-                        :PhysicalAche
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingHot
-                        :PhysicalNumbness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingHot
-                        :RespiratoryEffort
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingHot
-                        :Satiety
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingHot
-                        :ShortnessOfBreath
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingHot
-                        :SkinIrritation
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingHot
-                        :Temperature
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :FeelingHot
-                        :Thirst
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Fisher_r_to_z
-                        :PotthoffAnalyses
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Happiness
-                        :Sadness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Happiness
-                        :Surprise
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :HeartRate
-                        :Hunger
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :HeartRate
-                        :Itch
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :HeartRate
-                        :MuscleAche
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :HeartRate
-                        :Nausea
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :HeartRate
-                        :Pain
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :HeartRate
-                        :PhysicalAche
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :HeartRate
-                        :PhysicalNumbness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :HeartRate
-                        :RespiratoryEffort
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :HeartRate
-                        :Satiety
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :HeartRate
-                        :ShortnessOfBreath
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :HeartRate
-                        :SkinIrritation
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :HeartRate
-                        :Temperature
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :HeartRate
-                        :Thirst
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Hunger
-                        :Itch
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Hunger
-                        :MuscleAche
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Hunger
-                        :Nausea
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Hunger
-                        :Pain
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Hunger
-                        :PhysicalAche
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Hunger
-                        :PhysicalNumbness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Hunger
-                        :RespiratoryEffort
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Hunger
-                        :Satiety
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Hunger
-                        :ShortnessOfBreath
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Hunger
-                        :SkinIrritation
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Hunger
-                        :Temperature
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Hunger
-                        :Thirst
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :InteroceptiveAwareness
-                        :InteroceptiveSensibility
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :InteroceptiveAwareness
-                        :InteroceptiveSensitivity
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :InteroceptiveConfusionQuestionnaire
-                        :MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :InteroceptiveSensibility
-                        :InteroceptiveSensitivity
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Itch
-                        :MuscleAche
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Itch
-                        :Nausea
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Itch
-                        :Pain
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Itch
-                        :PhysicalAche
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Itch
-                        :PhysicalNumbness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Itch
-                        :RespiratoryEffort
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Itch
-                        :Satiety
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Itch
-                        :ShortnessOfBreath
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Itch
-                        :SkinIrritation
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Itch
-                        :Temperature
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Itch
-                        :Thirst
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :MuscleAche
-                        :Nausea
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :MuscleAche
-                        :Pain
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :MuscleAche
-                        :PhysicalAche
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :MuscleAche
-                        :PhysicalNumbness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :MuscleAche
-                        :RespiratoryEffort
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :MuscleAche
-                        :Satiety
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :MuscleAche
-                        :ShortnessOfBreath
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :MuscleAche
-                        :SkinIrritation
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :MuscleAche
-                        :Temperature
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :MuscleAche
-                        :Thirst
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Nausea
-                        :Pain
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Nausea
-                        :PhysicalAche
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Nausea
-                        :PhysicalNumbness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Nausea
-                        :RespiratoryEffort
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Nausea
-                        :Satiety
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Nausea
-                        :ShortnessOfBreath
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Nausea
-                        :SkinIrritation
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Nausea
-                        :Temperature
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Nausea
-                        :Thirst
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Pain
-                        :PhysicalAche
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Pain
-                        :PhysicalNumbness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Pain
-                        :RespiratoryEffort
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Pain
-                        :Satiety
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Pain
-                        :ShortnessOfBreath
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Pain
-                        :SkinIrritation
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Pain
-                        :Temperature
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Pain
-                        :Thirst
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :PhysicalAche
-                        :PhysicalNumbness
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :PhysicalAche
-                        :RespiratoryEffort
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :PhysicalAche
-                        :Satiety
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :PhysicalAche
-                        :ShortnessOfBreath
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :PhysicalAche
-                        :SkinIrritation
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :PhysicalAche
-                        :Temperature
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :PhysicalAche
-                        :Thirst
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :PhysicalNumbness
-                        :RespiratoryEffort
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :PhysicalNumbness
-                        :Satiety
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :PhysicalNumbness
-                        :ShortnessOfBreath
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :PhysicalNumbness
-                        :SkinIrritation
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :PhysicalNumbness
-                        :Temperature
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :PhysicalNumbness
-                        :Thirst
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :RespiratoryEffort
-                        :Satiety
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :RespiratoryEffort
-                        :ShortnessOfBreath
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :RespiratoryEffort
-                        :SkinIrritation
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :RespiratoryEffort
-                        :Temperature
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :RespiratoryEffort
-                        :Thirst
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Sadness
-                        :Surprise
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Satiety
-                        :ShortnessOfBreath
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Satiety
-                        :SkinIrritation
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Satiety
-                        :Temperature
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Satiety
-                        :Thirst
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :ShortnessOfBreath
-                        :SkinIrritation
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :ShortnessOfBreath
-                        :Temperature
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :ShortnessOfBreath
-                        :Thirst
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :SkinIrritation
-                        :Temperature
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :SkinIrritation
-                        :Thirst
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Temperature
-                        :Thirst
-                      )
-] .
 
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ>
+                     <http://www.alexontology.com#InteroceptiveConfusionQuestionnaire>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Pain>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Satiety>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#RespiratoryEffort>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Happiness>
+                     <http://www.alexontology.com#Surprise>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#ANOVA>
+                     <http://www.alexontology.com#Fisher_r_to_z>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#Pain>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Anger>
+                     <http://www.alexontology.com#Disgust>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#InteroceptiveSensibility>
+                     <http://www.alexontology.com#InteroceptiveSensitivity>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Pain>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Satiety>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#SkinIrritation>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#Nausea>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Nausea>
+                     <http://www.alexontology.com#Pain>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#Fatigue>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ>
+                     <http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Nausea>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#RespiratoryEffort>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalNumbness>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#HeartRate>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#RespiratoryEffort>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#FeelingCold>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Nausea>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#SkinIrritation>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#Hunger>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#Nausea>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Pain>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#RespiratoryEffort>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#HeartRate>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalNumbness>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Alexithymia>
+                     <http://www.alexontology.com#Interoception>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#Pain>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#FeelingHot>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#InteroceptiveAwareness>
+                     <http://www.alexontology.com#InteroceptiveSensibility>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Anger>
+                     <http://www.alexontology.com#Happiness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Anger>
+                     <http://www.alexontology.com#Sadness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalNumbness>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#MuscleAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalNumbness>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Pain>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalNumbness>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#Hunger>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ>
+                     <http://www.alexontology.com#InteroceptiveConfusionQuestionnaire>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#Itch>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#HeartRate>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#Hunger>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#Nausea>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Anger>
+                     <http://www.alexontology.com#Surprise>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#Itch>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#FeelingHot>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#MuscleAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#MuscleAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#InteroceptiveConfusionQuestionnaire>
+                     <http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Nausea>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fear>
+                     <http://www.alexontology.com#Surprise>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#Pain>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#Itch>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#ANOVA>
+                     <http://www.alexontology.com#PotthoffAnalyses>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#MuscleAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Disgust>
+                     <http://www.alexontology.com#Fear>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#HeartRate>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ>
+                     <http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#MuscleAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#ShortnessOfBreath>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Satiety>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#Hunger>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Anger>
+                     <http://www.alexontology.com#Fear>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#FeelingHot>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#Nausea>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#MuscleAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Sadness>
+                     <http://www.alexontology.com#Surprise>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#AffectiveState>
+                     <http://www.alexontology.com#NonAffectiveState>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Nausea>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ>
+                     <http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#RespiratoryEffort>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#Pain>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Satiety>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fear>
+                     <http://www.alexontology.com#Happiness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Disgust>
+                     <http://www.alexontology.com#Sadness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Disgust>
+                     <http://www.alexontology.com#Happiness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Pain>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fisher_r_to_z>
+                     <http://www.alexontology.com#PotthoffAnalyses>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#Pain>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Nausea>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#MuscleAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Nausea>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#Nausea>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Disgust>
+                     <http://www.alexontology.com#Surprise>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Temperature>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fear>
+                     <http://www.alexontology.com#Sadness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#Itch>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#Pain>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#FeelingCold>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Happiness>
+                     <http://www.alexontology.com#Sadness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#Pain>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#Itch>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#Nausea>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalAche>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Nausea>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#InteroceptiveAwareness>
+                     <http://www.alexontology.com#InteroceptiveSensitivity>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Nausea>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingCold>
+                     <http://www.alexontology.com#PhysicalNumbness>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Pain>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#ShortnessOfBreath>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#Hunger>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#Nausea>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Arousal>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Pain>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#RespiratoryEffort>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#Itch>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#AnteriorCingulateCortex_ACC>
+                     <http://www.alexontology.com#AnteriorInsula_AI>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Hunger>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#MuscleAche>
+                     <http://www.alexontology.com#Satiety>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#PhysicalAche>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#PhysicalNumbness>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Itch>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#ShortnessOfBreath>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Pain>
+                     <http://www.alexontology.com#SkinIrritation>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#FeelingHot>
+                     <http://www.alexontology.com#Pain>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#ShortnessOfBreath>
+                     <http://www.alexontology.com#Temperature>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#HeartRate>
+                     <http://www.alexontology.com#Nausea>
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( <http://www.alexontology.com#Fatigue>
+                     <http://www.alexontology.com#Thirst>
+                   )
+] .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
