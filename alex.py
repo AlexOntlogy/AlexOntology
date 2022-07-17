@@ -75,7 +75,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX alex: <http://www.alexontology.com#>
 
-select ?social where{alex:Participant alex:isRecruitedVia ?social}
+select ?social where{alex:Individual alex:isRecruitedVia ?social}
 '''
 
 cq9 = '''
