@@ -15,99 +15,243 @@
 
 ###  http://www.alexontology.com#PublicizedOn
 www.alexontology.com:PublicizedOn rdf:type owl:ObjectProperty ;
-                                  rdfs:domain www.alexontology.com:SocialMedia .
+                                  rdfs:domain www.alexontology.com:Questionnaire ;
+                                  rdfs:range www.alexontology.com:SocialMedia .
+
+
+###  http://www.alexontology.com#canBeImproved
+www.alexontology.com:canBeImproved rdf:type owl:ObjectProperty ;
+                                   rdfs:domain www.alexontology.com:Interoception ;
+                                   rdfs:range www.alexontology.com:Discussion .
+
+
+###  http://www.alexontology.com#canBeSymptomOf
+www.alexontology.com:canBeSymptomOf rdf:type owl:ObjectProperty ;
+                                    rdfs:domain www.alexontology.com:ClinicalDisorder ;
+                                    rdfs:range www.alexontology.com:ClinicalDisorder .
 
 
 ###  http://www.alexontology.com#hasAbilityToPerceive
 www.alexontology.com:hasAbilityToPerceive rdf:type owl:ObjectProperty ;
-                                          rdfs:domain www.alexontology.com:Emotion ,
-                                                      www.alexontology.com:PhysicalState .
+                                          rdfs:domain www.alexontology.com:Interoception ;
+                                          rdfs:range www.alexontology.com:PhysicalState .
 
 
-###  http://www.alexontology.com#hasCorrelation
-www.alexontology.com:hasCorrelation rdf:type owl:ObjectProperty ;
-                                    rdfs:domain www.alexontology.com:StatisticalTest .
+###  http://www.alexontology.com#hasCorrelationInteroception
+www.alexontology.com:hasCorrelationInteroception rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain www.alexontology.com:Interoception ;
+                                                 rdfs:range www.alexontology.com:ClinicalDisorder .
 
 
 ###  http://www.alexontology.com#hasDifficultiesInPerceiving
 www.alexontology.com:hasDifficultiesInPerceiving rdf:type owl:ObjectProperty ;
-                                                 rdfs:domain www.alexontology.com:Emotion ,
-                                                             www.alexontology.com:PhysicalState .
+                                                 rdfs:domain www.alexontology.com:ClinicalDisorder ;
+                                                 rdfs:range www.alexontology.com:Emotion .
 
 
-###  http://www.alexontology.com#hasMeasured
-www.alexontology.com:hasMeasured rdf:type owl:ObjectProperty ;
-                                 rdfs:domain www.alexontology.com:Scale .
+###  http://www.alexontology.com#hasMeasuredEmotion
+www.alexontology.com:hasMeasuredEmotion rdf:type owl:ObjectProperty ;
+                                        rdfs:domain www.alexontology.com:Scale ;
+                                        rdfs:range www.alexontology.com:Emotion .
+
+
+###  http://www.alexontology.com#hasMeasuredInteroception
+www.alexontology.com:hasMeasuredInteroception rdf:type owl:ObjectProperty ;
+                                              rdfs:domain www.alexontology.com:Scale ;
+                                              rdfs:range www.alexontology.com:Interoception .
+
+
+###  http://www.alexontology.com#hasMeasuredState
+www.alexontology.com:hasMeasuredState rdf:type owl:ObjectProperty ;
+                                      rdfs:subPropertyOf owl:topObjectProperty ;
+                                      rdfs:domain www.alexontology.com:Scale ;
+                                      rdfs:range www.alexontology.com:PhysicalState .
 
 
 ###  http://www.alexontology.com#hasMethod
 www.alexontology.com:hasMethod rdf:type owl:ObjectProperty ;
-                               rdfs:domain www.alexontology.com:Questionnaire .
+                               rdfs:domain www.alexontology.com:Questionnaire ;
+                               rdfs:range www.alexontology.com:StatisticalTest .
+
+
+###  http://www.alexontology.com#hasMethodScale
+www.alexontology.com:hasMethodScale rdf:type owl:ObjectProperty ;
+                                    rdfs:domain www.alexontology.com:Scale ;
+                                    rdfs:range www.alexontology.com:StatisticalTest .
 
 
 ###  http://www.alexontology.com#hasSymptom
 www.alexontology.com:hasSymptom rdf:type owl:ObjectProperty ;
-                                rdfs:domain www.alexontology.com:Symptom .
+                                rdfs:domain www.alexontology.com:ClinicalDisorder ;
+                                rdfs:range www.alexontology.com:Symptom .
+
+
+###  http://www.alexontology.com#has_correlation_disorder
+www.alexontology.com:has_correlation_disorder rdf:type owl:ObjectProperty ;
+                                              rdfs:domain www.alexontology.com:ClinicalDisorder ;
+                                              rdfs:range www.alexontology.com:ClinicalDisorder .
+
+
+###  http://www.alexontology.com#has_correlation_scale
+www.alexontology.com:has_correlation_scale rdf:type owl:ObjectProperty ;
+                                           rdfs:domain www.alexontology.com:ClinicalDisorder ;
+                                           rdfs:range www.alexontology.com:Scale .
+
+
+###  http://www.alexontology.com#has_result_questionnaire
+www.alexontology.com:has_result_questionnaire rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf owl:topObjectProperty ;
+                                              rdfs:domain www.alexontology.com:Questionnaire ;
+                                              rdfs:range www.alexontology.com:Result .
+
+
+###  http://www.alexontology.com#has_result_test
+www.alexontology.com:has_result_test rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf owl:topObjectProperty ;
+                                     rdfs:domain www.alexontology.com:StatisticalTest ;
+                                     rdfs:range www.alexontology.com:Result .
+
+
+###  http://www.alexontology.com#isBasedOnPaper
+www.alexontology.com:isBasedOnPaper rdf:type owl:ObjectProperty ;
+                                    rdfs:domain www.alexontology.com:Discussion ;
+                                    rdfs:range www.alexontology.com:Discussion .
+
+
+###  http://www.alexontology.com#isBroaderThan
+www.alexontology.com:isBroaderThan rdf:type owl:ObjectProperty ;
+                                   rdfs:domain www.alexontology.com:Discussion ;
+                                   rdfs:range www.alexontology.com:Discussion .
 
 
 ###  http://www.alexontology.com#isConnectedTo
 www.alexontology.com:isConnectedTo rdf:type owl:ObjectProperty ;
-                                   rdfs:domain www.alexontology.com:BodyPart ,
-                                               www.alexontology.com:BrainRegion ,
-                                               www.alexontology.com:ClinicalDisorder ,
-                                               www.alexontology.com:Emotion ,
-                                               www.alexontology.com:Interoception ,
-                                               www.alexontology.com:Person ,
-                                               www.alexontology.com:PhysicalState ,
-                                               www.alexontology.com:Questionnaire ,
-                                               www.alexontology.com:Scale ,
-                                               www.alexontology.com:SocialMedia ,
-                                               www.alexontology.com:StatisticalTest ,
-                                               www.alexontology.com:Symptom .
+                                   rdfs:domain www.alexontology.com:PhysicalState ;
+                                   rdfs:range www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#isDiagnosedWith
 www.alexontology.com:isDiagnosedWith rdf:type owl:ObjectProperty ;
-                                     rdfs:domain www.alexontology.com:ClinicalDisorder .
+                                     rdfs:domain www.alexontology.com:Person ;
+                                     rdfs:range www.alexontology.com:ClinicalDisorder .
 
 
-###  http://www.alexontology.com#isInvolvedIn
-www.alexontology.com:isInvolvedIn rdf:type owl:ObjectProperty .
+###  http://www.alexontology.com#isInvolvedInEmotion
+www.alexontology.com:isInvolvedInEmotion rdf:type owl:ObjectProperty ;
+                                         rdfs:domain www.alexontology.com:BrainRegion ;
+                                         rdfs:range www.alexontology.com:Emotion .
+
+
+###  http://www.alexontology.com#isInvolvedInInteroception
+www.alexontology.com:isInvolvedInInteroception rdf:type owl:ObjectProperty ;
+                                               rdfs:domain www.alexontology.com:BrainRegion ;
+                                               rdfs:range www.alexontology.com:Interoception .
+
+
+###  http://www.alexontology.com#isInvolvedInState
+www.alexontology.com:isInvolvedInState rdf:type owl:ObjectProperty ;
+                                       rdfs:domain www.alexontology.com:BrainRegion ;
+                                       rdfs:range www.alexontology.com:PhysicalState .
+
+
+###  http://www.alexontology.com#isLinkedTo
+www.alexontology.com:isLinkedTo rdf:type owl:ObjectProperty ;
+                                rdfs:domain www.alexontology.com:Discussion ;
+                                rdfs:range www.alexontology.com:Discussion .
 
 
 ###  http://www.alexontology.com#isParticipantIn
 www.alexontology.com:isParticipantIn rdf:type owl:ObjectProperty ;
-                                     rdfs:domain www.alexontology.com:StatisticalTest .
+                                     rdfs:domain www.alexontology.com:Person ;
+                                     rdfs:range www.alexontology.com:Questionnaire .
 
 
 ###  http://www.alexontology.com#isRecruitedVia
 www.alexontology.com:isRecruitedVia rdf:type owl:ObjectProperty ;
-                                    rdfs:domain www.alexontology.com:Person ,
-                                                www.alexontology.com:SocialMedia .
+                                    rdfs:domain www.alexontology.com:Person ;
+                                    rdfs:range www.alexontology.com:SocialMedia .
 
 
 ###  http://www.alexontology.com#isReferredToAs
 www.alexontology.com:isReferredToAs rdf:type owl:ObjectProperty ;
-                                    rdfs:domain www.alexontology.com:BrainRegion .
+                                    rdfs:domain www.alexontology.com:BrainRegion ;
+                                    rdfs:range www.alexontology.com:BrainRegion .
 
 
-###  http://www.alexontology.com#isSentTo
-www.alexontology.com:isSentTo rdf:type owl:ObjectProperty ;
-                              rdfs:domain www.alexontology.com:BrainRegion .
+###  http://www.alexontology.com#isRelatedTo
+www.alexontology.com:isRelatedTo rdf:type owl:ObjectProperty ;
+                                 rdfs:domain www.alexontology.com:Emotion ;
+                                 rdfs:range www.alexontology.com:ClinicalDisorder .
 
 
-###  http://www.alexontology.com#isSentVia
-www.alexontology.com:isSentVia rdf:type owl:ObjectProperty ;
-                               rdfs:domain www.alexontology.com:BodyPart .
+###  http://www.alexontology.com#isResultOf
+www.alexontology.com:isResultOf rdf:type owl:ObjectProperty ;
+                                rdfs:domain www.alexontology.com:Result ;
+                                rdfs:range www.alexontology.com:StatisticalTest .
+
+
+###  http://www.alexontology.com#isSentToBody
+www.alexontology.com:isSentToBody rdf:type owl:ObjectProperty ;
+                                  rdfs:domain www.alexontology.com:PhysicalState ;
+                                  rdfs:range www.alexontology.com:BodyPart .
+
+
+###  http://www.alexontology.com#isSentToRegion
+www.alexontology.com:isSentToRegion rdf:type owl:ObjectProperty ;
+                                    rdfs:domain www.alexontology.com:PhysicalState ;
+                                    rdfs:range www.alexontology.com:BrainRegion .
+
+
+###  http://www.alexontology.com#isSentViaBody
+www.alexontology.com:isSentViaBody rdf:type owl:ObjectProperty ;
+                                   rdfs:domain www.alexontology.com:PhysicalState ;
+                                   rdfs:range www.alexontology.com:BodyPart .
+
+
+###  http://www.alexontology.com#isSentViaRegion
+www.alexontology.com:isSentViaRegion rdf:type owl:ObjectProperty ;
+                                     rdfs:domain www.alexontology.com:PhysicalState ;
+                                     rdfs:range www.alexontology.com:BrainRegion .
+
+
+###  http://www.alexontology.com#isSynonymousWith
+www.alexontology.com:isSynonymousWith rdf:type owl:ObjectProperty ;
+                                      rdfs:domain www.alexontology.com:Discussion ;
+                                      rdfs:range www.alexontology.com:ClinicalDisorder .
+
+
+###  http://www.alexontology.com#notAffectedBy
+www.alexontology.com:notAffectedBy rdf:type owl:ObjectProperty ;
+                                   rdfs:domain www.alexontology.com:Symptom ;
+                                   rdfs:range www.alexontology.com:Gender .
+
+
+###  http://www.alexontology.com#respresentsSeverityOf
+www.alexontology.com:respresentsSeverityOf rdf:type owl:ObjectProperty ;
+                                           rdfs:domain www.alexontology.com:Discussion ;
+                                           rdfs:range www.alexontology.com:ClinicalDisorder .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
+###  http://www.alexontology.com#hasChronbachsAlphaValue
+www.alexontology.com:hasChronbachsAlphaValue rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain www.alexontology.com:Result ;
+                                             rdfs:range xsd:decimal .
+
+
+###  http://www.alexontology.com#hasEigenvalue
+www.alexontology.com:hasEigenvalue rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain www.alexontology.com:Result ;
+                                   rdfs:range xsd:decimal .
+
+
 ###  http://www.alexontology.com#hasFemaleParticipant
 www.alexontology.com:hasFemaleParticipant rdf:type owl:DatatypeProperty ;
-                                          rdfs:domain www.alexontology.com:Questionnaire .
+                                          rdfs:domain www.alexontology.com:Questionnaire ;
+                                          rdfs:range xsd:int .
 
 
 ###  http://www.alexontology.com#hasItem
@@ -116,24 +260,34 @@ www.alexontology.com:hasItem rdf:type owl:DatatypeProperty ;
                              rdfs:range xsd:int .
 
 
+###  http://www.alexontology.com#hasItemScale
+www.alexontology.com:hasItemScale rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain www.alexontology.com:Scale ;
+                                  rdfs:range xsd:int .
+
+
 ###  http://www.alexontology.com#hasMaleParticipant
 www.alexontology.com:hasMaleParticipant rdf:type owl:DatatypeProperty ;
-                                        rdfs:domain www.alexontology.com:Questionnaire .
+                                        rdfs:domain www.alexontology.com:Questionnaire ;
+                                        rdfs:range xsd:int .
 
 
 ###  http://www.alexontology.com#hasParticipantNumber
 www.alexontology.com:hasParticipantNumber rdf:type owl:DatatypeProperty ;
-                                          rdfs:domain www.alexontology.com:Questionnaire .
+                                          rdfs:domain www.alexontology.com:Questionnaire ;
+                                          rdfs:range xsd:int .
 
 
 ###  http://www.alexontology.com#hasRange
 www.alexontology.com:hasRange rdf:type owl:DatatypeProperty ;
-                              rdfs:domain www.alexontology.com:Questionnaire ,
-                                          www.alexontology.com:Scale .
+                              rdfs:domain www.alexontology.com:Scale ;
+                              rdfs:range xsd:string .
 
 
 ###  http://www.alexontology.com#hasRangeOfAge
-www.alexontology.com:hasRangeOfAge rdf:type owl:DatatypeProperty .
+www.alexontology.com:hasRangeOfAge rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain www.alexontology.com:Questionnaire ;
+                                   rdfs:range xsd:string .
 
 
 #################################################################
@@ -152,8 +306,16 @@ www.alexontology.com:BrainRegion rdf:type owl:Class .
 www.alexontology.com:ClinicalDisorder rdf:type owl:Class .
 
 
+###  http://www.alexontology.com#Discussion
+www.alexontology.com:Discussion rdf:type owl:Class .
+
+
 ###  http://www.alexontology.com#Emotion
 www.alexontology.com:Emotion rdf:type owl:Class .
+
+
+###  http://www.alexontology.com#Gender
+www.alexontology.com:Gender rdf:type owl:Class .
 
 
 ###  http://www.alexontology.com#Interoception
@@ -170,6 +332,10 @@ www.alexontology.com:PhysicalState rdf:type owl:Class .
 
 ###  http://www.alexontology.com#Questionnaire
 www.alexontology.com:Questionnaire rdf:type owl:Class .
+
+
+###  http://www.alexontology.com#Result
+www.alexontology.com:Result rdf:type owl:Class .
 
 
 ###  http://www.alexontology.com#Scale
@@ -194,98 +360,75 @@ www.alexontology.com:Symptom rdf:type owl:Class .
 
 ###  http://www.alexontology.com#ANOVA
 www.alexontology.com:ANOVA rdf:type owl:NamedIndividual ,
-                                    www.alexontology.com:StatisticalTest ;
-                           www.alexontology.com:isConnectedTo www.alexontology.com:InteroceptiveConfusionQuestionnaire .
+                                    www.alexontology.com:StatisticalTest .
 
 
 ###  http://www.alexontology.com#AffectiveState
 www.alexontology.com:AffectiveState rdf:type owl:NamedIndividual ,
                                              www.alexontology.com:Emotion ;
-                                    www.alexontology.com:isConnectedTo www.alexontology.com:Alexithymia .
+                                    www.alexontology.com:isRelatedTo www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#AlcoholConsumption
 www.alexontology.com:AlcoholConsumption rdf:type owl:NamedIndividual ,
                                                  www.alexontology.com:ClinicalDisorder ;
-                                        www.alexontology.com:isConnectedTo www.alexontology.com:Alexithymia .
+                                        www.alexontology.com:canBeSymptomOf www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#Alexithymia
 www.alexontology.com:Alexithymia rdf:type owl:NamedIndividual ,
                                           www.alexontology.com:ClinicalDisorder ;
-                                 www.alexontology.com:hasCorrelation www.alexontology.com:InteroceptiveConfusion ,
-                                                                     www.alexontology.com:Psychopathy ,
-                                                                     www.alexontology.com:StateEmotionSimilarityScore ;
                                  www.alexontology.com:hasDifficultiesInPerceiving www.alexontology.com:AffectiveState ;
                                  www.alexontology.com:hasSymptom www.alexontology.com:NoPerceptionOfEmotions ;
-                                 www.alexontology.com:isConnectedTo www.alexontology.com:AlcoholConsumption ,
-                                                                    www.alexontology.com:AutismSpectrumDisorder_ASD ,
-                                                                    www.alexontology.com:CaffeineConsumption ,
-                                                                    www.alexontology.com:CareForOthers ,
-                                                                    www.alexontology.com:ColonicDistension ,
-                                                                    www.alexontology.com:EatingDisorder_EDs ,
-                                                                    www.alexontology.com:FrontotemporalDementia ,
-                                                                    www.alexontology.com:ImmunodeficiencyVirus_HIV ,
-                                                                    www.alexontology.com:InteroceptiveConfusionQuestionnaire ,
-                                                                    www.alexontology.com:MultipleSclerosis ,
-                                                                    www.alexontology.com:MyocardialInfarction ,
-                                                                    www.alexontology.com:OtherSubstancesConsumption ,
-                                                                    www.alexontology.com:PostTraumaticStressDisorder ,
-                                                                    www.alexontology.com:Psychopathy ,
-                                                                    www.alexontology.com:SubstanceAbuse .
+                                 www.alexontology.com:has_correlation_disorder www.alexontology.com:Psychopathy ;
+                                 www.alexontology.com:has_correlation_scale www.alexontology.com:StateEmotionSimilarityScore .
 
 
 ###  http://www.alexontology.com#Anger
 www.alexontology.com:Anger rdf:type owl:NamedIndividual ,
                                     www.alexontology.com:Emotion ;
-                           www.alexontology.com:isConnectedTo www.alexontology.com:AffectiveState ,
-                                                              www.alexontology.com:Alexithymia ,
-                                                              www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                           www.alexontology.com:isRelatedTo www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#AnteriorCingulateCortex_ACC
 www.alexontology.com:AnteriorCingulateCortex_ACC rdf:type owl:NamedIndividual ,
                                                           www.alexontology.com:BrainRegion ;
-                                                 www.alexontology.com:isInvolvedIn www.alexontology.com:AffectiveState ,
-                                                                                   www.alexontology.com:Interoception ,
-                                                                                   www.alexontology.com:NonAffectiveState ;
+                                                 www.alexontology.com:isInvolvedInEmotion www.alexontology.com:AffectiveState ;
+                                                 www.alexontology.com:isInvolvedInInteroception www.alexontology.com:Interoception ;
+                                                 www.alexontology.com:isInvolvedInState www.alexontology.com:NonAffectiveState ;
                                                  www.alexontology.com:isReferredToAs www.alexontology.com:InteroceptiveCortex .
 
 
 ###  http://www.alexontology.com#AnteriorInsula_AI
 www.alexontology.com:AnteriorInsula_AI rdf:type owl:NamedIndividual ,
                                                 www.alexontology.com:BrainRegion ;
-                                       www.alexontology.com:isInvolvedIn www.alexontology.com:AffectiveState ,
-                                                                         www.alexontology.com:Interoception ,
-                                                                         www.alexontology.com:NonAffectiveState ;
+                                       www.alexontology.com:isInvolvedInEmotion www.alexontology.com:AffectiveState ;
+                                       www.alexontology.com:isInvolvedInInteroception www.alexontology.com:Interoception ;
+                                       www.alexontology.com:isInvolvedInState www.alexontology.com:NonAffectiveState ;
                                        www.alexontology.com:isReferredToAs www.alexontology.com:InteroceptiveCortex .
 
 
 ###  http://www.alexontology.com#Anxiety
 www.alexontology.com:Anxiety rdf:type owl:NamedIndividual ,
-                                      www.alexontology.com:ClinicalDisorder .
+                                      www.alexontology.com:ClinicalDisorder ;
+                             www.alexontology.com:canBeSymptomOf www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#Arousal
 www.alexontology.com:Arousal rdf:type owl:NamedIndividual ,
                                       www.alexontology.com:PhysicalState ;
-                             www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                                www.alexontology.com:NonAffectiveState .
+                             www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#AtypicalAffectiveTouch
 www.alexontology.com:AtypicalAffectiveTouch rdf:type owl:NamedIndividual ,
-                                                     www.alexontology.com:Symptom ;
-                                            www.alexontology.com:isConnectedTo www.alexontology.com:AutismSpectrumDisorder_ASD .
+                                                     www.alexontology.com:Symptom .
 
 
 ###  http://www.alexontology.com#AutismSpectrumDisorder_ASD
 www.alexontology.com:AutismSpectrumDisorder_ASD rdf:type owl:NamedIndividual ,
                                                          www.alexontology.com:ClinicalDisorder ;
-                                                www.alexontology.com:isConnectedTo www.alexontology.com:Alexithymia ,
-                                                                                   www.alexontology.com:AtypicalAffectiveTouch ,
-                                                                                   www.alexontology.com:DislikeOfPhisicalContact ,
-                                                                                   www.alexontology.com:SensitivityToFabrics .
+                                                www.alexontology.com:canBeSymptomOf www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#BodyConsciousnessQuestionnaire_BCQ
@@ -293,13 +436,11 @@ www.alexontology.com:BodyConsciousnessQuestionnaire_BCQ rdf:type owl:NamedIndivi
                                                                  www.alexontology.com:Questionnaire ;
                                                         www.alexontology.com:PublicizedOn www.alexontology.com:Facebook ,
                                                                                           www.alexontology.com:Twitter ;
-                                                        www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                                                           www.alexontology.com:NonAffectiveState ;
                                                         www.alexontology.com:hasFemaleParticipant "172"^^xsd:int ;
                                                         www.alexontology.com:hasItem "20"^^xsd:int ;
                                                         www.alexontology.com:hasMaleParticipant "36"^^xsd:int ;
                                                         www.alexontology.com:hasParticipantNumber "208"^^xsd:int ;
-                                                        www.alexontology.com:hasRangeOfAge "18-69"^^rdfs:Literal .
+                                                        www.alexontology.com:hasRangeOfAge "18-69"^^xsd:string .
 
 
 ###  http://www.alexontology.com#BodyPerceptionQuestionnaire_BPQ
@@ -307,158 +448,162 @@ www.alexontology.com:BodyPerceptionQuestionnaire_BPQ rdf:type owl:NamedIndividua
                                                               www.alexontology.com:Questionnaire ;
                                                      www.alexontology.com:PublicizedOn www.alexontology.com:Facebook ,
                                                                                        www.alexontology.com:Twitter ;
-                                                     www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                                                        www.alexontology.com:NonAffectiveState ;
                                                      www.alexontology.com:hasFemaleParticipant "172"^^xsd:int ;
                                                      www.alexontology.com:hasItem "20"^^xsd:int ;
                                                      www.alexontology.com:hasMaleParticipant "36"^^xsd:int ;
                                                      www.alexontology.com:hasParticipantNumber "208"^^xsd:int ;
-                                                     www.alexontology.com:hasRangeOfAge "18-69"^^rdfs:Literal .
+                                                     www.alexontology.com:hasRangeOfAge "18-69"^^xsd:string .
 
 
 ###  http://www.alexontology.com#CaffeineConsumption
 www.alexontology.com:CaffeineConsumption rdf:type owl:NamedIndividual ,
                                                   www.alexontology.com:ClinicalDisorder ;
-                                         www.alexontology.com:isConnectedTo www.alexontology.com:Alexithymia .
+                                         www.alexontology.com:canBeSymptomOf www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#CareForOthers
 www.alexontology.com:CareForOthers rdf:type owl:NamedIndividual ,
-                                            www.alexontology.com:Symptom ;
-                                   www.alexontology.com:isConnectedTo www.alexontology.com:Alexithymia .
+                                            www.alexontology.com:Symptom .
 
 
 ###  http://www.alexontology.com#ColonicDistension
 www.alexontology.com:ColonicDistension rdf:type owl:NamedIndividual ,
                                                 www.alexontology.com:ClinicalDisorder ;
-                                       www.alexontology.com:isConnectedTo www.alexontology.com:Alexithymia .
+                                       www.alexontology.com:canBeSymptomOf www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#CranialNerves
 www.alexontology.com:CranialNerves rdf:type owl:NamedIndividual ,
-                                            www.alexontology.com:BodyPart ;
-                                   www.alexontology.com:isConnectedTo www.alexontology.com:SolitaryTract .
+                                            www.alexontology.com:BodyPart .
+
+
+###  http://www.alexontology.com#CurrentKnowledge
+www.alexontology.com:CurrentKnowledge rdf:type owl:NamedIndividual ,
+                                               www.alexontology.com:Discussion ;
+                                      www.alexontology.com:isBasedOnPaper <http://www.alexontology.com#HowAreAlexithymiaAndPhysicalIllnessLinked?> .
+
+
+###  http://www.alexontology.com#CurrentfFindings
+www.alexontology.com:CurrentfFindings rdf:type owl:NamedIndividual ,
+                                               www.alexontology.com:Discussion ;
+                                      www.alexontology.com:isBroaderThan www.alexontology.com:CurrentKnowledge .
 
 
 ###  http://www.alexontology.com#Depression
 www.alexontology.com:Depression rdf:type owl:NamedIndividual ,
-                                         www.alexontology.com:ClinicalDisorder .
+                                         www.alexontology.com:ClinicalDisorder ;
+                                www.alexontology.com:canBeSymptomOf www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#Diabetes
 www.alexontology.com:Diabetes rdf:type owl:NamedIndividual ,
                                        www.alexontology.com:ClinicalDisorder ;
-                              www.alexontology.com:isConnectedTo www.alexontology.com:Alexithymia .
+                              www.alexontology.com:canBeSymptomOf www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#Disgust
 www.alexontology.com:Disgust rdf:type owl:NamedIndividual ,
                                       www.alexontology.com:Emotion ;
-                             www.alexontology.com:isConnectedTo www.alexontology.com:AffectiveState ,
-                                                                www.alexontology.com:Alexithymia ,
-                                                                www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                             www.alexontology.com:isRelatedTo www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#DislikeOfPhisicalContact
 www.alexontology.com:DislikeOfPhisicalContact rdf:type owl:NamedIndividual ,
-                                                       www.alexontology.com:Symptom ;
-                                              www.alexontology.com:isConnectedTo www.alexontology.com:AutismSpectrumDisorder_ASD .
+                                                       www.alexontology.com:Symptom .
 
 
 ###  http://www.alexontology.com#EatingDisorder_EDs
 www.alexontology.com:EatingDisorder_EDs rdf:type owl:NamedIndividual ,
                                                  www.alexontology.com:ClinicalDisorder ;
-                                        www.alexontology.com:isConnectedTo www.alexontology.com:Alexithymia .
+                                        www.alexontology.com:canBeSymptomOf www.alexontology.com:Alexithymia .
+
+
+###  http://www.alexontology.com#EnhancementOfHeartbeatRelatedBrainPotentialsThroughCardiacAwarenessTraining
+www.alexontology.com:EnhancementOfHeartbeatRelatedBrainPotentialsThroughCardiacAwarenessTraining rdf:type owl:NamedIndividual ,
+                                                                                                          www.alexontology.com:Discussion ;
+                                                                                                 www.alexontology.com:isLinkedTo www.alexontology.com:Training .
+
+
+###  http://www.alexontology.com#ExploratoryFactorAnalysis
+www.alexontology.com:ExploratoryFactorAnalysis rdf:type owl:NamedIndividual ,
+                                                        www.alexontology.com:StatisticalTest ;
+                                               www.alexontology.com:has_result_test www.alexontology.com:OneFactorSolution ,
+                                                                                    www.alexontology.com:TestRetestReliability ,
+                                                                                    www.alexontology.com:TwoFactorSolution .
 
 
 ###  http://www.alexontology.com#Facebook
 www.alexontology.com:Facebook rdf:type owl:NamedIndividual ,
-                                       www.alexontology.com:SocialMedia ;
-                              www.alexontology.com:isConnectedTo www.alexontology.com:BodyConsciousnessQuestionnaire_BCQ ,
-                                                                 www.alexontology.com:BodyPerceptionQuestionnaire_BPQ ,
-                                                                 www.alexontology.com:InteroceptiveConfusionQuestionnaire ,
-                                                                 www.alexontology.com:MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA .
+                                       www.alexontology.com:SocialMedia .
 
 
 ###  http://www.alexontology.com#Fatigue
 www.alexontology.com:Fatigue rdf:type owl:NamedIndividual ,
                                       www.alexontology.com:PhysicalState ;
-                             www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                                www.alexontology.com:NonAffectiveState ,
-                                                                www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                             www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#Fear
 www.alexontology.com:Fear rdf:type owl:NamedIndividual ,
                                    www.alexontology.com:Emotion ;
-                          www.alexontology.com:isConnectedTo www.alexontology.com:AffectiveState ,
-                                                             www.alexontology.com:Alexithymia ,
-                                                             www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                          www.alexontology.com:isRelatedTo www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#FeelingCold
 www.alexontology.com:FeelingCold rdf:type owl:NamedIndividual ,
                                           www.alexontology.com:PhysicalState ;
-                                 www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                                    www.alexontology.com:NonAffectiveState ,
-                                                                    www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                                 www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#FeelingHot
 www.alexontology.com:FeelingHot rdf:type owl:NamedIndividual ,
                                          www.alexontology.com:PhysicalState ;
-                                www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                                   www.alexontology.com:NonAffectiveState ,
-                                                                   www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                                www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#Fisher_r_to_z
 www.alexontology.com:Fisher_r_to_z rdf:type owl:NamedIndividual ,
-                                            www.alexontology.com:StatisticalTest ;
-                                   www.alexontology.com:isConnectedTo www.alexontology.com:InteroceptiveConfusionQuestionnaire .
+                                            www.alexontology.com:StatisticalTest .
 
 
 ###  http://www.alexontology.com#FrontotemporalDementia
 www.alexontology.com:FrontotemporalDementia rdf:type owl:NamedIndividual ,
                                                      www.alexontology.com:ClinicalDisorder ;
-                                            www.alexontology.com:isConnectedTo www.alexontology.com:Alexithymia .
+                                            www.alexontology.com:canBeSymptomOf www.alexontology.com:Alexithymia .
+
+
+###  http://www.alexontology.com#Gender
+www.alexontology.com:Gender rdf:type owl:NamedIndividual ,
+                                     www.alexontology.com:Gender .
 
 
 ###  http://www.alexontology.com#Happiness
 www.alexontology.com:Happiness rdf:type owl:NamedIndividual ,
                                         www.alexontology.com:Emotion ;
-                               www.alexontology.com:isConnectedTo www.alexontology.com:AffectiveState ,
-                                                                  www.alexontology.com:Alexithymia ,
-                                                                  www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                               www.alexontology.com:isRelatedTo www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#HeartRate
 www.alexontology.com:HeartRate rdf:type owl:NamedIndividual ,
                                         www.alexontology.com:PhysicalState ;
-                               www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                                  www.alexontology.com:MyocardialInfarction ,
-                                                                  www.alexontology.com:NonAffectiveState ,
-                                                                  www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                               www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#Hunger
 www.alexontology.com:Hunger rdf:type owl:NamedIndividual ,
                                      www.alexontology.com:PhysicalState ;
-                            www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                               www.alexontology.com:NonAffectiveState ,
-                                                               www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                            www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#ImmunodeficiencyVirus_HIV
 www.alexontology.com:ImmunodeficiencyVirus_HIV rdf:type owl:NamedIndividual ,
                                                         www.alexontology.com:ClinicalDisorder ;
-                                               www.alexontology.com:isConnectedTo www.alexontology.com:Alexithymia .
+                                               www.alexontology.com:canBeSymptomOf www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#Individual
 www.alexontology.com:Individual rdf:type owl:NamedIndividual ,
                                          www.alexontology.com:Person ;
-                                www.alexontology.com:hasDifficultiesInPerceiving www.alexontology.com:HeartRate ;
                                 www.alexontology.com:isDiagnosedWith www.alexontology.com:Alexithymia ,
                                                                      www.alexontology.com:Anxiety ,
                                                                      www.alexontology.com:AutismSpectrumDisorder_ASD ,
@@ -473,10 +618,14 @@ www.alexontology.com:Individual rdf:type owl:NamedIndividual ,
                                                                     www.alexontology.com:Twitter .
 
 
+###  http://www.alexontology.com#IndividualsWithAlexithymia
+www.alexontology.com:IndividualsWithAlexithymia rdf:type owl:NamedIndividual ,
+                                                         www.alexontology.com:Person .
+
+
 ###  http://www.alexontology.com#Interoception
 www.alexontology.com:Interoception rdf:type owl:NamedIndividual ,
-                                            www.alexontology.com:Interoception ,
-                                            www.alexontology.com:PhysicalState ;
+                                            www.alexontology.com:Interoception ;
                                    www.alexontology.com:hasAbilityToPerceive www.alexontology.com:Fatigue ,
                                                                              www.alexontology.com:HeartRate ,
                                                                              www.alexontology.com:Hunger ,
@@ -487,22 +636,24 @@ www.alexontology.com:Interoception rdf:type owl:NamedIndividual ,
                                                                              www.alexontology.com:RespiratoryEffort ,
                                                                              www.alexontology.com:Satiety ,
                                                                              www.alexontology.com:Temperature ,
-                                                                             www.alexontology.com:Thirst ;
-                                   www.alexontology.com:hasSymptom www.alexontology.com:NoPerceptionOfPhysicalState .
+                                                                             www.alexontology.com:Thirst .
+
+
+###  http://www.alexontology.com#InteroceptiveAbility
+www.alexontology.com:InteroceptiveAbility rdf:type owl:NamedIndividual ,
+                                                   www.alexontology.com:Discussion .
 
 
 ###  http://www.alexontology.com#InteroceptiveAwareness
 www.alexontology.com:InteroceptiveAwareness rdf:type owl:NamedIndividual ,
-                                                     www.alexontology.com:Interoception ;
-                                            www.alexontology.com:isConnectedTo www.alexontology.com:InteroceptiveSensibility ,
-                                                                               www.alexontology.com:InteroceptiveSensitivity .
+                                                     www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#InteroceptiveConfusion
 www.alexontology.com:InteroceptiveConfusion rdf:type owl:NamedIndividual ,
+                                                     www.alexontology.com:ClinicalDisorder ,
                                                      www.alexontology.com:Interoception ;
-                                            www.alexontology.com:hasCorrelation www.alexontology.com:Alexithymia ,
-                                                                                www.alexontology.com:StateEmotionSimilarityScore .
+                                            www.alexontology.com:hasCorrelationInteroception www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#InteroceptiveConfusionQuestionnaire
@@ -510,40 +661,47 @@ www.alexontology.com:InteroceptiveConfusionQuestionnaire rdf:type owl:NamedIndiv
                                                                   www.alexontology.com:Questionnaire ;
                                                          www.alexontology.com:PublicizedOn www.alexontology.com:Facebook ,
                                                                                            www.alexontology.com:Twitter ;
-                                                         www.alexontology.com:hasMethod www.alexontology.com:Fisher_r_to_z ,
+                                                         www.alexontology.com:hasMethod www.alexontology.com:ExploratoryFactorAnalysis ,
+                                                                                        www.alexontology.com:Fisher_r_to_z ,
                                                                                         www.alexontology.com:PotthoffAnalyses ;
-                                                         www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                                                            www.alexontology.com:InteroceptiveConfusionScale ,
-                                                                                            www.alexontology.com:InteroceptiveConfusionScore ,
-                                                                                            www.alexontology.com:NonAffectiveState ;
                                                          www.alexontology.com:hasFemaleParticipant "172"^^xsd:int ;
                                                          www.alexontology.com:hasItem "20"^^xsd:int ;
                                                          www.alexontology.com:hasMaleParticipant "36"^^xsd:int ;
                                                          www.alexontology.com:hasParticipantNumber "208"^^xsd:int ;
-                                                         www.alexontology.com:hasRangeOfAge "18-69"^^rdfs:Literal .
+                                                         www.alexontology.com:hasRangeOfAge "18-69"^^xsd:string .
 
 
 ###  http://www.alexontology.com#InteroceptiveConfusionScale
 www.alexontology.com:InteroceptiveConfusionScale rdf:type owl:NamedIndividual ,
                                                           www.alexontology.com:Scale ;
-                                                 www.alexontology.com:hasMeasured www.alexontology.com:InteroceptiveSensibility ;
-                                                 www.alexontology.com:isConnectedTo www.alexontology.com:InteroceptiveConfusionQuestionnaire ,
-                                                                                    www.alexontology.com:InteroceptiveConfusionScore ;
+                                                 www.alexontology.com:hasMeasuredInteroception www.alexontology.com:InteroceptiveSensibility ;
                                                  www.alexontology.com:hasRange "1-5"^^xsd:string .
 
 
 ###  http://www.alexontology.com#InteroceptiveConfusionScore
 www.alexontology.com:InteroceptiveConfusionScore rdf:type owl:NamedIndividual ,
                                                           www.alexontology.com:Scale ;
-                                                 www.alexontology.com:isConnectedTo www.alexontology.com:InteroceptiveConfusionScale ;
                                                  www.alexontology.com:hasRange "20-100"^^xsd:string .
 
 
 ###  http://www.alexontology.com#InteroceptiveCortex
 www.alexontology.com:InteroceptiveCortex rdf:type owl:NamedIndividual ,
                                                   www.alexontology.com:BrainRegion ;
-                                         www.alexontology.com:isInvolvedIn www.alexontology.com:AffectiveState ,
-                                                                           www.alexontology.com:NonAffectiveState .
+                                         www.alexontology.com:isInvolvedInEmotion www.alexontology.com:AffectiveState ;
+                                         www.alexontology.com:isInvolvedInState www.alexontology.com:NonAffectiveState .
+
+
+###  http://www.alexontology.com#InteroceptiveDeficit
+www.alexontology.com:InteroceptiveDeficit rdf:type owl:NamedIndividual ,
+                                                   www.alexontology.com:Discussion ;
+                                          www.alexontology.com:isLinkedTo www.alexontology.com:CurrentfFindings .
+
+
+###  http://www.alexontology.com#InteroceptiveImpairment
+www.alexontology.com:InteroceptiveImpairment rdf:type owl:NamedIndividual ,
+                                                      www.alexontology.com:Discussion ;
+                                             www.alexontology.com:isLinkedTo www.alexontology.com:CurrentfFindings ;
+                                             www.alexontology.com:isSynonymousWith www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#InteroceptiveSensibility
@@ -555,26 +713,24 @@ www.alexontology.com:InteroceptiveSensibility rdf:type owl:NamedIndividual ,
 ###  http://www.alexontology.com#InteroceptiveSensitivity
 www.alexontology.com:InteroceptiveSensitivity rdf:type owl:NamedIndividual ,
                                                        www.alexontology.com:Interoception ;
+                                              www.alexontology.com:canBeImproved www.alexontology.com:Training ;
                                               www.alexontology.com:hasAbilityToPerceive www.alexontology.com:HeartRate .
 
 
 ###  http://www.alexontology.com#Itch
 www.alexontology.com:Itch rdf:type owl:NamedIndividual ,
                                    www.alexontology.com:PhysicalState ;
-                          www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                             www.alexontology.com:NonAffectiveState .
+                          www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#LaminaI
 www.alexontology.com:LaminaI rdf:type owl:NamedIndividual ,
-                                      www.alexontology.com:BodyPart ;
-                             www.alexontology.com:isConnectedTo www.alexontology.com:AnteriorCingulateCortex_ACC .
+                                      www.alexontology.com:BodyPart .
 
 
 ###  http://www.alexontology.com#LevensonSelf-ReportPsychopathyScale_SRPS
 www.alexontology.com:LevensonSelf-ReportPsychopathyScale_SRPS rdf:type owl:NamedIndividual ,
-                                                                       www.alexontology.com:Scale ;
-                                                              www.alexontology.com:hasMeasured www.alexontology.com:Psychopathy .
+                                                                       www.alexontology.com:Scale .
 
 
 ###  http://www.alexontology.com#MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA
@@ -582,227 +738,240 @@ www.alexontology.com:MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA rdf
                                                                                       www.alexontology.com:Questionnaire ;
                                                                              www.alexontology.com:PublicizedOn www.alexontology.com:Facebook ,
                                                                                                                www.alexontology.com:Twitter ;
-                                                                             www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                                                                                www.alexontology.com:NonAffectiveState ;
                                                                              www.alexontology.com:hasFemaleParticipant "172"^^xsd:int ;
                                                                              www.alexontology.com:hasItem "20"^^xsd:int ;
                                                                              www.alexontology.com:hasMaleParticipant "36"^^xsd:int ;
                                                                              www.alexontology.com:hasParticipantNumber "208"^^xsd:int ;
-                                                                             www.alexontology.com:hasRangeOfAge "18-69"^^rdfs:Literal .
+                                                                             www.alexontology.com:hasRangeOfAge "18-69"^^xsd:string .
 
 
 ###  http://www.alexontology.com#MultipleSclerosis
 www.alexontology.com:MultipleSclerosis rdf:type owl:NamedIndividual ,
                                                 www.alexontology.com:ClinicalDisorder ;
-                                       www.alexontology.com:isConnectedTo www.alexontology.com:Alexithymia .
+                                       www.alexontology.com:canBeSymptomOf www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#MuscleAche
 www.alexontology.com:MuscleAche rdf:type owl:NamedIndividual ,
                                          www.alexontology.com:PhysicalState ;
-                                www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                                   www.alexontology.com:NonAffectiveState ,
-                                                                   www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                                www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#MyocardialInfarction
 www.alexontology.com:MyocardialInfarction rdf:type owl:NamedIndividual ,
                                                    www.alexontology.com:ClinicalDisorder ;
-                                          www.alexontology.com:isConnectedTo www.alexontology.com:Alexithymia .
+                                          www.alexontology.com:canBeSymptomOf www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#Nausea
 www.alexontology.com:Nausea rdf:type owl:NamedIndividual ,
                                      www.alexontology.com:PhysicalState ;
-                            www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                               www.alexontology.com:NonAffectiveState ,
-                                                               www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                            www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#NoPerceptionOfEmotions
 www.alexontology.com:NoPerceptionOfEmotions rdf:type owl:NamedIndividual ,
-                                                     www.alexontology.com:Symptom ;
-                                            www.alexontology.com:isConnectedTo www.alexontology.com:Alexithymia .
-
-
-###  http://www.alexontology.com#NoPerceptionOfPhysicalState
-www.alexontology.com:NoPerceptionOfPhysicalState rdf:type owl:NamedIndividual ,
-                                                          www.alexontology.com:Symptom ;
-                                                 www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
+                                                     www.alexontology.com:Symptom .
 
 
 ###  http://www.alexontology.com#NonAffectiveState
-www.alexontology.com:NonAffectiveState rdf:type owl:NamedIndividual ;
-                                       www.alexontology.com:isSentTo www.alexontology.com:AnteriorCingulateCortex_ACC ,
-                                                                     www.alexontology.com:SolitaryTract ;
-                                       www.alexontology.com:isSentVia www.alexontology.com:CranialNerves ,
-                                                                      www.alexontology.com:LaminaI .
+www.alexontology.com:NonAffectiveState rdf:type owl:NamedIndividual ,
+                                                www.alexontology.com:PhysicalState ;
+                                       www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ;
+                                       www.alexontology.com:isSentToBody www.alexontology.com:SolitaryTract ;
+                                       www.alexontology.com:isSentToRegion www.alexontology.com:AnteriorCingulateCortex_ACC ;
+                                       www.alexontology.com:isSentViaBody www.alexontology.com:CranialNerves ,
+                                                                          www.alexontology.com:LaminaI .
+
+
+###  http://www.alexontology.com#OneFactorSolution
+www.alexontology.com:OneFactorSolution rdf:type owl:NamedIndividual ,
+                                                www.alexontology.com:Result ;
+                                       www.alexontology.com:isResultOf www.alexontology.com:ExploratoryFactorAnalysis ;
+                                       www.alexontology.com:hasChronbachsAlphaValue 0.96 ;
+                                       www.alexontology.com:hasEigenvalue 20.73 .
 
 
 ###  http://www.alexontology.com#OtherDisorders
 www.alexontology.com:OtherDisorders rdf:type owl:NamedIndividual ,
-                                             www.alexontology.com:ClinicalDisorder .
+                                             www.alexontology.com:ClinicalDisorder ;
+                                    www.alexontology.com:canBeSymptomOf www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#OtherSubstancesConsumption
 www.alexontology.com:OtherSubstancesConsumption rdf:type owl:NamedIndividual ,
                                                          www.alexontology.com:ClinicalDisorder ;
-                                                www.alexontology.com:isConnectedTo www.alexontology.com:Alexithymia .
+                                                www.alexontology.com:canBeSymptomOf www.alexontology.com:Alexithymia .
+
+
+###  http://www.alexontology.com#PFactor
+www.alexontology.com:PFactor rdf:type owl:NamedIndividual ,
+                                      www.alexontology.com:Discussion ;
+                             www.alexontology.com:isBasedOnPaper <http://www.alexontology.com#ThePFactorOneGeneralPsychopathologyFactorInTheStructureOfPsychiatricDisorders?> ;
+                             www.alexontology.com:isLinkedTo www.alexontology.com:CurrentfFindings ;
+                             www.alexontology.com:respresentsSeverityOf www.alexontology.com:Psychopathy .
 
 
 ###  http://www.alexontology.com#Pain
 www.alexontology.com:Pain rdf:type owl:NamedIndividual ,
                                    www.alexontology.com:PhysicalState ;
-                          www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                             www.alexontology.com:NonAffectiveState .
+                          www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#PhysicalAche
 www.alexontology.com:PhysicalAche rdf:type owl:NamedIndividual ,
                                            www.alexontology.com:PhysicalState ;
-                                  www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                                     www.alexontology.com:NonAffectiveState ,
-                                                                     www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                                  www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#PhysicalNumbness
 www.alexontology.com:PhysicalNumbness rdf:type owl:NamedIndividual ,
                                                www.alexontology.com:PhysicalState ;
-                                      www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                                         www.alexontology.com:NonAffectiveState ,
-                                                                         www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                                      www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#PostTraumaticStressDisorder
 www.alexontology.com:PostTraumaticStressDisorder rdf:type owl:NamedIndividual ,
                                                           www.alexontology.com:ClinicalDisorder ;
-                                                 www.alexontology.com:isConnectedTo www.alexontology.com:Alexithymia .
+                                                 www.alexontology.com:canBeSymptomOf www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#PotthoffAnalyses
 www.alexontology.com:PotthoffAnalyses rdf:type owl:NamedIndividual ,
-                                               www.alexontology.com:StatisticalTest ;
-                                      www.alexontology.com:isConnectedTo www.alexontology.com:InteroceptiveConfusionQuestionnaire .
+                                               www.alexontology.com:StatisticalTest .
 
 
 ###  http://www.alexontology.com#Psychopathy
 www.alexontology.com:Psychopathy rdf:type owl:NamedIndividual ,
                                           www.alexontology.com:ClinicalDisorder ;
-                                 www.alexontology.com:hasCorrelation www.alexontology.com:Alexithymia ;
-                                 www.alexontology.com:isConnectedTo www.alexontology.com:Alexithymia .
+                                 www.alexontology.com:canBeSymptomOf www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#RespiratoryEffort
 www.alexontology.com:RespiratoryEffort rdf:type owl:NamedIndividual ,
                                                 www.alexontology.com:PhysicalState ;
-                                       www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                                          www.alexontology.com:NonAffectiveState .
+                                       www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#Sadness
 www.alexontology.com:Sadness rdf:type owl:NamedIndividual ,
                                       www.alexontology.com:Emotion ;
-                             www.alexontology.com:isConnectedTo www.alexontology.com:AffectiveState ,
-                                                                www.alexontology.com:Alexithymia ,
-                                                                www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                             www.alexontology.com:isRelatedTo www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#Satiety
 www.alexontology.com:Satiety rdf:type owl:NamedIndividual ,
                                       www.alexontology.com:PhysicalState ;
-                             www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                                www.alexontology.com:NonAffectiveState .
+                             www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#SensitivityToFabrics
 www.alexontology.com:SensitivityToFabrics rdf:type owl:NamedIndividual ,
-                                                   www.alexontology.com:Symptom ;
-                                          www.alexontology.com:isConnectedTo www.alexontology.com:SensitivityToFabrics .
+                                                   www.alexontology.com:Symptom .
 
 
 ###  http://www.alexontology.com#ShortnessOfBreath
 www.alexontology.com:ShortnessOfBreath rdf:type owl:NamedIndividual ,
                                                 www.alexontology.com:PhysicalState ;
-                                       www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                                          www.alexontology.com:NonAffectiveState ,
-                                                                          www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                                       www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#SkinIrritation
 www.alexontology.com:SkinIrritation rdf:type owl:NamedIndividual ,
                                              www.alexontology.com:PhysicalState ;
-                                    www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                                       www.alexontology.com:NonAffectiveState ,
-                                                                       www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                                    www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#SolitaryTract
 www.alexontology.com:SolitaryTract rdf:type owl:NamedIndividual ,
-                                            www.alexontology.com:BodyPart ;
-                                   www.alexontology.com:isConnectedTo www.alexontology.com:CranialNerves .
+                                            www.alexontology.com:BodyPart .
 
 
 ###  http://www.alexontology.com#StateEmotionSImilarityQuestionnaire
 www.alexontology.com:StateEmotionSImilarityQuestionnaire rdf:type owl:NamedIndividual ,
                                                                   www.alexontology.com:Scale ;
-                                                         www.alexontology.com:hasMeasured www.alexontology.com:AffectiveState ,
-                                                                                          www.alexontology.com:InteroceptiveSensibility ,
-                                                                                          www.alexontology.com:NonAffectiveState ;
-                                                         www.alexontology.com:hasItem "72"^^xsd:int ;
+                                                         www.alexontology.com:hasMeasuredEmotion www.alexontology.com:AffectiveState ;
+                                                         www.alexontology.com:hasMeasuredInteroception www.alexontology.com:InteroceptiveSensibility ;
+                                                         www.alexontology.com:hasMeasuredState www.alexontology.com:NonAffectiveState ;
+                                                         www.alexontology.com:hasMethodScale www.alexontology.com:ExploratoryFactorAnalysis ;
+                                                         www.alexontology.com:hasItemScale "72"^^xsd:int ;
                                                          www.alexontology.com:hasRange "1-7"^^xsd:string .
 
 
 ###  http://www.alexontology.com#StateEmotionSimilarityScore
 www.alexontology.com:StateEmotionSimilarityScore rdf:type owl:NamedIndividual ,
                                                           www.alexontology.com:Scale ;
-                                                 www.alexontology.com:hasCorrelation www.alexontology.com:Alexithymia ,
-                                                                                     www.alexontology.com:InteroceptiveConfusion ;
-                                                 www.alexontology.com:isConnectedTo www.alexontology.com:StateEmotionSImilarityQuestionnaire ;
                                                  www.alexontology.com:hasRange "72-504"^^xsd:string .
 
 
 ###  http://www.alexontology.com#SubstanceAbuse
 www.alexontology.com:SubstanceAbuse rdf:type owl:NamedIndividual ,
                                              www.alexontology.com:ClinicalDisorder ;
-                                    www.alexontology.com:isConnectedTo www.alexontology.com:Alexithymia .
+                                    www.alexontology.com:canBeSymptomOf www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#Surprise
 www.alexontology.com:Surprise rdf:type owl:NamedIndividual ,
                                        www.alexontology.com:Emotion ;
-                              www.alexontology.com:isConnectedTo www.alexontology.com:AffectiveState ,
-                                                                 www.alexontology.com:Alexithymia ,
-                                                                 www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                              www.alexontology.com:isRelatedTo www.alexontology.com:Alexithymia .
 
 
 ###  http://www.alexontology.com#Temperature
 www.alexontology.com:Temperature rdf:type owl:NamedIndividual ,
                                           www.alexontology.com:PhysicalState ;
-                                 www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                                    www.alexontology.com:NonAffectiveState .
+                                 www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
+
+
+###  http://www.alexontology.com#TestRetestReliability
+www.alexontology.com:TestRetestReliability rdf:type owl:NamedIndividual ,
+                                                    www.alexontology.com:Result .
 
 
 ###  http://www.alexontology.com#Thirst
 www.alexontology.com:Thirst rdf:type owl:NamedIndividual ,
                                      www.alexontology.com:PhysicalState ;
-                            www.alexontology.com:isConnectedTo www.alexontology.com:Interoception ,
-                                                               www.alexontology.com:NonAffectiveState ,
-                                                               www.alexontology.com:StateEmotionSImilarityQuestionnaire .
+                            www.alexontology.com:isConnectedTo www.alexontology.com:Interoception .
 
 
 ###  http://www.alexontology.com#TorontoAlexithymiaScale_TAS_20
 www.alexontology.com:TorontoAlexithymiaScale_TAS_20 rdf:type owl:NamedIndividual ,
-                                                             www.alexontology.com:Scale ;
-                                                    www.alexontology.com:hasMeasured www.alexontology.com:Alexithymia .
+                                                             www.alexontology.com:Scale .
+
+
+###  http://www.alexontology.com#Training
+www.alexontology.com:Training rdf:type owl:NamedIndividual ,
+                                       www.alexontology.com:Discussion ;
+                              www.alexontology.com:isBasedOnPaper www.alexontology.com:EnhancementOfHeartbeatRelatedBrainPotentialsThroughCardiacAwarenessTraining .
 
 
 ###  http://www.alexontology.com#Twitter
 www.alexontology.com:Twitter rdf:type owl:NamedIndividual ,
-                                      www.alexontology.com:SocialMedia ;
-                             www.alexontology.com:isConnectedTo www.alexontology.com:BodyConsciousnessQuestionnaire_BCQ ,
-                                                                www.alexontology.com:BodyPerceptionQuestionnaire_BPQ ,
-                                                                www.alexontology.com:InteroceptiveConfusionQuestionnaire ,
-                                                                www.alexontology.com:MultidimensionalAssessmentOfInteroceptiveAwareness_MAIA .
+                                      www.alexontology.com:SocialMedia .
+
+
+###  http://www.alexontology.com#TwoFactorSolution
+www.alexontology.com:TwoFactorSolution rdf:type owl:NamedIndividual ,
+                                                www.alexontology.com:Result ;
+                                       www.alexontology.com:isResultOf www.alexontology.com:ExploratoryFactorAnalysis ;
+                                       www.alexontology.com:hasChronbachsAlphaValue 0.53 .
+
+
+###  http://www.alexontology.com#TypicalAssociationEmotionPysicalstate
+www.alexontology.com:TypicalAssociationEmotionPysicalstate rdf:type owl:NamedIndividual ,
+                                                                    www.alexontology.com:Symptom ;
+                                                           www.alexontology.com:notAffectedBy www.alexontology.com:Gender .
+
+
+###  http://www.alexontology.com#HowAreAlexithymiaAndPhysicalIllnessLinked?
+<http://www.alexontology.com#HowAreAlexithymiaAndPhysicalIllnessLinked?> rdf:type owl:NamedIndividual ,
+                                                                                  www.alexontology.com:Discussion ;
+                                                                         www.alexontology.com:isLinkedTo www.alexontology.com:CurrentKnowledge .
+
+
+###  http://www.alexontology.com#ThePFactorOneGeneralPsychopathologyFactorInTheStructureOfPsychiatricDisorders?
+<http://www.alexontology.com#ThePFactorOneGeneralPsychopathologyFactorInTheStructureOfPsychiatricDisorders?> rdf:type owl:NamedIndividual ,
+                                                                                                                      www.alexontology.com:Discussion ;
+                                                                                                             www.alexontology.com:isLinkedTo www.alexontology.com:CurrentKnowledge .
 
 
 #################################################################

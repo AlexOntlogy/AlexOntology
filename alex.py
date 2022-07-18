@@ -41,22 +41,21 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX alex: <http://www.alexontology.com#>
 
-select ?nonAffectiveState where {?nonAffectiveState a alex:PhysicalState.
-                        ?nonAffectiveState alex:isConnectedTo alex:StateEmotionSImilarityQuestionnaire
+select ?paper where {?knowledge a alex:Discussion.
+                        ?knowledge alex:isBasedOnPaper ?paper
                         }
 
 '''
 
 cq6 = '''
-
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX alex: <http://www.alexontology.com#>
 
-select ?emotion where{ ?emotion a alex:Emotion.
-                        ?emotion alex:isConnectedTo alex:StateEmotionSImilarityQuestionnaire
-}
+select DISTINCT ?age where{?questionnaire a alex:Questionnaire.
+                            ?questionnaire alex:hasRangeOfAge ?age}
 '''
+
 
 cq7 = '''
 
@@ -65,7 +64,7 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX alex: <http://www.alexontology.com#>
 
 select ?brainRegion where{?brainRegion a alex:BrainRegion.
-                    ?brainRegion alex:isInvolvedIn alex:Interoception
+                    ?brainRegion alex:isInvolvedInInteroception alex:Interoception
 }
 '''
 
@@ -101,16 +100,8 @@ select ?scale where {
                     }
 '''
 
-cq11 = '''
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX alex: <http://www.alexontology.com#>
 
-select DISTINCT ?age where{?questionnaire a alex:Questionnaire.
-                            ?questionnaire alex:hasRangeOfAge ?age}
-'''
-
-cqs = [cq1, cq2, cq3, cq4, cq5, cq6, cq7, cq8, cq9, cq10, cq11]
+cqs = [cq1, cq2, cq3, cq4, cq5, cq6, cq7, cq8, cq9, cq10]
 
 for idx, cq in enumerate(cqs):
     print("Results for cq " + str(idx + 1) + ":")
