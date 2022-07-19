@@ -333,6 +333,7 @@ www.alexontology.com:InteroceptiveConfusionScale rdf:type owl:NamedIndividual ,
 ###  http://www.alexontology.com#InteroceptiveConfusionScore
 www.alexontology.com:InteroceptiveConfusionScore rdf:type owl:NamedIndividual ,
                                                           www.alexontology.com:Scale ;
+                                                 www.alexontology.com:isPartOf www.alexontology.com:InteroceptiveConfusionScale ;
                                                  www.alexontology.com:hasRange "20-100"^^xsd:string .
 
 
@@ -622,5 +623,5 @@ www.alexontology.com:TypicalAssociationEmotionPysicalstate rdf:type owl:NamedInd
 
 ###  http://www.alexontology.com#ThePFactorOneGeneralPsychopathologyFactorInTheStructureOfPsychiatricDisorders?
 <http://www.alexontology.com#ThePFactorOneGeneralPsychopathologyFactorInTheStructureOfPsychiatricDisorders?> rdf:type owl:NamedIndividual ,
-                                                                                                                      www.alexontology.com:Discussion ;
+                                                                                                                     www.alexontology.com:Discussion ;
                                                                                                              www.alexontology.com:isLinkedTo www.alexontology.com:CurrentKnowledge .

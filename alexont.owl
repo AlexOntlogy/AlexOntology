@@ -160,6 +160,12 @@ www.alexontology.com:isLinkedTo rdf:type owl:ObjectProperty ;
                                 rdfs:range www.alexontology.com:Discussion .
 
 
+###  http://www.alexontology.com#isPartOf
+www.alexontology.com:isPartOf rdf:type owl:ObjectProperty ;
+                              rdfs:domain www.alexontology.com:Scale ;
+                              rdfs:range www.alexontology.com:Scale .
+
+
 ###  http://www.alexontology.com#isParticipantIn
 www.alexontology.com:isParticipantIn rdf:type owl:ObjectProperty ;
                                      rdfs:domain www.alexontology.com:Person ;
@@ -681,6 +687,7 @@ www.alexontology.com:InteroceptiveConfusionScale rdf:type owl:NamedIndividual ,
 ###  http://www.alexontology.com#InteroceptiveConfusionScore
 www.alexontology.com:InteroceptiveConfusionScore rdf:type owl:NamedIndividual ,
                                                           www.alexontology.com:Scale ;
+                                                 www.alexontology.com:isPartOf www.alexontology.com:InteroceptiveConfusionScale ;
                                                  www.alexontology.com:hasRange "20-100"^^xsd:string .
 
 
