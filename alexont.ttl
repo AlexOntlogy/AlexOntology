@@ -277,6 +277,7 @@ www.alexontology.com:IndividualsWithAlexithymia rdf:type owl:NamedIndividual ,
 
 ###  http://www.alexontology.com#Interoception
 www.alexontology.com:Interoception rdf:type owl:NamedIndividual ,
+                                            www.alexontology.com:ClinicalDisorder ,
                                             www.alexontology.com:Interoception ;
                                    www.alexontology.com:hasAbilityToPerceive www.alexontology.com:Fatigue ,
                                                                              www.alexontology.com:HeartRate ,
@@ -303,7 +304,6 @@ www.alexontology.com:InteroceptiveAwareness rdf:type owl:NamedIndividual ,
 
 ###  http://www.alexontology.com#InteroceptiveConfusion
 www.alexontology.com:InteroceptiveConfusion rdf:type owl:NamedIndividual ,
-                                                     www.alexontology.com:ClinicalDisorder ,
                                                      www.alexontology.com:Interoception ;
                                             www.alexontology.com:hasCorrelationInteroception www.alexontology.com:Alexithymia .
 
@@ -623,5 +623,5 @@ www.alexontology.com:TypicalAssociationEmotionPysicalstate rdf:type owl:NamedInd
 
 ###  http://www.alexontology.com#ThePFactorOneGeneralPsychopathologyFactorInTheStructureOfPsychiatricDisorders?
 <http://www.alexontology.com#ThePFactorOneGeneralPsychopathologyFactorInTheStructureOfPsychiatricDisorders?> rdf:type owl:NamedIndividual ,
-                                                                                                                     www.alexontology.com:Discussion ;
-                                                                                                             www.alexontology.com:isLinkedTo www.alexontology.com:CurrentKnowledge .
+                                                                                                                      www.alexontology.com:Discussion ;
+                                                                                                              www.alexontology.com:isLinkedTo www.alexontology.com:CurrentKnowledge .
